@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+.cdiv-1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("assets/img/landing/contact/contact-01.png");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.cdiv-2{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-image: url("assets/img/landing/contact/contact-02.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    animation: stars 4s infinite ease-in-out;
+
+}
+
+@keyframes stars{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.cdiv-3{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    left: 0;
+
+}
+.cimg1{
+	position: absolute;
+	width: 9%;
+	top: 40%;
+	left: 4.5%;
+	
+	animation: aminate1 3s infinite ease-in-out;
+}
+
+@keyframes aminate1{
+	0%{
+		top: 40%;
+		left: 4.5%;
+	}
+	50%{
+		top: 35%;
+		left: 7%;
+	}
+	100%{
+		top: 40%;
+		left: 4.5%;
+	}
+
+}
+.cimg2{
+
+	position: absolute;
+	width: 15%;
+	left: 30%;
+	top: 10%;
+	animation: aminate2 2s infinite ease-in-out;
+}
+
+@keyframes aminate2{
+	0%{
+		left: 30%;
+		top: 10%;
+	}
+	50%{
+		top: 12%;
+		left: 27%;
+	}
+	100%{
+		left: 30%;
+		top: 10%;
+	}
+
+}
+.cimg3{
+	position: absolute;
+	width: 7%;
+	
+	left: 5%;
+	top: 10%;
+	animation: animate3 3s infinite ease-in-out;
+}
+@keyframes animate3{
+	0%{
+		left: 5%;
+		top: 10%;
+	}
+	50%{
+		left: 12%;
+		top: 13%;
+	}
+	100%{
+		left: 5%;
+		top: 10%;
+	}
+}
+.cdiv-4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size:18px ;
+    padding: 20px;
+    color:#000033;
+    font-family: 'Montserrat', sans-serif;
+    left: 0;
+}
+.heading {
+    margin: auto;
+    font-size: 45px;
+    text-shadow: 0px 3px 0px #ccc, 0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
+}
+ @media (max-width: 776px){
+    .cdiv-1{
+        background-image: url("assets/img/landing/contact/mobilec.png");
+    }
+    .cdiv-2{
+        background-image: url("assets/img/landing/contact/mobilecstar.png");
+    }
+
+}

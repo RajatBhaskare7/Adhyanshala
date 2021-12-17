@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+.div-1{
+    position: relative;
+    height: 110vh;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    background-image: url("assets/img/landing/about/About_Landing-06.png");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.div-2{
+    position: absolute;
+    height: 110vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-image: url("assets/img/landing/about/About_Landing-07.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    animation: stars 4s infinite ease-in-out;
+
+}
+.div-4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size:18px ;
+
+    padding: 40px;
+    color:#000033;
+    font-family: 'Montserrat', sans-serif;
+    left: 0;
+}
+@keyframes stars{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.div-3{
+
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.img1{
+    position: absolute;
+    width: 7%;
+    left:50%;
+    top: 5%;
+    animation: animate1 2s infinite ease-in-out;
+}
+@keyframes animate1{
+    0%{
+        left: 50%;
+        top: 5%;
+    }
+    50%{
+        left: 54%;
+        top:3%;
+    }
+    100%{
+        left: 50%;
+        top: 5%;
+    }
+}
+.img2{
+    position: absolute;
+    left: 60%;
+    width: 10%;
+    top: 15%;
+    animation: ani2 2s infinite ease-in-out;
+}
+@keyframes ani2
+{
+    0%{
+        left: 60%;
+        top: 15%;
+    }
+    50%{
+        left: 63%;
+        top: 16%;
+    }
+    100%{
+        left: 60%;
+        top: 15%;
+    }
+}
+.img3{
+    position: absolute;
+    left: 65%;
+    width: 13%;
+    top: 40%;
+    animation: ani3 2s infinite ease-in-out;
+}
+@keyframes ani3{
+    0%{
+        left: 65%;
+        top: 40%;
+    }
+    50%{
+        left: 69%;
+        top: 40%;
+    }
+    100%{
+        left: 65%;
+        top: 40%;
+    }
+}
+.img4{
+    position: absolute;
+    left: 85%;
+    width: 10%;
+    top: 6%;
+    animation: ani4 3s infinite ease-in-out;
+}
+@keyframes ani4{
+    0%{
+        left: 85%;
+        top: 10%;
+    }
+    50%{
+        left: 82%;
+        top: 12%;
+    }
+    100%{
+        left: 85%;
+        top: 10%;
+    }
+}
+.img5{
+    position: absolute;
+    left: 72%;
+    top: 9%;
+    width: 9%;
+    animation: ani5 3s infinite ease-in-out;
+}
+@keyframes ani5{
+    0%{
+        left: 72%;
+        top: 15%;
+    }
+    50%{
+        left: 75%;
+        top: 9%;
+    }
+    100%{
+        left: 72%;
+        top: 15%;
+    }
+}
+.about_heading {
+    margin: auto;
+    font-size: 35px;
+    transform: translate(-20px,20px);
+    text-shadow: 0px 3px 0px #ccc, 0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
+}
+
+.img7{
+    position: absolute;
+    left: 86%;
+    top: 30% ;
+    width: 8%;
+    animation: ani7 2s infinite ease-in-out;
+    }
+@keyframes ani7{
+    0%{
+        left: 86%;
+        top: 30%;
+    }
+    50%{
+        left: 82%;
+        top: 35%;
+    }
+    100%{
+        left: 86%;
+        top: 30%;
+    }
+}
+.img6{
+    position: absolute;
+    width:23%;
+    left: 75%;
+    top: 56%;
+}
+@media (max-width: 776px){
+    .div-1{
+        background-image: url("assets/img/landing/about/About_Mobile-01.png");
+    }
+    .div-2{
+        background-image: url("assets/img/landing/about/About_Mobile-02.png");
+    }
+   
+}

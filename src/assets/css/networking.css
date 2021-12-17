@@ -1,0 +1,96 @@
+/*---video-player--*/
+
+.video-player{
+	height:45%;
+	width:55%;
+}
+
+.data-img{
+	width:90%;
+	height:90%;
+}
+/*--cloud services--*/
+.heading{
+	font-size:2.3em;
+	font-weight:700;
+}
+.sub-heading{
+		padding:20px;
+		font-size:30px;
+}
+/*--routing--*/
+.routing-img{
+	height:70%;
+	width:70%;
+	padding:50px;
+}
+.ip6{
+	height:100%;
+	width:90%;
+}
+@media(max-width:770px){
+	.video-player{
+		height:80%;
+		width:120%;
+	}
+}
+/*--dtp table--*/
+.mode{
+	font-size:700 !important;
+	background:#16191b !important;
+	color:white!important;
+	font-size:20px !important;
+	
+}
+/*--routing ads --*/
+.ads-heading{
+	font-size:20px !important;
+}
+
+.head{
+	background:#04b0eb !important;
+}
+.other-head{
+	background:#04b0eb !important;
+	font-size:18px !important;
+	color:#ffff !important;
+	text-align:center;
+}
+.cell{
+	background:#414244 !important;
+	color:#ffff !important;
+	font-size:18px !important;
+	text-align:center;
+}
+/*--tcpvsudp--*/
+.tcp-main{
+	font-size:20px;
+	font-weight:700;
+}
+.tcp-label{
+	background:#00b0f0;
+	color:#fff;
+}
+.udp-label{
+	background:#9ccb42;
+	color:#fff; 
+}
+/*----------Security fundamentals---------*/
+/*-----vulnerability--------*/
+.vulnerability {
+	color:red !important; 
+}
+/*----migration technique---*/
+.technique{
+	color:lightgreen !important;
+}
+.steal-image{
+	width: 50%;
+	height: 50%;
+}
+.dot{
+	background:red ;
+	height:30px;
+	width: 30px;
+	border-radius: 30px;
+}

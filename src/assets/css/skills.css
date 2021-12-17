@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+}
+.sdiv-1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("assets/img/landing/skill/skill development-01.png");
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.sdiv-2{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-image: url("assets/img/landing/skill/skill development-02.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    animation: stars 4s infinite ease-in-out;
+
+}
+
+@keyframes stars{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        
+    }
+}
+.sdiv-3{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+    left: 0;
+
+}
+.imgr{
+    width: 6%;
+}
+/*.div-4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}*/
+/*--image 1--*/
+.simg1{
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    animation: animation1 3s infinite ease-in-out;
+}
+@keyframes animation1{
+    0%{
+        left: 2%;
+        top: 7%;
+    }
+    50%{
+        left: 4%;
+        top: 8%;
+    }
+    100%{
+        left: 2%;
+        top: 7%;  
+    }
+}
+.simg2{
+    position: absolute;
+    top: 32%;
+    width: 10%;
+    left: 6%;
+    animation: animation2 3s infinite ease-in-out;
+}
+@keyframes animation2{
+    0%{
+        top: 32%;
+        left: 6%;
+    }
+    50%{
+        top: 27%;
+        left: 7%;
+    }
+    100%{
+        top: 32%;
+        left: 6%;
+    }
+}
+.simg3{
+    position: absolute;
+    top: 52%;
+    left:10%;
+    width: 10%;
+    animation: animation3 7s infinite ease-in-out;
+}
+
+@keyframes animation3{
+    0%{
+        top: 52%;
+        left: 10%;
+        opacity: 0.7;
+    }
+    50%{
+        top: 50%;
+        left: 5%;
+        opacity: 1;
+    }
+    100%{
+        top: 52%;
+        left: 10%;
+        opacity: 0.7;
+    }
+}
+.simg4{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 14%;
+    animation: animation4 4s infinite ease-in-out;
+}
+
+@keyframes animation4{
+    0%{
+        top: 25%;
+        left: 20%;
+    }
+    50%{
+        top: 22%;
+        left: 25%;
+    }
+    100%{
+        top: 25%;
+        left: 20%;
+    }
+}
+.simg5{
+    position: absolute;
+    top: 3%;
+    left: 19%;
+    width: 7%;
+    animation: animation5 6s infinite ease-in-out;
+}
+
+@keyframes animation5{
+    0%{
+        top: 3%;
+        left: 19%;
+    }
+    50%{
+        top: 10%;
+        left: 19%;
+    }
+    100%{
+        top: 3%;
+        left:19%;
+    }
+}
+.simg6{
+    position: absolute;
+    top: 5%;
+    left: 39%;
+    width: 10%;
+    animation: animation6 4s infinite ease-in-out;
+}
+
+@keyframes animation6{
+    0%{
+        top: 5%;
+        left: 39%;
+    }
+    50%{
+        top: 5%;
+        left: 36%;
+    }
+    100%{
+        top: 5%;
+        left: 39%;
+    }
+}
+.simg7{
+    position: absolute;
+    width: 27.3%;
+    top: 26%;
+    left: 65%;
+    animation: animation7 2s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 26%;
+        left: 65%;
+        opacity:1;
+    }
+    50%{
+        top: 29%;
+        left: 63%;
+        opacity: 1;
+    }
+    100%{
+        top: 26%;
+        left: 65%;
+        opacity: 1;
+
+    }
+}
+.sdiv-4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size:18px ;
+    padding: 40px;
+    color:#000033;
+    font-family: 'Montserrat', sans-serif;
+    left: 0;
+}
+.skills_heading {
+    margin: auto;
+    font-size: 40px;
+    transform: translate(20px,20px);
+    text-shadow: 0px 3px 0px #ccc, 0px 10px 10px rgba(0, 0, 0, 0.15),
+        0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
+}
+/*@media (max-width: 840px){
+    .simg7{
+    position: absolute;
+    top: 34%;
+    left: 70%;
+    animation: animation7 2s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 34%;
+        left: 70%;
+        opacity:1;
+    }
+    50%{
+        top: 37%;
+        left: 68%;
+        opacity: 1;
+    }
+    100%{
+        top: 34%;
+        left: 70%;
+        opacity: 1;
+
+    }
+}
+}
+@media (max-width: 1120px){
+    .simg7{
+    position: absolute;
+    top: 37%;
+    left: 74%;
+    animation: animation7 2s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 37%;
+        left: 74%;
+        opacity:1;
+    }
+    50%{
+        top: 40%;
+        left: 72%;
+        opacity: 1;
+    }
+    100%{
+        top: 37%;
+        left: 74%;
+        opacity: 1;
+
+    }
+}
+}
+@media (max-width: 1100px){
+    .simg7{
+    position: absolute;
+    top: 37%;
+    left: 74%;
+    animation: animation7 2s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 37%;
+        left: 74%;
+        opacity:1;
+    }
+    50%{
+        top: 40%;
+        left: 72%;
+        opacity: 1;
+    }
+    100%{
+        top: 37%;
+        left: 74%;
+        opacity: 1;
+
+    }
+}
+}
+@media (max-width: 1000px){
+    .simg7{
+    position: absolute;
+    top: 37%;
+    left: 74%;
+    animation: animation7 2s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 37%;
+        left: 74%;
+        opacity:1;
+    }
+    50%{
+        top: 40%;
+        left: 72%;
+        opacity: 1;
+    }
+    100%{
+        top: 37%;
+        left: 74%;
+        opacity: 1;
+
+    }
+}
+}
+@media (max-width: 880px){
+    .simg7{
+    position: absolute;
+    top: 49%;
+    left: 74%;
+    animation: animation7 2s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 38%;
+        left: 74%;
+        opacity:1;
+    }
+    50%{
+        top: 41%;
+        left: 72%;
+        opacity: 1;
+    }
+    100%{
+        top: 38%;
+        left: 74%;
+        opacity: 1;
+
+    }
+}
+}
+@media only screen and (max-width: 600px) {
+  .sdiv-1{
+        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-01.png");
+    }
+    .sdiv-2{
+        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
+    }
+}*/
+@media (max-width: 776px){
+    .sdiv-1{
+        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-01.png");
+    }
+    .sdiv-2{
+        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
+    }
+    .simg1{
+    position: absolute;
+    top: 7%;
+    width: 20%;
+    left: 2%;
+    animation: animation1 3s infinite ease-in-out;
+}
+@keyframes animation1{
+    0%{
+        left: 2%;
+        top: 7%;
+    }
+    50%{
+        left: 4%;
+        top: 8%;
+    }
+    100%{
+        left: 2%;
+        top: 7%;  
+    }
+}
+.simg2{
+    position: absolute;
+    top: 32%;
+    width: 30%;
+    left: 14%;
+    animation: animation2 4s infinite ease-in-out;
+}
+@keyframes animation2{
+    0%{
+        top: 32%;
+        left: 14%;
+    }
+    50%{
+        top: 27%;
+        left: 18%;
+    }
+    100%{
+        top: 32%;
+        left: 14%;
+    }
+}
+.simg3{
+    position: absolute;
+    top: 52%;
+    left:10%;
+    width: 20%;
+    animation: animation3 7s infinite ease-in-out;
+}
+
+@keyframes animation3{
+    0%{
+        top: 62%;
+        left: 10%;
+        opacity: 0.7;
+    }
+    50%{
+        top: 60%;
+        left: 5%;
+        opacity: 1;
+    }
+    100%{
+        top: 62%;
+        left: 10%;
+        opacity: 0.7;
+    }
+}
+.simg4{
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    width: 24%;
+    animation: animation4 4s infinite ease-in-out;
+}
+
+@keyframes animation4{
+    0%{
+        top: 25%;
+        left: 60%;
+    }
+    50%{
+        top: 22%;
+        left: 65%;
+    }
+    100%{
+        top: 25%;
+        left: 60%;
+    }
+}
+.heading{
+    font-size: 70px;
+    top: -70%;
+}
+.simg7{
+    position: absolute;
+    width: 47.3%;
+    top: 56%;
+    left: 50%;
+    animation: animation7 3s infinite ease-in-out;
+} 
+
+@keyframes animation7{
+    0%{
+        top: 56%;
+    left: 26%;
+        opacity:1;
+    }
+    50%{
+        top: 62%;
+        left: 20%;
+        opacity: 1;
+    }
+    100%{
+        top: 56%;
+        left: 26%;
+        opacity: 1;
+
+    }
+}
+.simg5{
+    position: absolute;
+    top: 3%;
+    left: 79%;
+    width: 20%;
+    animation: animation5 6s infinite ease-in-out;
+}
+
+@keyframes animation5{
+    0%{
+        top: 3%;
+        left: 59%;
+    }
+    50%{
+        top: 10%;
+        left: 59%;
+    }
+    100%{
+        top: 3%;
+        left:59%;
+    }
+}
+.simg6{
+    position: absolute;
+    top: 15%;
+    left: 39%;
+    width: 20%;
+    animation: animation6 4s infinite ease-in-out;
+}
+
+@keyframes animation6{
+    0%{
+        top: 15%;
+        left: 39%;
+    }
+    50%{
+        top: 15%;
+        left: 36%;
+    }
+    100%{
+        top: 15%;
+        left: 39%;
+    }
+}
+}
+@media only screen and (max-width: 600px) {
+  .sdiv-1{
+        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-01.png");
+    }
+    .sdiv-2{
+        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
+    }
+}

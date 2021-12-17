@@ -1,0 +1,25 @@
+.start{
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: x proximity;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+}
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: #ccc;
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #000033;
+    border-radius: .5rem;
+}
+.main{
+  flex: none;
+  width: 100vw;
+  height: 100vh;
+  margin-left: -1.7px;
+  scroll-snap-align: start;
+}
