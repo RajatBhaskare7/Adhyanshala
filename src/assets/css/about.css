@@ -225,3 +225,12 @@ body{
     }
    
 }
+@media (max-width: 1475px) and (min-width: 776px){
+    .div-1{
+        background-image: url("assets/img/landing/about/About_tab-01.png");
+    }
+    .div-2{
+        background-image: url("assets/img/landing/about/About_tab-02.png");
+    }
+   
+}

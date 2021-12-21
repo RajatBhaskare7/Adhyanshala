@@ -23,3 +23,8 @@
   margin-left: -1.7px;
   scroll-snap-align: start;
 }
+@media only screen and (max-width: 1660px){
+    .main{
+      margin-left: -4px;
+    }
+}

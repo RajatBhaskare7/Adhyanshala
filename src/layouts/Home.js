@@ -13,11 +13,10 @@ import img10 from 'assets/img/landing/home/Landing-12.png';
 import bg from 'assets/img/landing/home/adhyanshala-01.png';
 class Home extends Component {
   //function to handle the click event of the button
-  handleClick = () => {
-  alert("Button Clicked");
-    
-  }
+  
+  
   render() {
+    
     return (
       <>
         <div className="landing">
