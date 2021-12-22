@@ -184,7 +184,7 @@ body{
 .about_heading {
     margin: auto;
     font-size: 35px;
-    transform: translate(-20px,20px);
+    transform: translate(-30px,30px);
     text-shadow: 0px 3px 0px #ccc, 0px 10px 10px rgba(0, 0, 0, 0.15),
         0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
 }
@@ -223,9 +223,142 @@ body{
     .div-2{
         background-image: url("assets/img/landing/about/About_Mobile-02.png");
     }
-   
+    .img6{
+    position: absolute;
+    width:50%;
+    left: 48%;
+    top: 75%;
 }
-@media (max-width: 1475px) and (min-width: 776px){
+    .img1{
+    position: absolute;
+    width: 14%;
+    left:50%;
+    top: 5%;
+    animation: animate1 2s infinite ease-in-out;
+}
+@keyframes animate1{
+    0%{
+        left: 20%;
+        top: 5%;
+    }
+    50%{
+        left: 24%;
+        top:3%;
+    }
+    100%{
+        left: 20%;
+        top: 5%;
+    }
+}
+   .img2{
+    position: absolute;
+    width: 20%;
+    left: 60%;
+    
+    top: 15%;
+    animation: ani2 2s infinite ease-in-out;
+}
+@keyframes ani2
+{
+    0%{
+        left: 60%;
+        top: 15%;
+    }
+    50%{
+        left: 63%;
+        top: 16%;
+    }
+    100%{
+        left: 60%;
+        top: 15%;
+    }
+}
+.img3{
+    position: absolute;
+    left: 15%;
+    width: 24%;
+    top: 30%;
+    animation: ani3 3s infinite ease-in-out;
+}
+@keyframes ani3{
+    0%{
+        left: 15%;
+        top: 30%;
+    }
+    50%{
+        left: 19%;
+        top: 33%;
+    }
+    100%{
+        left: 15%;
+        top: 30%;
+    }
+}
+.img4{
+    position: absolute;
+    left: 55%;
+    width: 20%;
+    top: 30%;
+    animation: ani4 3s infinite ease-in-out;
+}
+@keyframes ani4{
+    0%{
+        left: 55%;
+        top: 30%;
+    }
+    50%{
+        left: 52%;
+        top: 32%;
+    }
+    100%{
+        left: 55%;
+        top: 30%;
+    }
+}
+.img5{
+    position: absolute;
+    left: 72%;
+    top: 9%;
+    width:20%;
+    animation: ani5 3s infinite ease-in-out;
+}
+@keyframes ani5{
+    0%{
+        left: 72%;
+        top: 15%;
+    }
+    50%{
+        left: 75%;
+        top: 9%;
+    }
+    100%{
+        left: 72%;
+        top: 15%;
+    }
+}
+.img7{
+    position: absolute;
+    left: 86%;
+    top: 45% ;
+    width: 16%;
+    animation: ani7 2s infinite ease-in-out;
+    }
+@keyframes ani7{
+    0%{
+        left: 86%;
+        top: 45%;
+    }
+    50%{
+        left: 82%;
+        top: 50%;
+    }
+    100%{
+        left: 86%;
+        top: 45%;
+    }
+}
+}
+@media (max-width: 1565px) and (min-width: 776px){
     .div-1{
         background-image: url("assets/img/landing/about/About_tab-01.png");
     }

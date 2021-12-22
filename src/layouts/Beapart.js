@@ -25,7 +25,7 @@ class Home extends React.Component {
                 <img src={img6} alt="s" className="imgr limg6"/>              
             </div>
             <div className="ldiv-4">
-               <h1 className="skills_heading"><b>Be A Part</b></h1>
+               <h1 className="be_heading"><b>Be A Part</b></h1>
             </div>
         </div>
       </>

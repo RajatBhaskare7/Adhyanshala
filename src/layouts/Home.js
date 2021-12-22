@@ -12,8 +12,9 @@ import img9 from 'assets/img/landing/home/Landing-11.png';
 import img10 from 'assets/img/landing/home/Landing-12.png';
 import bg from 'assets/img/landing/home/adhyanshala-01.png';
 class Home extends Component {
-  //function to handle the click event of the button
   
+
+    
   
   render() {
     
@@ -49,8 +50,8 @@ class Home extends Component {
                         <br/>
                         education and profession
                         </p>
-                      <button OnClick={this.handleClick} className="btn btn-primary mt-3">
-                        <span>Learn More</span>
+                      <button className="btn btn-primary mt-3">
+                        Learn More
                       </button>
                       
 
