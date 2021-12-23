@@ -12,12 +12,11 @@ import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
 export default function main() {
     return (
         <div>
-            <Home/>
-            
+          
             <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                 <h1 className="text-black">About Us</h1>
                 <p className="mt-4">
-                    Our Artificial Intelligence powered tools use millions of project data
+                    What is AdhayanShala
                 </p>
             </div>
             <div className="container" data-aos="zoom-in">
@@ -29,8 +28,8 @@ export default function main() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-center text-md-start px-sm-3 p-md-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti facilis quaerat eius? Aut, praesentium soluta ex velit totam adipisci fugiat aliquid quae quia repellat dolore hic, quisquam tempora maxime. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, accusantium voluptatibus enim deleniti consequuntur deserunt, in soluta illo commodi quisquam ea earum odio magni, aut a cumque nostrum numquam accusamus.
+                           Adhyanshala deals with providing top-quality education to the underdeveloped sections of society in India. We aim to increase our reach to the remotest areas of the country and provide high-quality education there. This will help impart education to every nook and corner of the country and therefore improve the literacy rate.
+
                         </p>
                         <div className="row mt-5">
                             <div className="col-md-3 d-none d-lg-block">
@@ -125,7 +124,8 @@ export default function main() {
 
                                         </div>
                                         <h2 className="text-center">heading</h2>
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolor sit Lorem, ipsum dolorsit Lorem, ipsum dolor.</p>
+                                        <p className="text-center">we aim to change the way of teaching and learning in rural India
+</p>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@ export default function main() {
 
                                         </div>
                                         <h2 className="text-center">heading</h2>
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolor sit Lorem,sit Lorem, ipsum dolor ipsum dolor.</p>
+                                        <p className="text-center">we intend to expose more of our population to the best of technology</p>
                                     </div>
                                 </div>
                                 <div className="d-flex justify-content-center aligin-items-center">
@@ -145,7 +145,7 @@ export default function main() {
 
                                         </div>
                                         <h2 className="text-center">heading</h2>
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolors it Lorem, ipsum dolor sit Lorem, ipsum dolor.</p>
+                                        <p className="text-center">we want to create more opportunities for villagers to work in good places </p>
                                     </div>
                                 </div>
                             </div>

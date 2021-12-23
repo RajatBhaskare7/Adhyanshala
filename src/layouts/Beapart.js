@@ -26,6 +26,12 @@ class Home extends React.Component {
             </div>
             <div className="ldiv-4">
                <h1 className="be_heading"><b>Be A Part</b></h1>
+               
+            </div>
+            <div className="sdiv-3 buttons">
+              <button className="btn btn-primary mt-5">
+                        Learn More
+                      </button>
             </div>
         </div>
       </>

@@ -17,7 +17,13 @@ class Home extends React.Component {
                 <img src={img3} class="imgr cimg3" alt="s"/>            
             </div>
             <div class="cdiv-4">
-               <h1 class="heading"><b> Contact</b></h1>
+               <h1 class="heading"><b>Contact</b></h1>
+            </div>
+            <div className="sdiv-3 buttons">
+
+              <button className="btn btn-primary mt-5">
+                        Learn More
+                      </button>
             </div>
             
         </div>

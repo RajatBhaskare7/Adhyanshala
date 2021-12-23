@@ -11,7 +11,6 @@ function Home() {
   return (
     <>
     <div>
-    <Skills/>
     <div className="container">
                 <div className="row mt-5">
                     <div className="col-md-2 mt-3">

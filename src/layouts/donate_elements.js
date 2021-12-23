@@ -22,7 +22,6 @@ function Home() {
     
   return (
     <>
-    <Contact/>
       {/* Page content */}
 	  <section id="testimonial"  className=" testimonial-area">
         <div className="container">

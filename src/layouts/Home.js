@@ -11,16 +11,26 @@ import img8 from 'assets/img/landing/home/Landing-10.png';
 import img9 from 'assets/img/landing/home/Landing-11.png';
 import img10 from 'assets/img/landing/home/Landing-12.png';
 import bg from 'assets/img/landing/home/adhyanshala-01.png';
+import Homes from './home_elements.js';
 class Home extends Component {
-  
-
+    state ={
+        visibles:false,
+        
+    }
+    visible = () =>{
+        this.setState({
+            visibles:!this.state.visibles
+        })
+       
+        
+    }
     
   
   render() {
     
     return (
       <>
-        <div className="landing">
+        <div className="landing" >
             <div className="hdiv-1"></div>
             <div className="hdiv-2"></div>
             <div className="hdiv-3">
@@ -50,7 +60,7 @@ class Home extends Component {
                         <br/>
                         education and profession
                         </p>
-                      <button className="btn btn-primary mt-3">
+                      <button className="btn btn-primary mt-3" onClick={this.visible}>
                         Learn More
                       </button>
                       
@@ -59,7 +69,9 @@ class Home extends Component {
                     </div>
                 </div>
             </div>
+            
         </div>
+        {this.state.visibles===true && <Homes/>}
       </>
     );
   }

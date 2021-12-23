@@ -170,9 +170,12 @@ body{
     text-shadow: 0px 3px 0px #000, 0px 10px 10px rgba(0, 0, 0, 0.15),
         0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
 }
-  @media only screen and (max-width: 776px) {
+  @media (max-width: 776px) and (min-width: 400px) {
   .ddiv-1 {
     background-image: url("assets/img/landing/donate/Donate_mobile-01.png");
+  }
+  .ddiv-2 {
+    background-image: url("assets/img/landing/donate/Donate_mobile-02.png");
   }
   .dimg1{
   position: absolute;
@@ -265,19 +268,128 @@ body{
   left: 44%;
 }
 }
-@media (max-width: 1475px) and (min-width: 776px) {
+@media (max-width: 1475px) and (min-width: 1180px) {
  .ddiv-1 {
     background-image: url("assets/img/landing/donate/Donate_tab-01.png");
   }
   
+  .ddiv-2{
+    background-image: url("assets/img/landing/donate/Donate_tab-02.png");
+  }
+}
+
+@media (max-width: 1175px) and (min-width: 776px){
+  .ddiv-1 {
+    background-image: url("assets/img/landing/donate/Donate_tab_again-01.png");
+  }
+  
+  .ddiv-2{
+    background-image: url("assets/img/landing/donate/Donate_tab_again-02.png");
+  }
 }
 
 
 
 
+@media (max-width: 400px){
+  .ddiv-1 {
+    background-image: url("assets/img/landing/donate/Iphone_donate-01.png");
+  }
+  
+  .ddiv-2{
+    background-image: url("assets/img/landing/donate/Donate_tab_again-02.png");
+  }
+  .dimg1{
+  position: absolute;
+  width: 22%;
+  left: 20%;
+  top: 30%;
+  animation: daminate1 5s infinite ease-in-out;
+}
+@keyframes daminate1{
+  0%{
+    transform: rotate(0deg);
+    opacity: 1;
 
+  }
+  100%{
+    transform: rotate(-360deg);
+    opacity: 1;
+  }
+}
+.dimg2{
+  position: absolute;
+  top: 67%;
+  left: 15%;
+  width: 18%;
+  animation: danimate2 2s infinite ease-in-out;
+}
+@keyframes danimate2{
+  0%{
+    left: 15%;
+    top: 67%;
+  }
+  50%{
+    left: 16%;
+    top:63%;
+  }
+  100%{
+    left: 15%;
+    top: 67%;
 
+  }
+}
 
+.dimg3{
+  position: absolute;
+  width: 21%;
+  left: 60%;
+  top: 40%;
+  animation: danimate3 2s infinite ease-in-out;
+}
+@keyframes danimate3{
+  0%{
+    top: 40%;
+    left: 60%;
+  }
+  50%{
+    left: 63%;
+    top: 42%;
+
+  }
+  100%{
+    left: 60%;
+    top: 40%;
+  }
+}
+.dimg4{
+  position: absolute;
+  width: 15%;
+  left: 75%;
+  top: 9%;
+  animation: daminate4 3s infinite ease-in-out;
+}
+@keyframes daminate4{
+  0%{
+    left: 75%;
+    top: 9%;
+  }
+  50%{
+    left: 78%;
+    top: 12%;
+  }
+  100%{
+    left: 75%;
+    top: 9%;
+  }
+}
+.dimg5{
+  position: absolute;
+  width: 60%;
+  top: 76%;
+  left: 44%;
+}
+}
 
 
 

@@ -6,6 +6,14 @@
   overflow-y: hidden;
   display: flex;
 }
+.starty{
+  height: 100%;
+  width: 100%;
+  scroll-snap-type: y proximity;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+}
 ::-webkit-scrollbar{
     width: .60rem;
     background-color: #ccc;

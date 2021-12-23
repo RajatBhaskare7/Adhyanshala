@@ -149,7 +149,7 @@ body{
         0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
 }
 /*--1122x1870--*/
- @media (max-width: 776px){
+ @media (max-width: 776px) and (min-width: 400px){
     .cdiv-1{
         background-image: url("assets/img/landing/contact/mobilec.png");
     }
@@ -228,11 +228,166 @@ body{
 }
 
 }
-@media (max-width: 1475px) and (min-width: 776px) {
+@media (max-width: 1475px) and (min-width: 1180px) {
  .cdiv-1{
         background-image: url("assets/img/landing/contact/Contact_tab-01.png");
     }
     .cdiv-2{
         background-image: url("assets/img/landing/contact/Contact_tab-02.png");
     }
+}
+@media (max-width: 1175px) and (min-width: 776px){
+    .cdiv-1{
+        background-image: url("assets/img/landing/contact/Contact_tab_again-01.png");
+    }
+    .cdiv-2{
+        background-image: url("assets/img/landing/contact/Contact_tab_again-02.png");
+    }
+    .cimg1{
+    position: absolute;
+    width: 16%;
+    top: 40%;
+    left: 4.5%;
+    animation: aminate1 3s infinite ease-in-out;
+}
+
+@keyframes aminate1{
+    0%{
+        top: 70%;
+        left: 4.5%;
+    }
+    50%{
+        top: 65%;
+        left: 7%;
+    }
+    100%{
+        top: 70%;
+        left: 4.5%;
+    }
+
+}
+.cimg2{
+
+    position: absolute;
+    width: 27%;
+    left: 60%;
+    top: 10%;
+    animation: aminate2 2s infinite ease-in-out;
+}
+
+@keyframes aminate2{
+    0%{
+        left: 60%;
+        top: 10%;
+    }
+    50%{
+        top: 12%;
+        left: 55%;
+    }
+    100%{
+        left: 60%;
+        top: 10%;
+    }
+
+}
+.cimg3{
+    position: absolute;
+    width: 16%;
+    
+    left: 5%;
+    top: 10%;
+    animation: animate3 3s infinite ease-in-out;
+}
+@keyframes animate3{
+    0%{
+        left: 5%;
+        top: 10%;
+    }
+    50%{
+        left: 12%;
+        top: 13%;
+    }
+    100%{
+        left: 5%;
+        top: 10%;
+    }
+}
+}
+@media (max-width:400px) {
+    .cdiv-1{
+        background-image: url("assets/img/landing/contact/Iphone_contact-01.png");
+    }
+    .cdiv-2{
+        background-image: url("assets/img/landing/contact/Iphone_contact-02.png");
+    }
+    .cimg1{
+    position: absolute;
+    width: 16%;
+    top: 40%;
+    left: 4.5%;
+    
+    animation: aminate1 3s infinite ease-in-out;
+}
+
+@keyframes aminate1{
+    0%{
+        top: 70%;
+        left: 4.5%;
+    }
+    50%{
+        top: 65%;
+        left: 7%;
+    }
+    100%{
+        top: 70%;
+        left: 4.5%;
+    }
+
+}
+.cimg2{
+
+    position: absolute;
+    width: 27%;
+    left: 60%;
+    top: 10%;
+    animation: aminate2 2s infinite ease-in-out;
+}
+
+@keyframes aminate2{
+    0%{
+        left: 60%;
+        top: 10%;
+    }
+    50%{
+        top: 12%;
+        left: 55%;
+    }
+    100%{
+        left: 60%;
+        top: 10%;
+    }
+
+}
+.cimg3{
+    position: absolute;
+    width: 16%;
+    
+    left: 5%;
+    top: 10%;
+    animation: animate3 3s infinite ease-in-out;
+}
+@keyframes animate3{
+    0%{
+        left: 5%;
+        top: 10%;
+    }
+    50%{
+        left: 12%;
+        top: 13%;
+    }
+    100%{
+        left: 5%;
+        top: 10%;
+    }
+}
 }

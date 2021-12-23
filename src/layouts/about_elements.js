@@ -7,7 +7,7 @@ import About from './About.js';
 export default function page() {
     return (
         <div>
-        <About/>
+
             <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                 <h2 className="text-black">Overview</h2>
                 <p className="mt-4">

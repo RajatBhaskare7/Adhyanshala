@@ -7,11 +7,20 @@ import img4 from 'assets/img/landing/about/About_Landing-11.png';
 import img5 from 'assets/img/landing/about/About_Landing-12.png';
 import img6 from 'assets/img/landing/about/About_Landing-14.png';
 import img7 from 'assets/img/landing/about/About_Landing-15.png';
-
+import Abouts from './about_elements.js';
 import "assets/css/about.css";
 class Home extends React.Component {
   
-  
+  state ={
+        visibles:false,
+        
+    }
+    visible = () =>{
+        this.setState({
+            visibles:!this.state.visibles
+        })
+        
+    }
 
 
   render() {
@@ -32,8 +41,15 @@ class Home extends React.Component {
         </div>
         <div className="div-4">
             <h1 className="about_heading"><b>About</b></h1>
+            
         </div>
+        <div className="sdiv-3 buttons buttonsa">
+              <button className="btn btn-primary mt-5" onClick={this.visible}>
+                        Learn More
+                      </button>
+            </div>
     </div>
+    {this.state.visibles===true && <Abouts/>}
       </>
     );
   }
