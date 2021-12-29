@@ -13,17 +13,114 @@ import {
     Row,
     Col,
 } from "reactstrap";
-import Contact from './Donate.js';
 
-import border from 'assets/img/landing/donate/border.png';
-
+import border from './../assets/img/landing/donate/border.png';
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
-function Home() {
+import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
+import wave3 from 'assets/img/landing/home/div_-04.png'
+import wave4 from 'assets/img/landing/home/div_header_footer-04.png'
+import About from './About.js';
+import firebase from "../config/firebase-ad.js";
+
+class Landing extends React.Component {
+  constructor(props) {
+      super(props);
+
+      this.handleSubmit = this.handleSubmit.bind(this);
+      this.handleName = this.handleName.bind(this);
+      this.handleEmail = this.handleEmail.bind(this);
+      this.handleContact = this.handleContact.bind(this);
+      this.handleAddress = this.handleAddress.bind(this);
+      this.handleMethod = this.handleMethod.bind(this);
+      this.handleAmount= this.handleAmount.bind(this);
+      this.state={
+        visibles:false,
+        style:'start',
+        name:'',
+        contact:'',
+        email:'',
+        address:'',
+        method:'',
+        amount:'',
+      }
+    }
+   
+    visible = () =>{
+      
+       
+        this.setState({
+            visibles:!this.state.visibles,
+            style:'starty'
+        });
+        
+    };
     
-  return (
-    <>
-      {/* Page content */}
-	  <section id="testimonial"  className=" testimonial-area">
+    handleSubmit = (e) => {
+     
+    e.preventDefault();
+    const db = firebase.database();
+    const ref = db.ref("Donate/");
+    const a = ref.push({
+      data: {
+        name: this.state.name,
+        contact:this.state.contact,
+        email:this.state.email,
+        address:this.state.address,
+        method_of_Donation:this.state.method,
+        amount_of_Donation :this.state.amount,
+      },
+    });
+
+    const id = a.key;
+    db.ref("Donate/" + id + "/data/")
+      .update({
+        c_id: id,
+      })
+      .then(() => {
+        alert("Done Successfully!");
+        window.location.href = "/donate";
+      });
+  };
+
+  handleName = (e) => {
+    this.setState({ name: e.target.value });
+   
+  };
+  handleContact = (e) => {
+    this.setState({ contact: e.target.value });
+   
+  };
+  handleAddress = (e) => {
+    this.setState({ address: e.target.value });
+   
+  };
+  handleEmail = (e) => {
+    this.setState({ email: e.target.value });
+   
+  };
+  handleMethod = (e) => {
+    this.setState({ method: e.target.value });
+   
+  };
+  handleAmount = (e) => {
+    this.setState({ amount: e.target.value });
+   
+  };
+  
+  render() {
+    const {
+      visibles,
+      style,
+      name,
+      contact,
+      email,
+      address,
+      method,
+      amount
+          } = this.state;
+    return (
+      <>
+    <section id="testimonial"  className=" testimonial-area">
         <div className="container">
             <div className="row justify-content-between">
                 <div className="col-xl-5 col-lg-6">
@@ -46,7 +143,7 @@ function Home() {
                         </div>
                         <div className="testimonial-content-wrapper testimonial-active">
                             <div className="single-testimonial">
-							
+              
                             </div> 
                         </div> 
                     </div> 
@@ -62,7 +159,7 @@ function Home() {
             <div className="text-center text-muted mb-5">
               <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Donation Form</p>
             </div>
-            <Form role="form">
+            <Form role="form" onSubmit={this.handleSubmit}>
               <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
@@ -70,19 +167,26 @@ function Home() {
                       <i className="ni ni-hat-3" />
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Name" type="text" />
+                  <Input placeholder="Name" 
+                    value={this.state.name}
+                      onChange={this.handleName}
+                  type="text" />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
+
+                    <i className="far fa-envelope"></i>
                   </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Contact"
+                    placeholder="Email"
                     type="email"
                     
+                    value={this.state.email}
+                      onChange={this.handleEmail}
                   />
                 </InputGroup>
               </FormGroup>
@@ -90,50 +194,48 @@ function Home() {
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
-                      
+                      <i className="fas fa-map-marker-alt"></i>
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Address" type="text" />
+                  <Input placeholder="Address" type="text"
+
+                    value={this.state.address}
+                      onChange={this.handleAddress}
+                  />
                 </InputGroup>
               </FormGroup>
               <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
+
+                      <i className="fas fa-phone-alt"></i>
                                           </InputGroupText>
                   </InputGroupAddon>
                   <Input
                     placeholder="Contact"
-                    type="email"
+                    type="number"
                     autoComplete="new-email"
+
+                    value={this.state.contact}
+                      onChange={this.handleContact}
                   />
                 </InputGroup>
               </FormGroup>
-              <FormGroup>
+              
+                     <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
-                      
+                   <i className="fas fa-money-check"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="Gadget Type"
+                    placeholder="Method of Donation"
                     type="text"
                    
-                  />
-                </InputGroup>
-              </FormGroup>
-			               <FormGroup>
-                <InputGroup className="input-group-alternative mb-3">
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                   
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="to"
-                    type="date"
-                   
+                    value={this.state.method}
+                      onChange={this.handleMethod}
                   />
                 </InputGroup>
               </FormGroup>
@@ -141,18 +243,20 @@ function Home() {
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
-                  
+                  <i className="fas fa-hand-holding-heart"></i>
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input
-                    placeholder="To"
-                    type="date"
+                    placeholder="Amount of Donation"
+                    type="number"
                    
+                    value={this.state.amount}
+                      onChange={this.handleAmount}
                   />
                 </InputGroup>
               </FormGroup>
               <div className="text-center">
-                <Button className="mt-4 " color="primary" type="button">
+                <Button className="mt-4 " onSubmit={this.handleSubmit} color="primary" type="submit">
                   Submit
                 </Button>
               </div>
@@ -161,8 +265,10 @@ function Home() {
         </Card>
       </Col>
       </div>
-
-    </>
-  );
+          
+      </>
+    );
+  }
 }
-export default Home;
+
+export default Landing;

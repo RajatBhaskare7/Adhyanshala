@@ -8,11 +8,11 @@ import Donates from './donate_elements.js';
 import 'assets/css/donate.css';
 // reactstrap components
 class Home extends React.Component {
-
+  
    state ={
         visibles:false,
-        
     }
+    
     visible = () =>{
         this.setState({
             visibles:!this.state.visibles

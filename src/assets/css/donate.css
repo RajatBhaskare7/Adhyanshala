@@ -268,23 +268,23 @@ body{
   left: 44%;
 }
 }
-@media (max-width: 1475px) and (min-width: 1180px) {
+@media (max-width: 1475px) and (min-width: 776px) {
  .ddiv-1 {
-    background-image: url("assets/img/landing/donate/Donate_tab-01.png");
+    background-image: url("assets/img/landing/donate/Donate_landscape-01.png");
   }
   
   .ddiv-2{
-    background-image: url("assets/img/landing/donate/Donate_tab-02.png");
+    background-image: url("assets/img/landing/donate/Donate_landscape-02.png");
   }
 }
 
 @media (max-width: 1175px) and (min-width: 776px){
   .ddiv-1 {
-    background-image: url("assets/img/landing/donate/Donate_tab_again-01.png");
+    background-image: url("assets/img/landing/donate/Donate_tab-01.png");
   }
   
   .ddiv-2{
-    background-image: url("assets/img/landing/donate/Donate_tab_again-02.png");
+    background-image: url("assets/img/landing/donate/Donate_tab-02.png");
   }
 }
 

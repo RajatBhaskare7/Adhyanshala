@@ -7,8 +7,19 @@ import img3 from 'assets/img/landing/Beapart/login register-05.png';
 import img4 from 'assets/img/landing/Beapart/login register-06.png';
 import img5 from 'assets/img/landing/Beapart/login register-07.png';
 import img6 from 'assets/img/landing/Beapart/login register-08.png';
-
+import Login from './login_element.js';
 class Home extends React.Component {
+   state ={
+        visibles:false,
+        
+    }
+    visible = () =>{
+        this.setState({
+            visibles:!this.state.visibles
+        })
+       
+        
+    }
   render() {
   
     return (
@@ -29,11 +40,12 @@ class Home extends React.Component {
                
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5">
+              <button className="btn btn-primary mt-5" onClick={this.visible}>
                         Learn More
                       </button>
             </div>
         </div>
+         {this.state.visibles===true && <Login/>}
       </>
     );
   }

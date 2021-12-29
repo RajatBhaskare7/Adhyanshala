@@ -396,6 +396,9 @@ body{
     .sdiv-2{
         background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
     }
+    .buttons{
+        transform: translateY(-20px);
+    }
     .simg1{
     position: absolute;
     top: 7%;
@@ -493,8 +496,8 @@ body{
 .simg7{
     position: absolute;
     width: 47.3%;
-    top: 56%;
-    left: 40%;
+    top: 53%;
+    left: 36%;
     animation: animation7 3s infinite ease-in-out;
 } 
 
@@ -516,6 +519,7 @@ body{
 
     }
 }
+
 .simg5{
     position: absolute;
     top: 3%;
@@ -569,20 +573,20 @@ body{
         background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
     }
 }*/
-@media (max-width: 1475px) and (min-width: 1180px){
+@media (max-width: 1475px) and (min-width: 776px){
+    .sdiv-1{
+        background-image: url("assets/img/landing/skill/Skilldev_landscpe-01.png");
+    }
+    .sdiv-2{
+        background-image: url("assets/img/landing/skill/Skilldev_landscpe-02.png");
+    }
+}
+@media (max-width: 1175px) and (min-width: 776px){
     .sdiv-1{
         background-image: url("assets/img/landing/skill/Skill-enhancement_tab-01.png");
     }
     .sdiv-2{
         background-image: url("assets/img/landing/skill/Skill-enhancement_tab-02.png");
-    }
-}
-@media (max-width: 1175px) and (min-width: 776px){
-    .sdiv-1{
-        background-image: url("assets/img/landing/skill/Skill_dev_tab_again-01.png");
-    }
-    .sdiv-2{
-        background-image: url("assets/img/landing/skill/Skill_dev_tab_again-02.png");
     }
 }
 

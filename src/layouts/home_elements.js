@@ -3,13 +3,14 @@ import wave1 from 'assets/img/landing/home/div_-03.png'
 import wave2 from 'assets/img/landing/home/div_-05.png'
 import wave3 from 'assets/img/landing/home/div_-04.png'
 import Home from './Home.js';
-
 import 'assets/css/landing.css'
 import Contact from "./Contact.js";
 import wave4 from 'assets/img/landing/home/div_header_footer-04.png'
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
+
 export default function main() {
+
     return (
         <div>
           
@@ -33,27 +34,27 @@ export default function main() {
                         </p>
                         <div className="row mt-5">
                             <div className="col-md-3 d-none d-lg-block">
-                                <div className="icon"><i className="fas fa-chart-line"></i></div>
-                                <p>Lorem, ipsum.</p>
+                                <div className="icon"><i className="fas fa-swatchbook"></i></div>
+                                <p>Learning</p>
+                            </div>
+                            <div className="col-md-3 d-none d-lg-block">
+                                <div className="icon"><i className="fas fa-award"></i></div>
+                                <p>Education</p>
                             </div>
                             <div className="col-md-3 d-none d-lg-block">
                                 <div className="icon"><i className="fas fa-chart-line"></i></div>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                            <div className="col-md-3 d-none d-lg-block">
-                                <div className="icon"><i className="fas fa-chart-line"></i></div>
-                                <p>Lorem, ipsum.</p>
+                                <p>Studying</p>
                             </div>
                         </div>
                     </div>
                     <div className="d-sm-block d-lg-none">
                         <div className="row mt-5 justify-content-center">
                             <div className="col-sm-4 text-center">
-                                <div className="icon"><i className="fas fa-chart-line"></i></div>
+                                <div className="icon"><i className="fas fa-chalkboard-teacher"></i></div>
                                 <p>Lorem, ipsum.</p>
                             </div>
                             <div className="col-sm-4 text-center">
-                                <div className="icon"><i className="fas fa-chart-line"></i></div>
+                                <div className="icon"><i className="fas fa-swatchbook"></i></div>
                                 <p>Lorem, ipsum.</p>
                             </div>
                             <div className="col-sm-4 text-center">
@@ -67,38 +68,38 @@ export default function main() {
             </div>
             <div className="container">
                 <div className="row mt-5">
-                    <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
+                    <div className="col-md-2 col-sm-4 col-xs-4 mt-3 ">
                         <div className="feature-card text-center">
                             <div className="icon"><i className="fas fa-user-graduate"></i></div>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
                         <div className="feature-card text-center">
-                            <div className="icon"><i className="fas fa-user-graduate"></i></div>
-                        </div>
-                    </div>
-                    <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
-                        <div className="feature-card text-center">
-
-                            <div className="icon"><i className="fas fa-user-graduate"></i></div>
+                            <div className="icon"><i className="fas fa-pencil-ruler"></i></div>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
                         <div className="feature-card text-center">
 
-                            <div className="icon"><i className="fas fa-user-graduate"></i></div>
+                            <div className="icon"><i className="fas fa-laptop-code"></i></div>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
                         <div className="feature-card text-center">
 
-                            <div className="icon"><i className="fas fa-user-graduate"></i></div>
+                            <div className="icon"><i className="fas fa-book-open"></i></div>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
                         <div className="feature-card text-center">
 
-                            <div className="icon"><i className="fas fa-user-graduate"></i></div>
+                            <div className="icon"><i className="fas fa-book-reader"></i></div>
+                        </div>
+                    </div>
+                    <div className="col-md-2 col-sm-4 col-xs-4 mt-3">
+                        <div className="feature-card text-center">
+
+                            <div className="icon"><i className="fas fa-microscope"></i></div>
                         </div>
                     </div>
                 </div>
@@ -168,7 +169,7 @@ export default function main() {
       <div className="container-fluid" style={{"background" : "#000033"}} >
           <div className="row">
             <div className="col-12">
-                <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                <lord-icon trigger="hover" src="/my-icon.json"></lord-icon>
                 <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
                 <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
                 <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>

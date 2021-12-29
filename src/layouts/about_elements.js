@@ -1,4 +1,5 @@
 import React from 'react'
+
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
 import wave3 from 'assets/img/landing/home/div_-04.png'
@@ -23,9 +24,8 @@ export default function page() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-center text-md-start px-sm-3 p-md-0">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti facilis quaerat eius? Aut, praesentium soluta ex velit totam adipisci fugiat aliquid quae quia repellat dolore hic, quisquam tempora maxime. Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Perspiciatis, accusantium voluptatibus enim deleniti consequuntur deserunt, in soluta illo commodi quisquam ea earum odio magni, aut a cumque nostrum numquam accusamus.
-                        </p>
+                           Adhyanshala is a complete online learning platform, which is specially curated for the rural population of our country. We provide everything, the best teachers, a lot of skill-based courses, an easy-to-use multilingual user interface, and much more. We even provide gadgets on rent to all the needy students. All of what we are providing is useless without internet connectivity, so we would provide internet dongles in areas with poor connectivity and we will set up high bandwidth wifi in villages with no internet connectivity. This platform will be revolutionary for a rural student and it will fulfill a lot of dreams.
+</p>
                     </div>
                 </div>
             </div>
@@ -36,10 +36,8 @@ export default function page() {
                             <div className="icon-box">
                                 <div className="icon"><i className="fas fa-chart-line"></i></div>
                                 <h3 className="title">Our Mission</h3>
-                                <p className="description">No matter who we are or where we are,
-                                    learning empowers us to change and grow
-                                    and redefine what’s possible.
-                                    That’s why access to the best learning is a right, not a privilege.
+                                <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
+
                                 </p>
                             </div>
                         </div>
@@ -47,8 +45,9 @@ export default function page() {
                             <div className="icon-box">
                                 <div className="icon"><i className="fas fa-location-arrow"></i></div>
                                 <h3 className="title">Our Vision</h3>
-                                <p className="description">Our vision is of a new world of learning based on the compelling truth
-                                    that improving education is the key to the survival of the human race.</p>
+                                <p className="description">We at Adhyanshala have a very positive vision for the country as time passes. We have a vision that every single villager has access to fast internet and all kinds of global technology. That exposure to technology will increase the employability of 1 billion and that will surely make India a developed country in very little time.
+
+</p>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
@@ -68,7 +67,7 @@ export default function page() {
             <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                 <h2 className="text-black">Belife and values</h2>
                 <p className="mt-4">
-                    Our Artificial Intelligence powered tools use millions of project data
+                    Adhyanshala translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and the latest technology. We strongly believe that education is the only way forward in life
                 </p>
             </div>
           
@@ -77,8 +76,8 @@ export default function page() {
            
             <div className="col-md-7">
                 <p className="mt-5 text-center text-md-start px-sm-3 p-md-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti facilis quaerat eius? Aut, praesentium soluta ex velit totam adipisci fugiat aliquid quae quia repellat dolore hic, quisquam tempora maxime. Lorem, ipsum dolor sit amet consectetur adipisicing
-                    elit. Perspiciatis, accusantium voluptatibus enim deleniti consequuntur deserunt, in soluta illo commodi quisquam ea earum odio magni, aut a cumque nostrum numquam accusamus.
+                   We are a tech-based learning platform to cater to the rural crowd of India. We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.  toolboxskillsetWe do only one thing, we just teach, but we do it the best. 
+
                 </p>
                 <div className="row mt-5">
                     <div className="col-md-3 d-none d-lg-block">
