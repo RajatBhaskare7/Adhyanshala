@@ -4,7 +4,6 @@ import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
 import wave3 from 'assets/img/landing/home/div_-04.png'
 import wave4 from 'assets/img/landing/home/div_header_footer-04.png'
-import About from './About.js';
 export default function page() {
     return (
         <div>
@@ -19,7 +18,7 @@ export default function page() {
                 <div className="row">
                     <div className="col-md-5">
                         <div className="d-flex justify-content-center align-middle">
-                            <img src={astronaut} width="70%" />
+                            <img src={astronaut} width="70%" alt='img' />
                         </div>
                     </div>
                     <div className="col-md-7">
@@ -112,12 +111,12 @@ export default function page() {
             </div>
             <div className="col-md-5">
                 <div className="d-flex justify-content-center">
-                    <img src={astronaut1} width="90%" />
+                    <img src={astronaut1} width="90%" alt='img' />
                 </div>
             </div>
         </div>
     </div>
-    <img src={wave3} width="100%" className="mt-5"/>
+    <img src={wave3} width="100%" className="mt-5" alt='img'/>
       <div className="container-fluid" style={{"background" : "#000033"}} >
           <div className="row">
             <div className="col-12">
@@ -129,7 +128,7 @@ export default function page() {
           </div>
 
       </div>
-      <img src={wave4} width="100%" className="mb-5"/>
+      <img src={wave4} width="100%" className="mb-5" alt='img'/>
             <section className="home-clients">
                 <div className="container">
                     <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
@@ -167,7 +166,7 @@ export default function page() {
                 <div className="row">
                     <div className="col-md-5 order-2 order-md-1">
                         <div className="d-flex justify-content-end align-items-center h-100 mt-5">
-                            <img src={astronaut} width="95%" />
+                            <img src={astronaut} width="95%" alt='img' />
                         </div>
                     </div>
                     <div className="col-md-7 order-1 order-md-2">
@@ -197,7 +196,6 @@ export default function page() {
                     </div>
                 </div>
             </div>
-          
         </div>
     )
 }
