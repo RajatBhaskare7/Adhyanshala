@@ -15,11 +15,9 @@ import {
 } from "reactstrap";
 
 import border from './../assets/img/landing/donate/border.png';
-import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
-import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
-import wave3 from 'assets/img/landing/home/div_-04.png'
-import wave4 from 'assets/img/landing/home/div_header_footer-04.png'
-import About from './About.js';
+
+import donateswavet from 'assets/img/landing/home/waves/donateswavetop.png'
+import donateswaveb from 'assets/img/landing/home/waves/donateswavebtm.png'
 import firebase from "../config/firebase-ad.js";
 
 class Landing extends React.Component {
@@ -265,6 +263,19 @@ class Landing extends React.Component {
         </Card>
       </Col>
       </div>
+      <img src={donateswavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
+            <div className="container-fluid" style={{ "background": "#000033" }} >
+                <div className="row">
+                    <div className="col-12">
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                    </div>
+                </div>
+
+            </div>
+            <img src={donateswaveb} width="100%" className="mb-5" alt='img' />
           
       </>
     );

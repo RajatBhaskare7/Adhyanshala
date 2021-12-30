@@ -11,19 +11,16 @@ function Home() {
     return (
         <>
             <div>
-                <div className="container">
+                <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
                     <div className="row mt-5">
                         <div className="col-md-2 mt-3">
                             <div className="feature-card text-center">
-
                                 <lord-icon
                                     src="https://cdn.lordicon.com/wloilxuq.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-
-
                             </div>
                         </div>
                         <div className="col-md-2 mt-3">
@@ -95,13 +92,10 @@ function Home() {
                                 <p>
                                     Our Artificial Intelligence powered tools use millions of project data
                                 </p>
-
                             </div>
-
                         </div>
                         <div className="col-md-2 mt-3">
                             <div className="feature-card text-center">
-
                                 <lord-icon
                                     src="https://cdn.lordicon.com/gxulgxck.json"
                                     trigger="loop"
@@ -122,7 +116,6 @@ function Home() {
                                 </lord-icon>
                             </div>
                         </div>
-
                         <div className="col-md-2 mt-3">
                             <div className="feature-card text-center">
                                 <lord-icon
@@ -132,12 +125,9 @@ function Home() {
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
                             </div>
-
                         </div>
-
                         <div className="col-md-4 ">
                             <img src={bg} className="ml-5" style={{ marginTop: '-40px' }} width="70%" alt="d" />
-
                         </div>
                         <div className="col-md-2 mt-1">
                             <div className="feature-card text-center">
@@ -162,7 +152,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="row mt-1">
-                        <div className="col-md-2 mt-3">
+                        <div className="col-md-2 mt-1">
                             <div className="feature-card text-center">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/ngcezuqf.json"
@@ -225,35 +215,78 @@ function Home() {
                         </div>
                     </div>
                 </div>
+                <div className="container" data-aos="zoom-in" style={{marginTop: '8rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h2 className="text-black">Overview</h2>
-                    <p className="mt-4">
+                    <h1 className="text-black">Overview</h1>
+                    <p className="mt-1">
                         Our Artificial Intelligence powered tools use millions of project data
                     </p>
                 </div>
-                <div className="container" data-aos="zoom-in">
-                    <div className="row">
-                        <div className="col-md-5">
-                            <div className="d-flex justify-content-center align-middle">
-                                <img src={astronaut} width="70%" alt="s"/>
-                            </div>
-                        </div>
-                        <div className="col-md-7">
-                            <p className="mt-5 text-center text-md-start px-sm-3 p-md-0">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corrupti facilis quaerat eius? Aut, praesentium soluta ex velit totam adipisci fugiat aliquid quae quia repellat dolore hic, quisquam tempora maxime. Lorem, ipsum dolor sit amet consectetur adipisicing
-                                elit. Perspiciatis, accusantium voluptatibus enim deleniti consequuntur deserunt, in soluta illo commodi quisquam ea earum odio magni, aut a cumque nostrum numquam accusamus.
-                            </p>
+                <div className="row mt-5">
+                    <div className="col-md-5">
+                        <div className="d-flex justify-content-center align-middle">
+                            <img src={astronaut} width="73%" alt='img' />
                         </div>
                     </div>
-                </div>
+                    <div className="col-md-7">
+                        <p className="mt-5 text-start px-sm-3 p-md-0">
+                            Adhyanshala is a complete online learning platform, which is specially curated for the rural population of our country. We provide everything, the best teachers, a lot of skill-based courses, an easy-to-use multilingual user interface, and much more. We even provide gadgets on rent to all the needy students. All of what we are providing is useless without internet connectivity, so we would provide internet dongles in areas with poor connectivity and we will set up high bandwidth wifi in villages with no internet connectivity. This platform will be revolutionary for a rural student and it will fulfill a lot of dreams.
+                        </p>
+                        <button className="btn btn-primary mt-2">Learn More</button>
 
-                <div className="main-text section-title mt-5 mb-3 text-center" data-aos="zoom-in">
-                    <h2 className="text-black">What we do?</h2>
-                    <p className="mt-4 px-4">
+                    </div>
+                </div>
+            </div>
+            <div className="container" data-aos="zoom-in" style={{marginTop: '8rem'}}>
+                <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
+                    <h1 className="text-black">Overview</h1>
+                    <p className="mt-1">
                         Our Artificial Intelligence powered tools use millions of project data
                     </p>
                 </div>
-                <img src={wave5} width="100%" className="mt-5" alt="l"/>
+                <div className="row">
+                            <div className="col-md-4">
+                                <div className="d-flex justify-content-center aligin-items-center">
+                                    <div className="service-card py-2 px-3 mt-4">
+                                        <div className="service-icon text-center">
+
+                                        </div>
+                                        <h2 className="text-center">Step-1</h2>
+                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+
+                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolor sit Lorem, ipsum dolorsit Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4 mt-md-5 mt-0">
+
+                                <div className="d-flex justify-content-center aligin-items-center">
+                                    <div className="service-card py-2 px-3 mt-4">
+                                        <div className="service-icon text-center">
+
+                                        </div>
+                                        <h2 className="text-center">Step-2</h2>
+                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolors it Lorem, ipsum dolor sit Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="d-flex justify-content-center aligin-items-center">
+                                    <div className="service-card py-2 px-3 mt-4">
+                                        <div className="service-icon text-center">
+
+                                        </div>
+                                        <h2 className="text-center">Step-3</h2>
+                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum sit Lorem, ipsum dolor dolor sit Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+          
+                <img src={wave5} width="100%" className="mt-5" alt="l" />
                 <div className="container-fluid" style={{ "background": "#000033" }} >
                     <div className="row">
                         <div className="col-12">
@@ -267,7 +300,7 @@ function Home() {
                     </div>
 
                 </div>
-                <img src={wave6} width="100%" className="mb-5" alt=""/>
+                <img src={wave6} width="100%" className="mb-5" alt="" />
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
@@ -307,7 +340,7 @@ function Home() {
                         </div>
                         <div className="col-md-6 order-1 order-md-2" data-aos="fade-left">
                             <div className="d-flex justify-content-center">
-                                <img src={astronaut} width="75%" alt="s"/>
+                                <img src={astronaut} width="75%" alt="s" />
                             </div>
                         </div>
                     </div>
@@ -359,40 +392,6 @@ function Home() {
 
                     </div>
                 </div>
-                <div className="container mb-5" data-aos="zoom-in">
-                <div className="row">
-                    <div className="col-md-5 order-2 order-md-1">
-                        <div className="d-flex justify-content-end align-items-center h-100 mt-5">
-                            <img src={astronaut} width="95%" alt='img' />
-                        </div>
-                    </div>
-                    <div className="col-md-7 order-1 order-md-2">
-                        <div className="d-flex justify-content-center">
-                            <div>
-                                <div className="row mt-5">
-                                    <h2 className="text-black mt-5">Reliable, efficient delivery</h2>
-                                    <p className="mt-4">Our Artificial Intelligence powered tools use millions of project data<br /> points to ensure that your project is successful</p>
-                                </div>
-                                <div className="row mt-4" data-aos="fade-down">
-                                    <div className="landing-card">
-                                        <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
-                                    </div>
-                                </div>
-                                <div className="row mt-4" data-aos="fade-down">
-                                    <div className="landing-card">
-                                        <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
-                                    </div>
-                                </div>
-                                <div className="row mt-4" data-aos="fade-down">
-                                    <div className="landing-card">
-                                        <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
                 <Footer />
             </div>
         </>

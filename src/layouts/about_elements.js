@@ -1,9 +1,8 @@
 import React from 'react'
-
+import aboutwavet from 'assets/img/landing/home/waves/aboutwavetop.png'
+import aboutwaveb from 'assets/img/landing/home/waves/aboutwavebtm.png'
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
-import wave3 from 'assets/img/landing/home/div_-03.png'
-import wave4 from 'assets/img/landing/home/div_-05.png'
 
 export default function page() {
     return (
@@ -74,7 +73,7 @@ export default function page() {
                 </div>
             </div>
       
-            <img src={wave3} width="100%" style={{marginTop:"8rem"}} alt='img' />
+            <img src={aboutwavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
@@ -86,7 +85,7 @@ export default function page() {
                 </div>
 
             </div>
-            <img src={wave4} width="100%" className="mb-5" alt='img' />
+            <img src={aboutwaveb} width="100%" className="mb-5" alt='img' />
             <section className="home-clients">
             <div className="container" data-aos="zoom-in" style={{marginTop: '2rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
@@ -148,11 +147,7 @@ export default function page() {
                     </p>
                 </div>
                 <div className="row" data-aos="zoom-in">
-                    <div className="col-md-5 ">
-                        <div className="d-flex justify-content-center">
-                            <img src={astronaut1} width="100%" alt='img' />
-                        </div>
-                    </div>
+                    
                     <div className="col-md-7">
                         <div className="row">
                             <div className="col-md-4">
@@ -193,6 +188,11 @@ export default function page() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col-md-5 ">
+                        <div className="d-flex justify-content-center">
+                            <img src={astronaut1} width="100%" alt='img' />
                         </div>
                     </div>
                 </div>

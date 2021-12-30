@@ -1,7 +1,8 @@
 import React from 'react'
-import homewave from 'assets/img/landing/home/homewavetop.png'
+import homewavet from 'assets/img/landing/home/waves/homewavetop.png'
+import homewaveb from 'assets/img/landing/home/waves/homewavebtm.png'
+
 import 'assets/css/landing.css'
-import wave4 from 'assets/img/landing/home/div_header_footer-04.png'
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
 export default function main() {
@@ -131,7 +132,7 @@ export default function main() {
                 </div>
             </div>
 `           {/* wave secrion-3 */}
-            <img src={homewave} width="100%" className="mt-5" alt='img' />
+            <img src={homewavet} width="100%" className="mt-5" alt='img' />
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
@@ -143,7 +144,7 @@ export default function main() {
                 </div>
 
             </div>
-            <img src={wave4} width="100%" className="mb-5" alt='img' />
+            <img src={homewaveb} width="100%" className="mb-5" alt='img' />
             <div className="container" style={{marginTop: '5.5rem'}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
                     <h1 className="text-black">What we do?</h1>
