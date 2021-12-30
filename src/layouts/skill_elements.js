@@ -4,8 +4,6 @@ import "assets/css/skills.css";
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import wave5 from 'assets/img/landing/home/div_header_footer-02.png'
 import wave6 from 'assets/img/landing/home/div_header_footer-01.png'
-import Skills from './Skills.js';
-import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
 import Footer from './footer.js';
 import bg from 'assets/img/landing/home/adhyanshala-01.jpg';
 function Home() {
@@ -237,7 +235,7 @@ function Home() {
                     <div className="row">
                         <div className="col-md-5">
                             <div className="d-flex justify-content-center align-middle">
-                                <img src={astronaut} width="70%" />
+                                <img src={astronaut} width="70%" alt="s"/>
                             </div>
                         </div>
                         <div className="col-md-7">
@@ -255,7 +253,7 @@ function Home() {
                         Our Artificial Intelligence powered tools use millions of project data
                     </p>
                 </div>
-                <img src={wave5} width="100%" className="mt-5" />
+                <img src={wave5} width="100%" className="mt-5" alt="l"/>
                 <div className="container-fluid" style={{ "background": "#000033" }} >
                     <div className="row">
                         <div className="col-12">
@@ -269,7 +267,7 @@ function Home() {
                     </div>
 
                 </div>
-                <img src={wave6} width="100%" className="mb-5" />
+                <img src={wave6} width="100%" className="mb-5" alt=""/>
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
@@ -309,7 +307,7 @@ function Home() {
                         </div>
                         <div className="col-md-6 order-1 order-md-2" data-aos="fade-left">
                             <div className="d-flex justify-content-center">
-                                <img src={astronaut} width="75%" />
+                                <img src={astronaut} width="75%" alt="s"/>
                             </div>
                         </div>
                     </div>
@@ -319,7 +317,7 @@ function Home() {
                     <div className="row">
                         <div className="col-md-6" data-aos="fade-left">
                             <div className="d-flex justify-content-center">
-                                <img src={astronaut} width="75%" />
+                                <img src={astronaut} width="75%" alt="a" />
                             </div>
                         </div>
                         <div className="col-md-6" data-aos="fade-right">
@@ -361,6 +359,40 @@ function Home() {
 
                     </div>
                 </div>
+                <div className="container mb-5" data-aos="zoom-in">
+                <div className="row">
+                    <div className="col-md-5 order-2 order-md-1">
+                        <div className="d-flex justify-content-end align-items-center h-100 mt-5">
+                            <img src={astronaut} width="95%" alt='img' />
+                        </div>
+                    </div>
+                    <div className="col-md-7 order-1 order-md-2">
+                        <div className="d-flex justify-content-center">
+                            <div>
+                                <div className="row mt-5">
+                                    <h2 className="text-black mt-5">Reliable, efficient delivery</h2>
+                                    <p className="mt-4">Our Artificial Intelligence powered tools use millions of project data<br /> points to ensure that your project is successful</p>
+                                </div>
+                                <div className="row mt-4" data-aos="fade-down">
+                                    <div className="landing-card">
+                                        <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
+                                    </div>
+                                </div>
+                                <div className="row mt-4" data-aos="fade-down">
+                                    <div className="landing-card">
+                                        <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
+                                    </div>
+                                </div>
+                                <div className="row mt-4" data-aos="fade-down">
+                                    <div className="landing-card">
+                                        <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <Footer />
             </div>
         </>
