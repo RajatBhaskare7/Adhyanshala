@@ -2,8 +2,8 @@ import React from "react";
 
 import "assets/css/skills.css";
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
-import wave5 from 'assets/img/landing/home/div_header_footer-02.png'
-import wave6 from 'assets/img/landing/home/div_header_footer-01.png'
+import skillwavet from 'assets/img/landing/home/waves/skillwavetop.png'
+import skillwaveb from 'assets/img/landing/home/waves/skillwavebtm.png'
 import Footer from './footer.js';
 import bg from 'assets/img/landing/home/adhyanshala-01.jpg';
 function Home() {
@@ -286,21 +286,19 @@ function Home() {
                         </div>
                 </div>
           
-                <img src={wave5} width="100%" className="mt-5" alt="l" />
-                <div className="container-fluid" style={{ "background": "#000033" }} >
-                    <div className="row">
-                        <div className="col-12">
-                            <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                            <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                            <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                            <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                            <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                            <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        </div>
+                <img src={skillwavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
+            <div className="container-fluid" style={{ "background": "#000033" }} >
+                <div className="row">
+                    <div className="col-12">
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
                     </div>
-
                 </div>
-                <img src={wave6} width="100%" className="mb-5" alt="" />
+
+            </div>
+            <img src={skillwaveb} width="100%" className="mb-5" alt='img' />
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
