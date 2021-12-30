@@ -28,7 +28,7 @@ export default function page() {
                     </div>
                 </div>
             </div>
-            <div id="points" className="points section-bg ">
+            <div id="points" className="points">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
@@ -36,7 +36,6 @@ export default function page() {
                                 <div className="icon"><i className="fas fa-chart-line"></i></div>
                                 <h3 className="title">Our Mission</h3>
                                 <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
-
                                 </p>
                             </div>
                         </div>
@@ -196,6 +195,63 @@ export default function page() {
                     </div>
                 </div>
             </div>
+            
+            <div className="container mt-5">
+                <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
+                    <h2 className="text-black">What we do?</h2>
+                    <p className="mt-4">Our Artificial Intelligence powered tools use millions of project data</p>
+                </div>
+                <div className="row" data-aos="zoom-in">
+                    <div className="col-md-5 ">
+                        <div className="d-flex justify-content-center">
+                            <img src={astronaut1} width="100%" alt='img' />
+                        </div>
+                    </div>
+                    <div className="col-md-7">
+                        <div className="row">
+                            <div className="col-md-4">
+                                <div className="d-flex justify-content-center aligin-items-center">
+                                    <div className="service-card py-2 px-3 mt-4">
+                                        <div className="service-icon text-center">
+
+                                        </div>
+                                        <h2 className="text-center">Step-1</h2>
+                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+
+                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolor sit Lorem, ipsum dolorsit Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4 mt-md-5 mt-0">
+
+                                <div className="d-flex justify-content-center aligin-items-center">
+                                    <div className="service-card py-2 px-3 mt-4">
+                                        <div className="service-icon text-center">
+
+                                        </div>
+                                        <h2 className="text-center">Step-2</h2>
+                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolors it Lorem, ipsum dolor sit Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-md-4">
+                                <div className="d-flex justify-content-center aligin-items-center">
+                                    <div className="service-card py-2 px-3 mt-4">
+                                        <div className="service-icon text-center">
+
+                                        </div>
+                                        <h2 className="text-center">Step-3</h2>
+                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum sit Lorem, ipsum dolor dolor sit Lorem, ipsum dolor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }

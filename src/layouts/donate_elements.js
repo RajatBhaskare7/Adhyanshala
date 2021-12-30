@@ -154,7 +154,7 @@ class Landing extends React.Component {
       <div className="d-flex align-item-center justify-content-center" >
        <Col className="mt-5 "  lg ="6" md="8">
         <Card className="bg-secondary shadow border-0" >
-          <img className="imgs" src={border} style={{borderRadius:'20px',}}/>
+          <img className="imgs" src={border} style={{borderRadius:'20px',}} alt="border"/>
           <CardBody className="px-lg-5 py-lg-5">
             <div className="text-center text-muted mb-5">
               <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Donation Form</p>
