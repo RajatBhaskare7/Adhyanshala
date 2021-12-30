@@ -308,7 +308,7 @@ body{
 
 
 }
-@media (max-width: 1475px) and (min-width: 776px){
+/*@media (max-width: 1475px) and (min-width: 776px){
   .ldiv-1{
          background-image: url("assets/img/landing/Beapart/login-register_landscape-01.png");
     }

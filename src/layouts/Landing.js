@@ -1,5 +1,7 @@
 import React from "react";
 // reactstrap components
+import ReactDOM from 'react-dom';
+import SwipeableViews from 'react-swipeable-views';
 import img1 from 'assets/img/landing/home/Landing-3.png';
 import img2 from 'assets/img/landing/home/Landing-4.png';
 import img3 from 'assets/img/landing/home/Landing-5.png';
@@ -48,13 +50,18 @@ import Donate from './Donate.js';
 import Beapart from './Beapart.js';
 import Contact from "./Contact.js";
 import Abouts from "./about_elements.js";
-import Homesub from "./home_elements.js"
+import Homesub from "./home_elements.js";
+import Skill from './Skills.js';
 import 'assets/css/landing.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import SwipeableRoutes from "react-swipeable-routes";
+
 class Landing extends React.Component {
    state ={
         visibles:false,
         visibleabout:false,
         style:'start'
+
 
     }
     visible = () =>{
@@ -70,15 +77,21 @@ class Landing extends React.Component {
     visible_about =() =>{
         this.setState({
             visibleabout:!this.state.visibleabout,
+            style:'starty' 
         })
     }
+
+     
   render() {
-    
+  
+  
     return (
       <>
-      <div className={this.state.style}>
-      <div  className="main">
-        <div className="landing" >
+    
+      
+      <SwipeableViews enableMouseEvents>
+      <div>
+         <div className="landing" >
             <div className="hdiv-1"></div>
             <div className="hdiv-2"></div>
             <div className="hdiv-3">
@@ -114,13 +127,11 @@ class Landing extends React.Component {
                     </div>
                 </div>
             </div>
-            
-        </div>
-        {this.state.visibles===true && <Homesub/>}
+            </div>
+            {this.state.visibles===true && <Homesub/>}
       </div>
-     {this.state.visibles==false && 
-      <div className="main">
-       <div className="landing">
+      <div >
+        <div className="landing">
         <div className="div-1"></div>
         <div className="div-2"></div>
         <div className="div-3">
@@ -141,11 +152,11 @@ class Landing extends React.Component {
                         Learn More
                       </button>
             </div>
-    </div>
-    {this.state.visiblesabout===true && <Abouts/>}
-       </div>}
+               </div>
+      </div>
+       
 
-     {this.state.visibles==false &&  <div className="main">
+      <div  >
          <div className="landing">
             <div className="sdiv-1"></div>
             <div className="sdiv-2"></div>
@@ -169,10 +180,8 @@ class Landing extends React.Component {
             </div>
 
         </div>
-        {this.state.visibles===true && <Skills/>}
-      </div>}
-      {this.state.visibles==false && 
-        <div className="main">
+      </div>
+      <div>
         <div className="landing">
             <div className="ldiv-1"></div>
             <div className="ldiv-2"></div>
@@ -195,11 +204,9 @@ class Landing extends React.Component {
             </div>
         </div>
          {this.state.visibles===true && <Login/>}
-        </div>
-      }
-      {this.state.visibles==false &&
-        <div className="main">
-           <div className="landing">
+      </div>
+      <div>
+        <div className="landing">
             <div className="ddiv-1"></div>
             <div className="ddiv-2"></div>
             <div className="ddiv-3">
@@ -222,34 +229,31 @@ class Landing extends React.Component {
             </div>
         </div>
         {this.state.visibles==true && <Donates/>}
-        </div>
-      }
-      {this.state.visibles==false &&
-        <div className="main">
-          <div class="landing">
-            <div class="cdiv-1"></div>
-            <div class="cdiv-2"></div>
-            <div class="cdiv-3">
-                <img src={c_img1} class="imgr cimg1" alt="s" />
-                <img src={c_img2} class="imgr cimg2" alt="s"/>
-                <img src={c_img3} class="imgr cimg3" alt="s"/>            
+      </div>
+      <div>
+         <div className="landing">
+            <div className="cdiv-1"></div>
+            <div className="cdiv-2"></div>
+            <div className="cdiv-3">
+                <img src={c_img1} className="imgr cimg1" alt="s" />
+                <img src={c_img2} className="imgr cimg2" alt="s"/>
+                <img src={c_img3} className="imgr cimg3" alt="s"/>            
             </div>
-            <div class="cdiv-4">
-               <h1 class="heading"><b>Contact</b></h1>
+            <div className="cdiv-4">
+               <h1 className="heading"><b>Contact</b></h1>
             </div>
-            <div className="sdiv-3 buttons">
+            <div classNameName="sdiv-3 buttons">
 
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
+              <button classNameName="btn btn-primary mt-5" onClick={this.visible}>
                         Learn More
                       </button>
             </div>
             
         </div>
         {this.state.visibles===true && <Contacts/>}
-        </div>
-      }
-       </div>
-      
+      </div>
+    </SwipeableViews>
+
 
       </>
     );

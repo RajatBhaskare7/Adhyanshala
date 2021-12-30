@@ -573,7 +573,7 @@ body{
         background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
     }
 }*/
-@media (max-width: 1475px) and (min-width: 776px){
+/*@media (max-width: 1475px) and (min-width: 776px){
     .sdiv-1{
         background-image: url("assets/img/landing/skill/Skilldev_landscpe-01.png");
     }
@@ -589,7 +589,7 @@ body{
         background-image: url("assets/img/landing/skill/Skill-enhancement_tab-02.png");
     }
 }
-
+*/
 .bg {
   background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-371678.jpg");
   background-size: cover;
