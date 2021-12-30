@@ -49,10 +49,11 @@ import Beapart from './Beapart.js';
 import Contact from "./Contact.js";
 import Abouts from "./about_elements.js";
 import Homesub from "./home_elements.js"
-import 'assets/css/landing.css'
+import 'assets/css/landing.css';
 class Landing extends React.Component {
    state ={
         visibles:false,
+        visibleabout:false,
         style:'start'
 
     }
@@ -66,7 +67,11 @@ class Landing extends React.Component {
         
     };
     
-    
+    visible_about =() =>{
+        this.setState({
+            visibleabout:!this.state.visibleabout,
+        })
+    }
   render() {
     
     return (
@@ -106,16 +111,12 @@ class Landing extends React.Component {
                       <button className="btn btn-primary mt-3" onClick={this.visible}>
                         Learn More
                       </button>
-                      
-
-                    
                     </div>
                 </div>
             </div>
             
         </div>
         {this.state.visibles===true && <Homesub/>}
-        
       </div>
      {this.state.visibles==false && 
       <div className="main">
@@ -136,12 +137,12 @@ class Landing extends React.Component {
             
         </div>
         <div className="sdiv-3 buttons buttonsa">
-              <button className="btn btn-primary mt-7" onClick={this.visible}>
+              <button className="btn btn-primary mt-7" onClick={this.visible_about}>
                         Learn More
                       </button>
             </div>
     </div>
-    {this.state.visibles===true && <Abouts/>}
+    {this.state.visiblesabout===true && <Abouts/>}
        </div>}
 
      {this.state.visibles==false &&  <div className="main">

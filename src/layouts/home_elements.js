@@ -8,12 +8,13 @@ import Contact from "./Contact.js";
 import wave4 from 'assets/img/landing/home/div_header_footer-04.png'
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
-
+import Menu from './Menu.js'
 export default function main() {
 
     return (
+
         <div>
-          
+        <Menu/>  
             <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                 <h1 className="text-black">About Us</h1>
                 <p className="mt-4">

@@ -40,9 +40,9 @@ class Home extends React.Component {
                
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
-                        Learn More
-                      </button>
+              <button className="btn btn-primary " onClick={this.visible}>
+                 View More
+                </button>
             </div>
         </div>
          {this.state.visibles===true && <Login/>}
