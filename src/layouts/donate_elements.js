@@ -13,11 +13,12 @@ import {
     Row,
     Col,
 } from "reactstrap";
+import astronaut from 'assets/img/landing/home/laptop_ass-04.svg'
 
 import border from './../assets/img/landing/donate/border.png';
 
-import donateswavet from 'assets/img/landing/home/waves/donateswavetop.png'
-import donateswaveb from 'assets/img/landing/home/waves/donateswavebtm.png'
+import donatewavet from 'assets/img/landing/home/waves/donatewavetop.png'
+import donatewaveb from 'assets/img/landing/home/waves/donatewavebtm.png'
 import firebase from "../config/firebase-ad.js";
 
 class Landing extends React.Component {
@@ -263,8 +264,8 @@ class Landing extends React.Component {
         </Card>
       </Col>
       </div>
-      <img src={donateswavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
-            <div className="container-fluid" style={{ "background": "#000033" }} >
+      <img src={donatewavet} width="100%" alt="" />
+            {/* <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
                         <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
@@ -274,9 +275,52 @@ class Landing extends React.Component {
                     </div>
                 </div>
 
-            </div>
-            <img src={donateswaveb} width="100%" className="mb-5" alt='img' />
-          
+            </div> */}
+            <img src={donatewaveb} width="100%" className="mb-5" alt='img' />
+            <div className="container mt-5">
+                    <div className="row">
+                        <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
+                            <div className="row">
+                                <div className="col-md-6 my-auto">
+                                    <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
+                                        <div className="icon-box box-1 text-center">
+                                            <i className="fas fa-location-arrow"></i>
+                                        </div>
+                                        <div className="text-center">
+                                            <h5>Heading</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                        </div>
+                                    </div>
+                                    <div className="statergy-card px-3 py-2 mt-5">
+                                        <div className="icon-box box-2 text-center">
+                                            <i className="fas fa-location-arrow"></i>
+                                        </div>
+                                        <div className="text-center">
+                                            <h5>Heading</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 my-auto">
+                                    <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
+                                        <div className="icon-box box-3 text-center">
+                                            <i className="fas fa-location-arrow"></i>
+                                        </div>
+                                        <div className="text-center">
+                                            <h5>Heading</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6 order-1 order-md-2" data-aos="fade-left">
+                            <div className="d-flex justify-content-center">
+                                <img src={astronaut} width="75%" alt="s" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
       </>
     );
   }
