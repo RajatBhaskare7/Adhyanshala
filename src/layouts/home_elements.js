@@ -25,7 +25,7 @@ export default function main() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                            Adhyanshala is a complete online learning platform, which is specially curated for the rural population of our country. We provide everything, the best teachers, a lot of skill-based courses, an easy-to-use multilingual user interface, and much more. We even provide gadgets on rent to all the needy students. All of what we are providing is useless without internet connectivity, so we would provide internet dongles in areas with poor connectivity and we will set up high bandwidth wifi in villages with no internet connectivity. This platform will be revolutionary for a rural student and it will fulfill a lot of dreams.
+                        Adhyanshala deals with providing top-quality education to the underdeveloped sections of society in India. We aim to increase our reach to the remotest areas of the country and provide high-quality education there. This will help impart education to every nook and corner of the country and therefore improve the literacy rate
                         </p>
                         <button className="btn btn-primary mt-2">Learn More</button>
 
@@ -72,7 +72,8 @@ export default function main() {
             {/* Section-2 */}
             <div className="container" style={{marginTop: '5.5rem'}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
-                    <h1 className="text-black">What we do?</h1>
+                    <h1 className="text-black">What is our goal and what are we aiming to change?
+</h1>
                     <p className="mt-1">Our Artificial Intelligence powered tools use millions of project data</p>
                 </div>
                 <div className="row" data-aos="zoom-in">

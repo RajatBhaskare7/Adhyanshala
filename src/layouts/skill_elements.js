@@ -284,7 +284,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                </div>
+                </div>n
           
                 <img src={skillwavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
             <div className="container-fluid" style={{ "background": "#000033" }} >

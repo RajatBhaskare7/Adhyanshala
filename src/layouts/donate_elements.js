@@ -124,7 +124,7 @@ class Landing extends React.Component {
             <div className="row justify-content-between">
                 <div className="col-xl-5 col-lg-6">
                     <div className="testimonial-left-content mt-45">
-                        <h6 className="sub-title">Testimonials</h6>
+                        <h6 className="sub-title">Donate and Help!</h6>
                         <h4 className="title">Who are we <br/> </h4>
                         <ul className="testimonial-line">
                             <li></li>
@@ -132,7 +132,7 @@ class Landing extends React.Component {
                             <li></li>
                             <li></li>
                         </ul>
-                        <p className="text">Duis et metus et massa tempus lacinia. className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum. <br/> <br/> ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit interdum.</p>
+                        <p className="text">It has been observed that most gadget users tend to discard their gadgets in a maximum duration of two years,so we are including a feature where people can donate old gadgets like old phones, tablets, PCs which they do not use anymore which can be distributed and used by the children living in rural areas to study. </p>
                     </div> 
                 </div>
                 <div className="col-lg-6">
@@ -276,38 +276,42 @@ class Landing extends React.Component {
                 </div>
             </div> */}
             <img src={donatewaveb} width="100%" className="mb-5" alt='img' />
-            <div className="container mt-5">
+            <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
+                <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
+                    <h1 className="text-black">3 ways you can donate</h1>
+                   
+                </div>
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
                             <div className="row">
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-1 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                        <i class="fas fa-book-open"></i>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h5>Books</h5>
+                                            <p>You can also donate books to help our children gain as much as knowledge as possible.</p>
                                         </div>
                                     </div>
                                     <div className="statergy-card px-3 py-2 mt-5">
                                         <div className="icon-box box-2 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                        <i class="fas fa-wallet"></i>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h5>Money</h5>
+                                            <p>You can donate money and contribute in educating the future minds.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-3 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                        <i class="fas fa-tablet"></i>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h5>Gadgets</h5>
+                                            <p>You can donate gadgets, it will help save a child’s future as well as the environment.</p>
                                         </div>
                                     </div>
                                 </div>
