@@ -55,13 +55,30 @@ import Skill from './Skills.js';
 import 'assets/css/landing.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import SwipeableRoutes from "react-swipeable-routes";
+const RedView = () => (
+  <div style={{ height: 300, backgroundColor: "red" }}>Red</div>
+);
+const BlueView = () => (
+  <div style={{ height: 300, backgroundColor: "blue" }}>Blue</div>
+);
+const GreenView = () => (
+  <div style={{ height: 300, backgroundColor: "green" }}>Green</div>
+);
+const YellowView = () => (
+  <div style={{ height: 300, backgroundColor: "yellow" }}>Yellow</div>
+);
 
 class Landing extends React.Component {
+    constructor(props){
+        super(props)
+        this.myRef = React.createRef()
+        this.state = {scrollTop: 0}
+    }
    state ={
         visibles:false,
         visibleabout:false,
         style:'start'
-
+        
 
     }
     visible = () =>{
@@ -80,21 +97,45 @@ class Landing extends React.Component {
             style:'starty' 
         })
     }
-
-     
+    
+    
+    onScroll = () => {
+    const scrollX = window.scrollX 
+    const scrollTop = this.myRef.current.scrollTop
+    console.log(`onScroll, window.scrollX: ${scrollX} myRef.scrollTop: ${scrollTop}`)
+    this.setState({
+      scrollTop: scrollTop
+    })
+    if (scrollTop>=50 && scrollTop<=300){
+        this.props.history.push('/about');
+    }
+    else if (scrollTop >=301 && scrollTop <=500){
+        this.props.history.push('/skills');
+    }
+  }
+     scrollToTop = index => {
+    Array.from(this.el.containerNode.children).forEach((child, i) => {
+      if (index !== i) {
+        child.scrollTo(0, 0);
+      }
+    });
+  };
   render() {
-  
+  const {
+      scrollTop
+    } = this.state
   
     return (
       <>
     
       
-      <SwipeableViews enableMouseEvents>
-      <div>
+     <SwipeableViews disabled={this.state.visibles} enableMouseEvents>
+      <div > 
          <div className="landing" >
             <div className="hdiv-1"></div>
-            <div className="hdiv-2"></div>
-            <div className="hdiv-3">
+
+            <div className="hdiv-2"></div > 
+                      <div className="hdiv-3">
                 <img src={img1}  className="himg1 imgr" alt="Img"/>
                 <img src={img2} className="himg2 imgr" alt="Img"/>
                 <img src={img3}className="himg3 imgr" alt="Img"/>
@@ -130,7 +171,7 @@ class Landing extends React.Component {
             </div>
             {this.state.visibles===true && <Homesub/>}
       </div>
-      <div >
+      <div style={{marginLeft:'10px'}} >
         <div className="landing">
         <div className="div-1"></div>
         <div className="div-2"></div>
@@ -148,11 +189,12 @@ class Landing extends React.Component {
             
         </div>
         <div className="sdiv-3 buttons buttonsa">
-              <button className="btn btn-primary mt-7" onClick={this.visible_about}>
+              <button className="btn btn-primary mt-7" onClick={this.visible}>
                         Learn More
                       </button>
             </div>
                </div>
+        {this.state.visibles ===true && <Abouts/>}
       </div>
        
 
@@ -170,7 +212,7 @@ class Landing extends React.Component {
                 <img src={skill_img7} alt="s" className="simgr simg7"/>               
             </div>
             <div className="sdiv-4">
-               <h1 className="skills_heading"><b>Skill Development</b></h1>
+               <h1 className="skills_head.ing"><b>Skill Development</b></h1>
               
             </div>
             <div className="sdiv-3 buttons">
@@ -180,6 +222,7 @@ class Landing extends React.Component {
             </div>
 
         </div>
+        {this.state.visibles===true && <Skills/>}
       </div>
       <div>
         <div className="landing">
@@ -246,7 +289,7 @@ class Landing extends React.Component {
 
               <button classNameName="btn btn-primary mt-5" onClick={this.visible}>
                         Learn More
-                      </button>
+            </button>
             </div>
             
         </div>
@@ -254,7 +297,7 @@ class Landing extends React.Component {
       </div>
     </SwipeableViews>
 
-
+    
       </>
     );
   }
