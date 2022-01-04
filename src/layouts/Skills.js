@@ -42,8 +42,8 @@ class Home extends React.Component {
             </div>
             <div className="sdiv-3 buttons">
               <button className="btn btn-primary mt-5" onClick={this.visible}>
-                        Learn More
-                      </button>
+                Learn More
+                </button>
             </div>
 
         </div>

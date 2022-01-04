@@ -15,8 +15,8 @@ import {
 } from "reactstrap";
 import astronaut from 'assets/img/landing/home/laptop_ass-04.svg'
 
-import border from './../assets/img/landing/donate/border.png';
-
+import border from './../assets/img/landing/donate/donate border.png';
+import astronaut1 from 'assets/img/landing/home/Be_A_Part-03.svg'
 import donatewavet from 'assets/img/landing/home/waves/donatewavetop.png'
 import donatewaveb from 'assets/img/landing/home/waves/donatewavebtm.png'
 import firebase from "../config/firebase-ad.js";
@@ -119,20 +119,21 @@ class Landing extends React.Component {
           } = this.state;
     return (
       <>
-    <section id="testimonial"  className=" testimonial-area">
+     
+    <section id="testimonial" style={{background:"url(donatewavet)"}}  className=" testimonial-area">
         <div className="container">
             <div className="row justify-content-between">
                 <div className="col-xl-5 col-lg-6">
                     <div className="testimonial-left-content mt-45">
-                        <h6 className="sub-title">Testimonials</h6>
-                        <h4 className="title">Who are we <br/> </h4>
+                        <h4 className="title">Donate and Help!<br/> </h4>
                         <ul className="testimonial-line">
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
-                        <p className="text">Duis et metus et massa tempus lacinia. className aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas ultricies, orci molestie blandit interdum. <br/> <br/> ipsum ante pellentesque nisl, eget mollis turpis quam nec eros. ultricies, orci molestie blandit interdum.</p>
+                        <p className="text">It has been observed that most gadget users tend to discard their gadgets in a maximum duration of two years,so we are including a feature where people can donate old gadgets like old phones, tablets, PCs which they do not use anymore which can be distributed and used by the children living in rural areas to study. 
+</p>
                     </div> 
                 </div>
                 <div className="col-lg-6">
@@ -142,7 +143,7 @@ class Landing extends React.Component {
                         </div>
                         <div className="testimonial-content-wrapper testimonial-active">
                             <div className="single-testimonial">
-              
+                                <img src={astronaut1 } alt="s"/>
                             </div> 
                         </div> 
                     </div> 
@@ -158,7 +159,7 @@ class Landing extends React.Component {
             <div className="text-center text-muted mb-5">
               <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Donation Form</p>
             </div>
-            <Form role="form" onSubmit={this.handleSubmit}>
+            <Form role="form" onSubmit={this.handleSubmit} className="mt-5">
               <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
@@ -167,6 +168,7 @@ class Landing extends React.Component {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input placeholder="Name" 
+                  required
                     value={this.state.name}
                       onChange={this.handleName}
                   type="text" />
@@ -183,7 +185,7 @@ class Landing extends React.Component {
                   <Input
                     placeholder="Email"
                     type="email"
-                    
+                    required
                     value={this.state.email}
                       onChange={this.handleEmail}
                   />
@@ -197,7 +199,7 @@ class Landing extends React.Component {
                     </InputGroupText>
                   </InputGroupAddon>
                   <Input placeholder="Address" type="text"
-
+                        required
                     value={this.state.address}
                       onChange={this.handleAddress}
                   />
@@ -215,7 +217,7 @@ class Landing extends React.Component {
                     placeholder="Contact"
                     type="number"
                     autoComplete="new-email"
-
+                      required
                     value={this.state.contact}
                       onChange={this.handleContact}
                   />
@@ -232,7 +234,7 @@ class Landing extends React.Component {
                   <Input
                     placeholder="Method of Donation"
                     type="text"
-                   
+                   required
                     value={this.state.method}
                       onChange={this.handleMethod}
                   />
@@ -248,7 +250,7 @@ class Landing extends React.Component {
                   <Input
                     placeholder="Amount of Donation"
                     type="number"
-                   
+                   required
                     value={this.state.amount}
                       onChange={this.handleAmount}
                   />
@@ -265,49 +267,75 @@ class Landing extends React.Component {
       </Col>
       </div>
       <img src={donatewavet} width="100%" alt="" />
-            {/* <div className="container-fluid" style={{ "background": "#000033" }} >
-                <div className="row">
-                    <div className="col-12">
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+             <div className="container-fluid" style={{ "background": "#000033" }} >
+                <div className="row ">
+                    <div className="col-md-5 mt-7" >
+                        <div className="d-flex justify-content-center align-middle">
+                            <img src={astronaut} width="73%" alt='img' />
+                        </div>
+                    </div>
+                    <div className="col-md-6 mt-9">
+                        <p className="mt-5  px-sm-3 p-md-0 ">
+                           Adhyanshala will allow all students to learn new skills and become more productive individuals and job-ready. We will have a lot of specially curated courses from global teachers which the students will be able to access anywhere, anytime. These courses will mainly be catered to anyone wanting to learn, we will also try in the future for multilingual courses to cater to a wider crowd.
+                        </p>
+                        <button className="btn btn-primary mt-2">Learn More</button>
+
                     </div>
                 </div>
-            </div> */}
-            <img src={donatewaveb} width="100%" className="mb-5" alt='img' />
-            <div className="container mt-5">
+            </div> 
+            <img src={donatewaveb} width="100%"  alt='img' />
+            <div className="container ">
+                    <div className="main-text section-title mb-5   text-center" data-aos="fade-up" data-aos-delay="0.1s">
+                    <h1 className="text-black" style={{ fontSize:'60px'}}>3 Ways you can donate</h1>
+                   
+                </div>
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
                             <div className="row">
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-1 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                            <lord-icon
+                                    src="https://cdn.lordicon.com/qhviklyi.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h2>Money</h2>
+                                            <p>you can donate money and contribute in educating the future minds.
+</p>
                                         </div>
                                     </div>
                                     <div className="statergy-card px-3 py-2 mt-5">
                                         <div className="icon-box box-2 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                           <lord-icon
+                                    src="https://cdn.lordicon.com/qhgmphtg.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h2>Gadgets</h2>
+                                            <p> You can donate gadgets, it will help save a child’s future as well as the environment.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-3 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                           <lord-icon
+                                    src="https://cdn.lordicon.com/wxnxiano.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h2>Books</h2>
+                                            <p> You can also donate books to help our children gain as much as knowledge as possible.</p>
                                         </div>
                                     </div>
                                 </div>

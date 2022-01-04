@@ -219,7 +219,7 @@ function Home() {
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black">Overview</h1>
                     <p className="mt-1">
-                        Our Artificial Intelligence powered tools use millions of project data
+                        Learn about the skills that we plan to induce into the rural population.
                     </p>
                 </div>
                 <div className="row mt-5">
@@ -230,31 +230,36 @@ function Home() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                            Adhyanshala is a complete online learning platform, which is specially curated for the rural population of our country. We provide everything, the best teachers, a lot of skill-based courses, an easy-to-use multilingual user interface, and much more. We even provide gadgets on rent to all the needy students. All of what we are providing is useless without internet connectivity, so we would provide internet dongles in areas with poor connectivity and we will set up high bandwidth wifi in villages with no internet connectivity. This platform will be revolutionary for a rural student and it will fulfill a lot of dreams.
+                           Adhyanshala will allow all students to learn new skills and become more productive individuals and job-ready. We will have a lot of specially curated courses from global teachers which the students will be able to access anywhere, anytime. These courses will mainly be catered to anyone wanting to learn, we will also try in the future for multilingual courses to cater to a wider crowd.
                         </p>
                         <button className="btn btn-primary mt-2">Learn More</button>
 
                     </div>
                 </div>
-            </div>
+            </div> 
+
             <div className="container" data-aos="zoom-in" style={{marginTop: '8rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black">Overview</h1>
-                    <p className="mt-1">
-                        Our Artificial Intelligence powered tools use millions of project data
-                    </p>
+                    <h1 className="text-black"> Types Of Courses : </h1>
                 </div>
                 <div className="row">
                             <div className="col-md-4">
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                                 <lord-icon
+                                    src="https://cdn.lordicon.com/soseozvi.json"
+                                    className="center"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '60px', height: '60px' }}>
+                                </lord-icon>
                                         </div>
-                                        <h2 className="text-center">Step-1</h2>
-                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
+                                       
+                                        
+                                         <h2 className="text-center">Online live</h2>
 
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolor sit Lorem, ipsum dolorsit Lorem, ipsum dolor.</p>
+                                        <p className="text-center">These will be online courses taken by the best teachers in real-time. Mainly for a better doubt-solving experience for students.</p>
                                     </div>
                                 </div>
                             </div>
@@ -263,11 +268,17 @@ function Home() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                            <lord-icon
+                                    src="https://cdn.lordicon.com/tclnsjgx.json"
+                                    className="center"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '60px', height: '60px' }}>
+                                </lord-icon>
                                         </div>
-                                        <h2 className="text-center">Step-2</h2>
-                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum dolors it Lorem, ipsum dolor sit Lorem, ipsum dolor.</p>
+                                        <h2 className="text-center">Online videos</h2>
+                                        
+                                        <p className="text-center">These will be well-structured specially curated online recorded courses. Each of them will be covering the whole topic.</p>
                                     </div>
                                 </div>
                             </div>
@@ -275,11 +286,17 @@ function Home() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                             <lord-icon
+                                    src="https://cdn.lordicon.com/zpxybbhl.json"
+                                    className="center"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '60px', height: '60px' }}>
+                                </lord-icon>
                                         </div>
-                                        <h2 className="text-center">Step-3</h2>
-                                        <h1 className="text-center"><i className="fas fa-chart-line"></i></h1>
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum sit Lorem, ipsum dolor dolor sit Lorem, ipsum dolor.</p>
+                                        <h2 className="text-center">Offline</h2>
+                                       
+                                        <p className="text-center">These will involve in-person teaching, the good old way of learning. Experienced teachers will take various classes.</p>
                                     </div>
                                 </div>
                             </div>
@@ -290,15 +307,14 @@ function Home() {
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <h1 className="text-white text-center">“learning is not the product of teaching,<br/> learning is the product of the activity of learners”</h1>
                     </div>
                 </div>
 
             </div>
             <img src={skillwaveb} width="100%" className="mb-5" alt='img' />
+        
+
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-6 order-2 order-md-1" data-aos="fade-right">
@@ -306,31 +322,51 @@ function Home() {
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-1 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                            <lord-icon
+    src="https://cdn.lordicon.com/anihkfxp.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    stroke="48"
+    scale="46"
+    style={{ height:'50px' ,width:'50px'}}>
+</lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h1>Web Development</h1>
+                                            <p>learn web development from our portal.</p>
                                         </div>
                                     </div>
                                     <div className="statergy-card px-3 py-2 mt-5">
                                         <div className="icon-box box-2 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                           <lord-icon
+    src="https://cdn.lordicon.com/gqdnbnwt.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    stroke="48"
+    scale="46"
+    style={{ height:'50px' ,width:'50px'}}>
+</lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h1>Mathematics</h1>
+                                            <p>Best of maths, available in your hands.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-3 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                            <lord-icon
+    src="https://cdn.lordicon.com/hbjlznlo.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    
+    style={{ height:'50px' ,width:'50px'}}>
+</lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h1>Science</h1>
+                                            <p>learn the latest of science through the courses.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -357,31 +393,52 @@ function Home() {
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-3 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                             <lord-icon
+    src="https://cdn.lordicon.com/vlupvdhl.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    stroke="48"
+    scale="46"
+    style={{ height:'50px' ,width:'50px'}}>
+</lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h1>Artificial Intelligence</h1>
+                                            <p> Use your intelligence to learn the artificial one.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-1 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                            <lord-icon
+    src="https://cdn.lordicon.com/wloilxuq.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    stroke="48"
+    scale="46"
+    style={{ height:'50px' ,width:'50px'}}>
+</lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h1> Designing</h1>
+                                            <p> Learn graphic designing on adhyanshala for free.</p>
                                         </div>
                                     </div>
                                     <div className="statergy-card px-3 py-2 mt-5">
                                         <div className="icon-box box-2 text-center">
-                                            <i className="fas fa-location-arrow"></i>
+                                             <lord-icon
+    src="https://cdn.lordicon.com/zpxybbhl.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    stroke="48"
+    scale="46"
+    style={{ height:'50px' ,width:'50px'}}>
+</lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h5>Heading</h5>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                                            <h1>English</h1>
+                                            <p>learn spoken English and flaunt it to everyone with confidence.</p>
                                         </div>
                                     </div>
                                 </div>

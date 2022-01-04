@@ -30,8 +30,9 @@ import About from "layouts/About.js";
 import Skills from "layouts/Skills.js";
 import Donate from "layouts/Donate.js";
 import Landing from "layouts/Landing.js";
-import Contact from "layouts/Menu.js";
+import Contact from "layouts/Contact.js";
 import Beapart from "layouts/Beapart.js";
+import Demo from "layouts/home_elements.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
@@ -44,6 +45,7 @@ ReactDOM.render(
       <Route path="/home" render={(props) => <Home {...props} />} />
       <Route path="/beapart" render={(props) => <Beapart {...props} />} />
       <Route path="/" render={props => <Landing {...props} />} />
+      <Route path="/demo" render={(props) => <Demo {...props}/> }/>
 
     </Switch>
   </BrowserRouter>,

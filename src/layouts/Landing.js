@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // reactstrap components
 import ReactDOM from 'react-dom';
 import SwipeableViews from 'react-swipeable-views';
@@ -51,11 +51,12 @@ import Beapart from './Beapart.js';
 import Contact from "./Contact.js";
 import Abouts from "./about_elements.js";
 import Homesub from "./home_elements.js";
+import Home from "./Home.js";
 import Skill from './Skills.js';
 import 'assets/css/landing.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import SwipeableRoutes from "react-swipeable-routes";
-const RedView = () => (
+const home = () => (
   <div style={{ height: 300, backgroundColor: "red" }}>Red</div>
 );
 const BlueView = () => (
@@ -67,12 +68,14 @@ const GreenView = () => (
 const YellowView = () => (
   <div style={{ height: 300, backgroundColor: "yellow" }}>Yellow</div>
 );
-
 class Landing extends React.Component {
     constructor(props){
         super(props)
         this.myRef = React.createRef()
-        this.state = {scrollTop: 0}
+        this.state = {
+            scrollTop: 0,
+            index:0,
+        }
     }
    state ={
         visibles:false,
@@ -88,38 +91,17 @@ class Landing extends React.Component {
             visibles:!this.state.visibles,
             style:'starty'
         });
-        
+             
     };
     
-    visible_about =() =>{
-        this.setState({
-            visibleabout:!this.state.visibleabout,
-            style:'starty' 
-        })
-    }
     
-    
-    onScroll = () => {
-    const scrollX = window.scrollX 
-    const scrollTop = this.myRef.current.scrollTop
-    console.log(`onScroll, window.scrollX: ${scrollX} myRef.scrollTop: ${scrollTop}`)
+     handleChangeIndex (index, fromIndex) {
+    alert('handleChangeIndex Fired with:', index)
     this.setState({
-      scrollTop: scrollTop
+      index: index+1
     })
-    if (scrollTop>=50 && scrollTop<=300){
-        this.props.history.push('/about');
-    }
-    else if (scrollTop >=301 && scrollTop <=500){
-        this.props.history.push('/skills');
-    }
   }
-     scrollToTop = index => {
-    Array.from(this.el.containerNode.children).forEach((child, i) => {
-      if (index !== i) {
-        child.scrollTo(0, 0);
-      }
-    });
-  };
+   
   render() {
   const {
       scrollTop
@@ -128,9 +110,9 @@ class Landing extends React.Component {
     return (
       <>
     
-      
-     <SwipeableViews disabled={this.state.visibles} enableMouseEvents>
-      <div > 
+    
+     <SwipeableViews  disabled={this.state.visibles} enableMouseEvents>
+      <div onSwitching= {() => this.handleChangeIndex()}> 
          <div className="landing" >
             <div className="hdiv-1"></div>
 
@@ -162,17 +144,24 @@ class Landing extends React.Component {
                         <br/>
                         education and profession
                         </p>
-                      <button className="btn btn-primary mt-3" onClick={this.visible}>
-                        Learn More
-                      </button>
+                 <span class="scroll-btn">
+    <a href="#" onClick={this.visible}>
+        <span class="mouse">
+            <span>
+            </span>
+        </span>
+    </a>
+  <p class="point">scroll me</p>
+
+</span>
                     </div>
                 </div>
             </div>
             </div>
             {this.state.visibles===true && <Homesub/>}
-      </div>
-      <div style={{marginLeft:'10px'}} >
-        <div className="landing">
+      </div>  
+      <div  >
+         <div className="landing">
         <div className="div-1"></div>
         <div className="div-2"></div>
         <div className="div-3">
@@ -193,13 +182,13 @@ class Landing extends React.Component {
                         Learn More
                       </button>
             </div>
-               </div>
-        {this.state.visibles ===true && <Abouts/>}
+    </div>
+    {this.state.visibles===true &&  <Abouts/>}
       </div>
        
 
-      <div  >
-         <div className="landing">
+      <div  style={{marginLeft:'-10px'}}>
+        <div className="landing">
             <div className="sdiv-1"></div>
             <div className="sdiv-2"></div>
             <div className="sdiv-3">
@@ -212,13 +201,13 @@ class Landing extends React.Component {
                 <img src={skill_img7} alt="s" className="simgr simg7"/>               
             </div>
             <div className="sdiv-4">
-               <h1 className="skills_head.ing"><b>Skill Development</b></h1>
+               <h1 className="skills_heading"><b>Skill Development</b></h1>
               
             </div>
             <div className="sdiv-3 buttons">
               <button className="btn btn-primary mt-5" onClick={this.visible}>
-                        Learn More
-                      </button>
+                Learn More
+                </button>
             </div>
 
         </div>
@@ -274,30 +263,27 @@ class Landing extends React.Component {
         {this.state.visibles==true && <Donates/>}
       </div>
       <div>
-         <div className="landing">
-            <div className="cdiv-1"></div>
-            <div className="cdiv-2"></div>
-            <div className="cdiv-3">
-                <img src={c_img1} className="imgr cimg1" alt="s" />
-                <img src={c_img2} className="imgr cimg2" alt="s"/>
-                <img src={c_img3} className="imgr cimg3" alt="s"/>            
-            </div>
-            <div className="cdiv-4">
-               <h1 className="heading"><b>Contact</b></h1>
-            </div>
-            <div classNameName="sdiv-3 buttons">
-
-              <button classNameName="btn btn-primary mt-5" onClick={this.visible}>
-                        Learn More
-            </button>
-            </div>
-            
+        <div className="landing">
+          <div className="cdiv-1"></div>
+          <div className="cdiv-2"></div>
+          <div className="cdiv-3">
+            <img src={c_img1} className="imgr cimg1" alt="s" />
+            <img src={c_img2} className="imgr cimg2" alt="s" />
+            <img src={c_img3} className="imgr cimg3" alt="s" />
+          </div>
+          <div className="cdiv-4">
+            <h1 className="heading"><b>Contact</b></h1>
+          </div>
+          <div className="sdiv-3 buttons">
+              <button className="btn btn-primary mt-5" onClick={this.visible}>
+                Learn More
+                </button>
+          </div>
         </div>
-        {this.state.visibles===true && <Contacts/>}
+        {this.state.visibles === true && <Contacts />}
       </div>
     </SwipeableViews>
 
-    
       </>
     );
   }

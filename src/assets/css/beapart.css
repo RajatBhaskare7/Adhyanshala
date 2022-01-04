@@ -16,7 +16,7 @@ body{
     top: 0;
     left: 0;
     background-image: url("assets/img/landing/Beapart/login register-01.png");
-    background-size:cover;
+   background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@ body{
     z-index: 1;
     left: 0;
     background-image: url("assets/img/landing/Beapart/login register-02.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     animation: stars 4s infinite ease-in-out;
@@ -308,12 +308,14 @@ body{
 
 
 }
-/*@media (max-width: 1475px) and (min-width: 776px){
+@media (max-width: 1550px) and (min-width: 1176px){
   .ldiv-1{
          background-image: url("assets/img/landing/Beapart/login-register_landscape-01.png");
+         
     }
     .ldiv-2{
          background-image: url("assets/img/landing/Beapart/login-register_landscape-02.png");
+         
     }
 }
 @media (max-width: 1175px) and (min-width: 776px){
@@ -323,7 +325,7 @@ body{
     .ldiv-2{
          background-image: url("assets/img/landing/Beapart/Login-Register_tab-02.png");
     }
-}/*
+}
 @media (max-width: 450px) {
   .ldiv-1{
          background-image: url("assets/img/landing/Beapart/Iphone_login_register-01.png");
@@ -439,7 +441,7 @@ body{
     left: 60%;
     }
 }
-}*/
+}
 .be_heading {
     margin: auto;
     font-size: 40px;

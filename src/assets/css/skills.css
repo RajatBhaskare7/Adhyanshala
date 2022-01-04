@@ -16,7 +16,7 @@ body{
     top: 0;
     left: 0;
     background-image: url("assets/img/landing/skill/skill development-01.png");
-    background-size:cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
 
@@ -30,7 +30,7 @@ body{
     z-index: 1;
     left: 0;
     background-image: url("assets/img/landing/skill/skill development-02.png");
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
     animation: stars 4s infinite ease-in-out;
@@ -233,7 +233,6 @@ body{
     display: flex;
     align-items:center;
     justify-content: center;
-    font-size:18px ;
     padding: 40px;
     color:#000033;
     font-family: 'Montserrat', sans-serif;
@@ -565,15 +564,8 @@ body{
     }
 }
 }
-/*@media only screen and (max-width: 776px) {
-  .sdiv-1{
-        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-01.png");
-    }
-    .sdiv-2{
-        background-image: url("assets/img/landing/skill/skill_enhancement_mobile-02.png");
-    }
-}*/
-/*@media (max-width: 1475px) and (min-width: 776px){
+
+@media (max-width: 1550px) and (min-width: 1176px){
     .sdiv-1{
         background-image: url("assets/img/landing/skill/Skilldev_landscpe-01.png");
     }
@@ -589,7 +581,7 @@ body{
         background-image: url("assets/img/landing/skill/Skill-enhancement_tab-02.png");
     }
 }
-*/
+
 .bg {
   background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-371678.jpg");
   background-size: cover;

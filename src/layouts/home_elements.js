@@ -37,34 +37,65 @@ export default function main() {
                 <div className="row" style={{marginTop: '3rem'}}>
                     <div className="col-md-2 col-sm-4 col-6 mt-3 ">
                         <div className="feature-card text-center">
-                            <div className="icon"><i className="fas fa-user-graduate"></i></div>
+                             <lord-icon
+                                    src="https://cdn.lordicon.com/oswatybr.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-6 mt-3">
                         <div className="feature-card text-center">
-                            <div className="icon"><i className="fas fa-pencil-ruler"></i></div>
+                            <lord-icon
+    src="https://cdn.lordicon.com/jqeuwnmb.json"
+    trigger="loop"
+    colors="primary:#000033,secondary:#000033"
+    style={{ width: '100px', height: '100px' }}
+                                    >
+</lord-icon>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-6 mt-3">
                         <div className="feature-card text-center">
 
-                            <div className="icon"><i className="fas fa-laptop-code"></i></div>
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-6 mt-3">
                         <div className="feature-card text-center">
-                            <div className="icon"><i className="fas fa-book-open"></i></div>
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/wxnxiano.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-6 mt-3">
                         <div className="feature-card text-center">
 
-                            <div className="icon"><i className="fas fa-book-reader"></i></div>
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/soseozvi.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon>
                         </div>
                     </div>
                     <div className="col-md-2 col-sm-4 col-6 mt-3">
                         <div className="feature-card text-center">
-                            <div className="icon"><i className="fas fa-microscope"></i></div>
+                           <lord-icon
+                                    src="https://cdn.lordicon.com/qhgmphtg.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon>
                         </div>
                     </div>
                 </div>
@@ -83,9 +114,16 @@ export default function main() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                                <lord-icon
+                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
-                                        <h2 className="text-center">heading</h2>
+
+                                        <h2 className="text-center">                            
+                                heading</h2>
                                         <p className="text-center">we aim to change the way of teaching and learning in rural India
                                         </p>
                                     </div>
@@ -95,7 +133,12 @@ export default function main() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                             <lord-icon
+                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
                                         <h2 className="text-center">heading</h2>
                                         <p className="text-center">we intend to expose more of our population to the best of technology</p>
@@ -104,7 +147,12 @@ export default function main() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                             <lord-icon
+                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
                                         <h2 className="text-center">heading</h2>
                                         <p className="text-center">we want to create more opportunities for villagers to work in good places </p>
@@ -115,7 +163,12 @@ export default function main() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-
+                                                 <lord-icon
+                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '40px', height: '40px' }}>
+                                </lord-icon>
                                         </div>
                                         <h2 className="text-center">heading</h2>
                                         <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum sit Lorem, ipsum dolor dolor sit Lorem, ipsum dolor.</p>

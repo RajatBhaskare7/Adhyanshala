@@ -26,9 +26,12 @@ function Login() {
     <>
 <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black">Overview</h1>
+                    <h1 className="text-black">Why Adhyanshala?</h1>
                     <p className="mt-1">
-                        Our Artificial Intelligence powered tools use millions of project data
+                        Adhyanshala deals with ruling out the problem of rural education by providing them the basis for education through virtual platforms.
+On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.
+Students do not have access to latest gadgets , hence we developed small gadget libraries where they can issue gadgets on rental basis at an affordable cost. On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.
+
                     </p>
                 </div>
                 <div className="row mt-5">
@@ -39,7 +42,7 @@ function Login() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                            Adhyanshala is a complete online learning platform, which is specially curated for the rural population of our country. We provide everything, the best teachers, a lot of skill-based courses, an easy-to-use multilingual user interface, and much more. We even provide gadgets on rent to all the needy students. All of what we are providing is useless without internet connectivity, so we would provide internet dongles in areas with poor connectivity and we will set up high bandwidth wifi in villages with no internet connectivity. This platform will be revolutionary for a rural student and it will fulfill a lot of dreams.
+                          
                         </p>
                         <button className="btn btn-primary mt-2">Learn More</button>
 

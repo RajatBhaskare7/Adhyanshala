@@ -31,7 +31,7 @@ function Home() {
     <span className="hamburger hamburger-3"></span>
   </label>
   
-  <a href="#" className="menu-item"> <i className="fa fa-home"></i> </a>
+  <a href="#" className="menu-item">  <i className="fa fa-home"></i> </a>
   <a href="#" className="menu-item"> <i className="fa fa-plus"></i> </a>
   <a href="#" className="menu-item"> <i className="fa fa-heart"></i> </a>
   <a href="#" className="menu-item"> <i className="fa fa-envelope"></i> </a>
