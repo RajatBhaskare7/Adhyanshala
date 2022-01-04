@@ -126,14 +126,16 @@ class Landing extends React.Component {
                 <div className="col-xl-5 col-lg-6">
                     <div className="testimonial-left-content mt-45">
                         <h4 className="title">Donate and Help!<br/> </h4>
+
                         <ul className="testimonial-line">
                             <li></li>
                             <li></li>
                             <li></li>
                             <li></li>
                         </ul>
-                        <p className="text">It has been observed that most gadget users tend to discard their gadgets in a maximum duration of two years,so we are including a feature where people can donate old gadgets like old phones, tablets, PCs which they do not use anymore which can be distributed and used by the children living in rural areas to study. 
-</p>
+
+                        <p className="text">It has been observed that most gadget users tend to discard their gadgets in a maximum duration of two years,so we are including a feature where people can donate old gadgets like old phones, tablets, PCs which they do not use anymore which can be distributed and used by the children living in rural areas to study. </p>
+
                     </div> 
                 </div>
                 <div className="col-lg-6">
@@ -282,11 +284,14 @@ class Landing extends React.Component {
 
                     </div>
                 </div>
+
             </div> 
-            <img src={donatewaveb} width="100%"  alt='img' />
-            <div className="container ">
-                    <div className="main-text section-title mb-5   text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black" style={{ fontSize:'60px'}}>3 Ways you can donate</h1>
+        
+            <img src={donatewaveb} width="100%" alt='img' />
+            <div className="container" data-aos="zoom-in" >
+                <div className="main-text section-title mb-5 text-center" data-aos="fade-up" data-aos-delay="0.1s">
+                    <h1 className="text-black" style={{ fontSize:'40px'}}>3 ways you can donate</h1>
+
                    
                 </div>
                     <div className="row">
@@ -295,6 +300,7 @@ class Landing extends React.Component {
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-1 text-center">
+
                                             <lord-icon
                                     src="https://cdn.lordicon.com/qhviklyi.json"
                                     trigger="loop"
@@ -306,10 +312,14 @@ class Landing extends React.Component {
                                             <h2>Money</h2>
                                             <p>you can donate money and contribute in educating the future minds.
 </p>
+
+                                     
                                         </div>
+                                        
                                     </div>
                                     <div className="statergy-card px-3 py-2 mt-5">
                                         <div className="icon-box box-2 text-center">
+
                                            <lord-icon
                                     src="https://cdn.lordicon.com/qhgmphtg.json"
                                     trigger="loop"
@@ -320,12 +330,15 @@ class Landing extends React.Component {
                                         <div className="text-center">
                                             <h2>Gadgets</h2>
                                             <p> You can donate gadgets, it will help save a child’s future as well as the environment.</p>
+
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="col-md-6 my-auto">
                                     <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
                                         <div className="icon-box box-3 text-center">
+
                                            <lord-icon
                                     src="https://cdn.lordicon.com/wxnxiano.json"
                                     trigger="loop"
@@ -336,7 +349,9 @@ class Landing extends React.Component {
                                         <div className="text-center">
                                             <h2>Books</h2>
                                             <p> You can also donate books to help our children gain as much as knowledge as possible.</p>
+
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -347,7 +362,9 @@ class Landing extends React.Component {
                             </div>
                         </div>
                     </div>
+
                 </div>
+
       </>
     );
   }

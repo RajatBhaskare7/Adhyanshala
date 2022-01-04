@@ -27,12 +27,7 @@ function Login() {
 <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black">Why Adhyanshala?</h1>
-                    <p className="mt-1">
-                        Adhyanshala deals with ruling out the problem of rural education by providing them the basis for education through virtual platforms.
-On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.
-Students do not have access to latest gadgets , hence we developed small gadget libraries where they can issue gadgets on rental basis at an affordable cost. On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.
-
-                    </p>
+                   
                 </div>
                 <div className="row mt-5">
                     <div className="col-md-5">
@@ -42,7 +37,8 @@ Students do not have access to latest gadgets , hence we developed small gadget 
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                          
+
+                        Adhyanshala deals with ruling out the problem of rural education by providing them the basis for education through virtual platforms.On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.Students do not have access to latest gadgets , hence we developed small gadget libraries where they can issue gadgets on rental basis at an affordable cost. On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.
                         </p>
                         <button className="btn btn-primary mt-2">Learn More</button>
 
@@ -222,7 +218,7 @@ Students do not have access to latest gadgets , hence we developed small gadget 
           <img className="imgs" src={border} style={{ borderRadius: '20px', }} alt="" />
           <CardHeader className="bg-transparent pb-5">
             <div className="text-muted text-center mt-5 mb-3">
-              <h1>Register</h1>
+              <h1>Login</h1>
             </div>
           </CardHeader>
           <CardBody className="px-lg-5 py-lg-5">
