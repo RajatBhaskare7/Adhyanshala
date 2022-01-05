@@ -78,7 +78,7 @@ class Home extends React.Component {
           <img className="imgs" src={border}  style={{borderRadius:'20px',}} alt="not able to load"/>
           <CardBody className="px-lg-5 py-lg-5">
             <div className="text-center text-muted mb-5">
-              <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Donation Form</p>
+              <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Contact Form</p>
             </div>
             <Form role="form"  onSubmit={this.handleSubmit}>
               <FormGroup>

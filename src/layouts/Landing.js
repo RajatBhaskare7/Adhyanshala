@@ -64,7 +64,8 @@ class Landing extends React.Component {
    state ={
         visibles:false,
         visibleabout:false,
-        style:'start'
+        style:'start',
+        vision:'landing'
         
 
     }
@@ -73,8 +74,10 @@ class Landing extends React.Component {
        
         this.setState({
             visibles:!this.state.visibles,
-            style:'starty'
+            style:'starty',
+            
         });
+        
              
     };
     
@@ -94,7 +97,7 @@ class Landing extends React.Component {
     
      <SwipeableViews  disabled={this.state.visibles} enableMouseEvents>
       <div onSwitching= {() => this.handleChangeIndex()}> 
-         <div className="landing" >
+         <div className={(this.state.visibles===true ? 'landing2' :'landing')} >
             <div className="hdiv-1"></div>
 
             <div className="hdiv-2"></div > 
@@ -138,7 +141,7 @@ class Landing extends React.Component {
             {this.state.visibles===true && <Homesub/>}
       </div>  
       <div  >
-         <div className="landing">
+         <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
         <div className="div-1"></div>
         <div className="div-2"></div>
         <div className="div-3">
@@ -165,7 +168,7 @@ class Landing extends React.Component {
        
 
       <div  style={{marginLeft:'-10px'}}>
-        <div className="landing">
+        <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
             <div className="sdiv-1"></div>
             <div className="sdiv-2"></div>
             <div className="sdiv-3">
@@ -191,7 +194,7 @@ class Landing extends React.Component {
         {this.state.visibles===true && <Skills/>}
       </div>
       <div>
-        <div className="landing">
+        <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
             <div className="ldiv-1"></div>
             <div className="ldiv-2"></div>
             <div className="ldiv-3">
@@ -215,9 +218,9 @@ class Landing extends React.Component {
          {this.state.visibles===true && <Login/>}
       </div>
       <div>
-        <div className="landing">
-            <div className="ddiv-1"></div>
-            <div className="ddiv-2"></div>
+        <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
+            <div className={(this.state.visibles===true ? 'ddiv-11' :'ddiv-1')}></div>
+            <div className={(this.state.visibles===true ? 'ddiv-22' :'ddiv-2')}></div>
             <div className="ddiv-3">
                 <img src={donate_img1} className="dimgr dimg1" alt="img1"/>
                 <img src={donate_img2} className="dimgr dimg2" alt="img2" />

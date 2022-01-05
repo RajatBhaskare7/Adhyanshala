@@ -38,7 +38,7 @@ export default function page() {
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
                                 <h3 className="title">Our Goal</h3>
-                                <p className="description">.Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and latest technology.We strongly believe that education is the only way forward in life.
+                                <p className="description">Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and latest technology.We strongly believe that education is the only way forward in life.
 </p>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ export default function page() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                        .We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best.
+                        We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best.
                         </p>
                     </div>
                 </div>

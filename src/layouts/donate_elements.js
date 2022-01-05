@@ -110,6 +110,10 @@ class Landing extends React.Component {
     
     return (
       <>
+      <div className="wave_landing">
+          <div className="donate_waves"></div>
+          <div className="donate_waves2"></div>
+      </div>
      
     <section id="testimonial" style={{background:"url(donatewavet)"}}  className=" testimonial-area">
         <div className="container">
@@ -152,7 +156,7 @@ class Landing extends React.Component {
             <div className="text-center text-muted mb-5">
               <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Donation Form</p>
             </div>
-            <Form role="form" onSubmit={this.handleSubmit} className="mt-5">
+            <Form role="form" onSubmit={this.handleSubmit} className="mt-7">
               <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">

@@ -3,12 +3,7 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.landing{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow:hidden;
-}
+
 .div-1{
     position: relative;
     height: 110vh;
