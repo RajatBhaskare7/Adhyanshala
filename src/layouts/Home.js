@@ -10,7 +10,7 @@ import img7 from 'assets/img/landing/home/Landing-9.png';
 import img8 from 'assets/img/landing/home/Landing-10.png';
 import img9 from 'assets/img/landing/home/Landing-11.png';
 import img10 from 'assets/img/landing/home/Landing-12.png';
-import Homesub from "./home_elements.js";
+
 import bg from 'assets/img/landing/home/adhyanshala-01.png';
 class Home extends Component {
   

@@ -3,7 +3,7 @@ import React from "react";
 import {
     Button,
     Card,
-    CardHeader,
+   
     CardBody,
     FormGroup,
     Form,
@@ -11,7 +11,7 @@ import {
     InputGroupAddon,
     InputGroupText,
     InputGroup,
-    Row,
+   
     Col,
 } from "reactstrap";
 
@@ -19,9 +19,6 @@ import border from './../assets/img/landing/donate/border.png';
 import "assets/css/contact.css";
 
 import firebase from "../config/firebase-ad.js";
-import img1 from "assets/img/landing/contact/contact-03.png";
-import img2 from "assets/img/landing/contact/contact-04.png";
-import img3 from "assets/img/landing/contact/contact-05.png";
 class Home extends React.Component {
 
   constructor(props) {
@@ -45,7 +42,7 @@ class Home extends React.Component {
     e.preventDefault();
     const db = firebase.database();
     const ref = db.ref("Contact/");
-    const a = ref.push({
+    ref.push({
       data: {
         name: this.state.name,
         email:this.state.email,
@@ -78,7 +75,7 @@ class Home extends React.Component {
        <Col className="mt-5 "  lg ="6" md="8">
         <Card className="bg-secondary shadow border-0" >
 
-          <img className="imgs" src={border}  style={{borderRadius:'20px',}}/>
+          <img className="imgs" src={border}  style={{borderRadius:'20px',}} alt="not able to load"/>
           <CardBody className="px-lg-5 py-lg-5">
             <div className="text-center text-muted mb-5">
               <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Donation Form</p>

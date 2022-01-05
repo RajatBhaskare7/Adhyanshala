@@ -2,7 +2,7 @@ import React from "react";
 import {
     Button,
     Card,
-    CardHeader,
+   
     CardBody,
     FormGroup,
     Form,
@@ -10,7 +10,7 @@ import {
     InputGroupAddon,
     InputGroupText,
     InputGroup,
-    Row,
+   
     Col,
 } from "reactstrap";
 import astronaut from 'assets/img/landing/home/laptop_ass-04.svg'
@@ -107,16 +107,7 @@ class Landing extends React.Component {
   };
   
   render() {
-    const {
-      visibles,
-      style,
-      name,
-      contact,
-      email,
-      address,
-      method,
-      amount
-          } = this.state;
+    
     return (
       <>
      

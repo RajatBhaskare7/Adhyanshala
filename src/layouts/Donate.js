@@ -47,7 +47,7 @@ class Home extends React.Component {
                       </button>
             </div>
         </div>
-        {this.state.visibles==true && <Donates/>}
+        {this.state.visibles===true && <Donates/>}
       </>
     );
   }

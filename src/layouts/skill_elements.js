@@ -4,7 +4,7 @@ import "assets/css/skills.css";
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import skillwavet from 'assets/img/landing/home/waves/skillwavetop.png'
 import skillwaveb from 'assets/img/landing/home/waves/skillwavebtm.png'
-import Footer from './footer.js';
+//import Footer from './footer.js';
 import bg from 'assets/img/landing/home/adhyanshala-01.jpg';
 function Home() {
 

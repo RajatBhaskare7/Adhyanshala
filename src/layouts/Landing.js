@@ -1,6 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
 // reactstrap components
-import ReactDOM from 'react-dom';
 import SwipeableViews from 'react-swipeable-views';
 import img1 from 'assets/img/landing/home/Landing-3.png';
 import img2 from 'assets/img/landing/home/Landing-4.png';
@@ -45,33 +44,18 @@ import Donates from './donate_elements.js';
 import Skills from './skill_elements.js';
 import Contacts from './contact_elements.js';
 import Login from './login_element.js';
-import About from './About.js';
-import Donate from './Donate.js';
-import Beapart from './Beapart.js';
-import Contact from "./Contact.js";
+
 import Abouts from "./about_elements.js";
 import Homesub from "./home_elements.js";
-import Home from "./Home.js";
-import Skill from './Skills.js';
+
 import 'assets/css/landing.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import SwipeableRoutes from "react-swipeable-routes";
-const home = () => (
-  <div style={{ height: 300, backgroundColor: "red" }}>Red</div>
-);
-const BlueView = () => (
-  <div style={{ height: 300, backgroundColor: "blue" }}>Blue</div>
-);
-const GreenView = () => (
-  <div style={{ height: 300, backgroundColor: "green" }}>Green</div>
-);
-const YellowView = () => (
-  <div style={{ height: 300, backgroundColor: "yellow" }}>Yellow</div>
-);
+//import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+//import SwipeableRoutes from "react-swipeable-routes";
+
 class Landing extends React.Component {
     constructor(props){
         super(props)
-        this.myRef = React.createRef()
+       
         this.state = {
             scrollTop: 0,
             index:0,
@@ -103,10 +87,7 @@ class Landing extends React.Component {
   }
    
   render() {
-  const {
-      scrollTop
-    } = this.state
-  
+ 
     return (
       <>
     
@@ -144,16 +125,12 @@ class Landing extends React.Component {
                         <br/>
                         education and profession
                         </p>
-                 <span class="scroll-btn">
-    <a href="#" onClick={this.visible}>
-        <span class="mouse">
-            <span>
-            </span>
-        </span>
-    </a>
-  <p class="point">scroll me</p>
+                
+    <button  className="btn btn-primary " onClick={this.visible}>
+     Learn More
+    </button>
 
-</span>
+
                     </div>
                 </div>
             </div>
@@ -260,7 +237,7 @@ class Landing extends React.Component {
                       </button>
             </div>
         </div>
-        {this.state.visibles==true && <Donates/>}
+        {this.state.visibles===true && <Donates/>}
       </div>
       <div>
         <div className="landing">
