@@ -9,8 +9,8 @@ export default function page() {
         <div>
             <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
                 <div className="main-text section-title mt-5  text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black" style={{ fontSize:'60px'}}>About Us</h1>
-                   
+                    <h1 className="text-black" style={{ fontSize: '60px' }}>About Us</h1>
+
                 </div>
                 <div className="row mt-5">
                     <div className="col-md-5">
@@ -26,8 +26,8 @@ export default function page() {
                 </div>
             </div>
             <div id="points" className="points">
-            <div className="container" data-aos="zoom-in" style={{ marginTop: '5rem' }}>
-               
+                <div className="container" data-aos="zoom-in" style={{ marginTop: '5rem' }}>
+
                     <div className="row justify-content-center">
                         <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                             <div className="icon-box">
@@ -39,7 +39,7 @@ export default function page() {
                                 </lord-icon>
                                 <h3 className="title">Our Goal</h3>
                                 <p className="description">.Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and latest technology.We strongly believe that education is the only way forward in life.
-</p>
+                                </p>
                             </div>
                         </div>
                         <div className="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
@@ -63,7 +63,7 @@ export default function page() {
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
                                 <h3 className="title">Our Vision</h3>
-                                <p className="description">We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best. 
+                                <p className="description">We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best.
                                 </p>
                             </div>
                         </div>
@@ -83,8 +83,8 @@ export default function page() {
                     </div>
                 </div>
             </div>
-      
-            <img src={aboutwavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
+
+            <img src={aboutwavet} width="100%" style={{ marginTop: "8rem" }} alt='img' />
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
@@ -98,13 +98,13 @@ export default function page() {
             </div>
             <img src={aboutwaveb} width="100%" className="mb-5" alt='img' />
             <section className="home-clients">
-            <div className="container" data-aos="zoom-in" style={{marginTop: '2rem'}}>
-                <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black">Overview</h1>
-                    <p className="mt-1">
-                        Our Artificial Intelligence powered tools use millions of project data
-                    </p>
-                </div>
+                <div className="container" data-aos="zoom-in" style={{ marginTop: '2rem' }}>
+                    <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
+                        <h1 className="text-black">Overview</h1>
+                        <p className="mt-1">
+                            Our Artificial Intelligence powered tools use millions of project data
+                        </p>
+                    </div>
                     <div className="clients-section">
                         <div className="clients-container">
                             <div className="clients-group">
@@ -140,17 +140,17 @@ export default function page() {
                 <div className="row mt-5">
                     <div className="col-md-5">
                         <div className="d-flex justify-content-center align-middle">
-                            <img src={astronaut} width="70%" alt='img' />
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_xsanjd6w.json" background="transparent" speed="1" style={{ "width": "300px", "height": "300px" }} loop autoplay></lottie-player>
                         </div>
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                        .We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best.
+                            .We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best.
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
+            <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black">Who all does Adhyanshala support?</h1>
                     <p className="mt-1">
@@ -158,7 +158,7 @@ export default function page() {
                     </p>
                 </div>
                 <div className="row" data-aos="zoom-in">
-                    
+
                     <div className="col-md-7">
                         <div className="row">
                             <div className="col-md-4">
@@ -169,12 +169,11 @@ export default function page() {
                                         </div>
                                         <h2 className="text-center">Student</h2>
                                         <lord-icon class="center"
-    src="https://cdn.lordicon.com/eszyyflr.json"
-    trigger="loop"
-     colors="primary:#000033,secondary:#000033"
-     style={{ width: '50px', height: '50px' }}>
-</lord-icon>
-
+                                            src="https://cdn.lordicon.com/eszyyflr.json"
+                                            trigger="loop"
+                                            colors="primary:#000033,secondary:#000033"
+                                            style={{ width: '50px', height: '50px' }}>
+                                        </lord-icon>
                                         <p className="text-center">Helps students from underdeveloped sections of society learn extraordinary skills in the field of web development, graphic design and ,many more</p>
                                     </div>
                                 </div>
@@ -184,17 +183,17 @@ export default function page() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-                                                
+
                                         </div>
                                         <h2 className="text-center">Adhyanshala</h2>
                                         <lord-icon class="center"
-    src="https://cdn.lordicon.com/jjjmlddk.json "
-    trigger="loop"
-     colors="primary:#000033,secondary:#000033"
-     style={{ width: '50px', height: '50px' }}></lord-icon>
-                                        
+                                            src="https://cdn.lordicon.com/jjjmlddk.json "
+                                            trigger="loop"
+                                            colors="primary:#000033,secondary:#000033"
+                                            style={{ width: '50px', height: '50px' }}></lord-icon>
+
                                         <p className="text-center"> We connect skilled teachers to students who are willing to learn.
-</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -202,16 +201,16 @@ export default function page() {
                                 <div className="d-flex justify-content-center aligin-items-center">
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
-                             
+
                                         </div>
                                         <h2 className="text-center">Teachers</h2>
                                         <lord-icon class="center"
-    src="https://cdn.lordicon.com/dxjqoygy.json"
-    trigger="loop"
-     colors="primary:#000033,secondary:#000033"
-     style={{ width: '50px', height: '50px' }}></lord-icon>
+                                            src="https://cdn.lordicon.com/dxjqoygy.json"
+                                            trigger="loop"
+                                            colors="primary:#000033,secondary:#000033"
+                                            style={{ width: '50px', height: '50px' }}></lord-icon>
                                         <p className="text-center">Helps eradicate unemployment and provide job satisfaction to the teachers even after they retire.
-</p>
+                                        </p>
                                     </div>
                                 </div>
                             </div>

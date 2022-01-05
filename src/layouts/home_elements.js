@@ -20,7 +20,8 @@ export default function main() {
                 <div className="row mt-5">
                     <div className="col-md-5">
                         <div className="d-flex justify-content-center align-middle">
-                            <img src={astronaut} width="73%" alt='img' />
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_1cazwtnc.json"  background="transparent"  speed="1"  style={{"width": "300px", "height": "300px"}}  loop  autoplay></lottie-player>
+
                         </div>
                     </div>
                     <div className="col-md-7">
@@ -180,7 +181,8 @@ export default function main() {
                     </div>
                     <div className="col-md-5 ">
                         <div className="d-flex justify-content-center">
-                            <img src={astronaut1} width="100%" alt='img' />
+                                                 
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jm7mv1ib.json"  background="transparent"  speed="1"  style={{"width": "500px", "height": "500px"}}  loop  autoplay></lottie-player>
                         </div>
                     </div>
                 </div>
@@ -207,7 +209,7 @@ export default function main() {
                 <div className="row">
                     <div className="col-md-5">
                         <div className="d-flex justify-content-center">
-                            <img src={astronaut} width="80%" alt='img' />
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_iwlmrnb5.json"  background="transparent"  speed="1"  style={{"width": "300px", "height": "300px"}}  loop  autoplay></lottie-player>
                         </div>
                     </div>
                     <div className="col-md-7">

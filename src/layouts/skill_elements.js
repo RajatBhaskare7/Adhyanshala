@@ -225,7 +225,7 @@ function Home() {
                 <div className="row mt-5">
                     <div className="col-md-5">
                         <div className="d-flex justify-content-center align-middle">
-                            <img src={astronaut} width="73%" alt='img' />
+                        <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_ojjrkacr.json"  background="transparent"  speed="1"  style={{"width": "300px", "height": "300px"}}  loop  autoplay></lottie-player>
                         </div>
                     </div>
                     <div className="col-md-7">
@@ -384,7 +384,7 @@ function Home() {
                     <div className="row">
                         <div className="col-md-6" data-aos="fade-left">
                             <div className="d-flex justify-content-center">
-                                <img src={astronaut} width="75%" alt="a" />
+                                
                             </div>
                         </div>
                         <div className="col-md-6" data-aos="fade-right">
