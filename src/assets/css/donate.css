@@ -3,12 +3,7 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-.landing{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-   
-}
+
 .ddiv-1{
     height: 100vh;
     width: 100%;
@@ -21,7 +16,32 @@ body{
     background-repeat: no-repeat;
 
 }
+.ddiv-11{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("assets/img/landing/donate/donate-01.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
+}
+.ddiv-22{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-image: url("assets/img/landing/donate/donate-02.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    animation: stars 4s infinite ease-in-out;
+
+}
 .ddiv-2{
     height: 100vh;
     width: 100%;
@@ -36,7 +56,39 @@ body{
     animation: stars 4s infinite ease-in-out;
 
 }
-
+.donate_waves{
+  position: relative;
+  height: 40vh;
+   width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-image: url("assets/img/landing/donate/donate-09.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    animation: stars 4s infinite ease-in-out;
+}
+.donate_waves2{
+  position: relative;
+  height: 40vh;
+   width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-image: url("assets/img/landing/donate/donate-10.png");
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    animation: stars 4s infinite ease-in-out;
+}
+.wave_landing{
+  position: absolute;
+  height: 40vh;
+  width: 100%;
+}
 @keyframes stars{
     0%{
         opacity: 1;
