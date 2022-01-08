@@ -1,6 +1,8 @@
 import React from "react";
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
+import astro3 from 'assets/img/landing/home/Astronaut-03.png';
 
+import why_astro from 'assets/img/landing/home/astro-1.png';
 import beapartwavet from 'assets/img/landing/home/waves/beapartwavetop.png'
 import beapartwaveb from 'assets/img/landing/home/waves/beapartwavebtm.png'
 
@@ -32,7 +34,7 @@ function Login() {
                 <div className="row mt-5">
                     <div className="col-md-5">
                         <div className="d-flex justify-content-center align-middle">
-                            <img src={astronaut} width="73%" alt='img' />
+                            <img src={why_astro} width="73%" alt='img' />
                         </div>
                     </div>
                     <div className="col-md-7">
@@ -75,7 +77,7 @@ function Login() {
           </div>
           <div className="col-md-5">
             <div className="d-flex justify-content-end align-items-center h-100 mt-5">
-              <img src={astronaut} width="95%" alt='img' />
+              <img src={astro3} width="95%" alt='img' />
             </div>
           </div>
         </div>

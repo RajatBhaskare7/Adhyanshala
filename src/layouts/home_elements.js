@@ -12,9 +12,9 @@ export default function main() {
             {/* Section-1 */}
             <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black">Overview</h1>
+                    <h1 className="text-black" style={{fontSize:'21px'}}>A Revolution</h1>
                     <p className="mt-1">
-                        Our Artificial Intelligence powered tools use millions of project data
+                       A change in education to change the future 
                     </p>
                 </div>
                 <div className="row mt-5">
@@ -26,7 +26,8 @@ export default function main() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-                        Adhyanshala deals with providing top-quality education to the underdeveloped sections of society in India. We aim to increase our reach to the remotest areas of the country and provide high-quality education there. This will help impart education to every nook and corner of the country and therefore improve the literacy rate
+                       Adhyanshala is an all-in-one web-based education solution for catering to the rural and underprivileged children of our country. This platform will be like a catalyst to an individual’s learning. We will have the best teachers taking live classes from our platform where any number of students can join and learn. All lectures will be recorded and provided to students for future reference. A whole lot of international skill-based courses will be available for making students job-ready. A gadget donation and rental facility will be provided for the underprivileged. We see a very bright future for this country and we will try our best to reach there one day.
+
                         </p>
                         <button className="btn btn-primary mt-2">Learn More</button>
 
@@ -125,7 +126,7 @@ export default function main() {
                                         </div>
 
                                         <h2 className="text-center">                            
-                                heading</h2>
+                              A Change  </h2>
                                         <p className="text-center">we aim to change the way of teaching and learning in rural India
                                         </p>
                                     </div>
@@ -136,13 +137,13 @@ export default function main() {
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
                                              <lord-icon
-                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    src="https://cdn.lordicon.com/uukerzzv.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '40px', height: '40px' }}>
                                 </lord-icon>
                                         </div>
-                                        <h2 className="text-center">heading</h2>
+                                        <h2 className="text-center">Exposure </h2>
                                         <p className="text-center">we intend to expose more of our population to the best of technology</p>
                                     </div>
                                 </div>
@@ -150,13 +151,13 @@ export default function main() {
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
                                              <lord-icon
-                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    src="https://cdn.lordicon.com/rgyftmhc.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '40px', height: '40px' }}>
                                 </lord-icon>
                                         </div>
-                                        <h2 className="text-center">heading</h2>
+                                        <h2 className="text-center"> An Opportunity</h2>
                                         <p className="text-center">we want to create more opportunities for villagers to work in good places </p>
                                     </div>
                                 </div>
@@ -166,14 +167,14 @@ export default function main() {
                                     <div className="service-card py-2 px-3 mt-4">
                                         <div className="service-icon text-center">
                                                  <lord-icon
-                                    src="https://cdn.lordicon.com/anihkfxp.json"
+                                    src="https://cdn.lordicon.com/nocovwne.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '40px', height: '40px' }}>
                                 </lord-icon>
                                         </div>
-                                        <h2 className="text-center">heading</h2>
-                                        <p className="text-center">Lorem ipsum dolor ipsum dolorLorem ipsum sit Lorem, ipsum dolor dolor sit Lorem, ipsum dolor.</p>
+                                        <h2 className="text-center">learning</h2>
+                                        <p className="text-center"> we intend to relate education with the latest technology.</p>
                                     </div>
                                 </div>
                             </div>
@@ -192,10 +193,7 @@ export default function main() {
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <h1 class="text-white text-center" >"Education is not the learning of facts, but the training of the mind to think"</h1>
                     </div>
                 </div>
 
@@ -204,7 +202,7 @@ export default function main() {
             <div className="container" style={{marginTop: '5.5rem'}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
                     <h1 className="text-black">What we do?</h1>
-                    <p className="mt-1">Our Artificial Intelligence powered tools use millions of project data</p>
+                    <p className="mt-1">We intend to change the present based on the future</p>
                 </div>
                 <div className="row">
                     <div className="col-md-5">
@@ -218,7 +216,7 @@ export default function main() {
                         </p>
                         <div className="row mt-5">
                             <div className="col-md-3 d-none d-lg-block">
-                                <div className="icon"><i className="fas fa-swatchbook"></i></div>
+                                <div className="icon"><i className="fas fa-chart-line"></i></div>
                                 <p>Learning</p>
                             </div>
                             <div className="col-md-3 d-none d-lg-block">
@@ -226,7 +224,7 @@ export default function main() {
                                 <p>Education</p>
                             </div>
                             <div className="col-md-3 d-none d-lg-block">
-                                <div className="icon"><i className="fas fa-chart-line"></i></div>
+                                <div className="icon"><i className="fas fa-swatchbook"></i></div>
                                 <p>Studying</p>
                             </div>
                         </div>
@@ -259,8 +257,13 @@ export default function main() {
                 <div className="row justify-content-center points" data-aos="zoom-in">
                     <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
-
-                        <div className="icon"><i className="fas fa-chart-line"></i></div>
+                                 
+                        <div className="icon"><lord-icon
+                                    src="https://cdn.lordicon.com/jvucoldz.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon></div>
                             <h3 className="title">Our Mission</h3>
                             <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
                             </p>
@@ -268,10 +271,15 @@ export default function main() {
                     </div>
                     <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
-                            <div className="icon"><i className="fas fa-chart-line"></i></div>
-                            <h3 className="title">Our Mission</h3>
-                            <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
-                            </p>
+                            <div className="icon">                                <lord-icon
+                                    src="https://cdn.lordicon.com/tyounuzx.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon></div>
+                            <h3 className="title">Our Vision</h3>
+                            <p className="description"> We at Adhyanshala have a very positive vision for the country as time passes. We have a vision that every single villager has access to fast internet and to all kinds of global technology. That exposure to technology will definitely increase the employability of 1 billion and that will surely make India a developed country in very little time.
+ </p>
                         </div>
                     </div>
                 </div>
@@ -279,9 +287,8 @@ export default function main() {
                     <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
                             <div className="icon"><i className="fas fa-chart-line"></i></div>
-                            <h3 className="title">Our Mission</h3>
-                            <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
-                            </p>
+                            <h3 className="title">Our Belief</h3>
+                            <p className="description">Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and the latest technology. We strongly believe that education is the only way forward in life.            </p>
                         </div>
                     </div>
                 </div>

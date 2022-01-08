@@ -17,10 +17,14 @@ import astronaut from 'assets/img/landing/home/laptop_ass-04.svg'
 
 import border from './../assets/img/landing/donate/donate border.png';
 import astronaut1 from 'assets/img/landing/home/Be_A_Part-03.svg'
+import why_astro from 'assets/img/landing/home/astro-1.png';
+import astro2 from 'assets/img/landing/home/astro-2.png'
+import astronaut3 from 'assets/img/landing/home/Astronaut-05.png'
 import donatewavet from 'assets/img/landing/home/waves/donatewavetop.png'
 import donatewaveb from 'assets/img/landing/home/waves/donatewavebtm.png'
 import firebase from "../config/firebase-ad.js";
 
+import astro_donate from 'assets/img/landing/home/Astronaut-02.png'
 class Landing extends React.Component {
   constructor(props) {
       super(props);
@@ -110,12 +114,12 @@ class Landing extends React.Component {
     
     return (
       <>
-      <div className="wave_landing">
+    {/*  <div className="wave_landing">
           <div className="donate_waves"></div>
           <div className="donate_waves2"></div>
-      </div>
+      </div>*/}
      
-    <section id="testimonial" style={{background:"url(donatewavet)"}}  className=" testimonial-area">
+    <section id="testimonial" style={{background:"url(donatewavet)"}}  className=" mt-9 testimonial-area">
         <div className="container">
             <div className="row justify-content-between">
                 <div className="col-xl-5 col-lg-6">
@@ -140,7 +144,7 @@ class Landing extends React.Component {
                         </div>
                         <div className="testimonial-content-wrapper testimonial-active">
                             <div className="single-testimonial">
-                                <img src={astronaut1 } alt="s"/>
+                                <img src={astro_donate } alt="s"/>
                             </div> 
                         </div> 
                     </div> 
@@ -268,14 +272,14 @@ class Landing extends React.Component {
                 <div className="row ">
                     <div className="col-md-5 mt-7" >
                         <div className="d-flex justify-content-center align-middle">
-                            <img src={astronaut} width="73%" alt='img' />
+                            <img src={astro2}  alt='img' />
                         </div>
                     </div>
                     <div className="col-md-6 mt-9">
-                        <p className="mt-5  px-sm-3 p-md-0 ">
+                        <p className="mt-7   px-sm-3 p-md-0 ">
                            Adhyanshala will allow all students to learn new skills and become more productive individuals and job-ready. We will have a lot of specially curated courses from global teachers which the students will be able to access anywhere, anytime. These courses will mainly be catered to anyone wanting to learn, we will also try in the future for multilingual courses to cater to a wider crowd.
                         </p>
-                        <button className="btn btn-primary mt-2">Learn More</button>
+                       
 
                     </div>
                 </div>
@@ -353,7 +357,7 @@ class Landing extends React.Component {
                         </div>
                         <div className="col-md-6 order-1 order-md-2" data-aos="fade-left">
                             <div className="d-flex justify-content-center">
-                                <img src={astronaut} width="75%" alt="s" />
+                                <img src={astronaut3}  alt="s" />
                             </div>
                         </div>
                     </div>

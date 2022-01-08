@@ -17,19 +17,19 @@ body{
 
 }
 .ddiv-11{
-    height: 100%;
+    height: 135vh;
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
-    background-image: url("assets/img/landing/donate/donate-01.png");
+    background-image: url("assets/img/landing/donate/Landing-06.png");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 
 }
 .ddiv-22{
-    height: 100%;
+    height: 130vh;
     width: 100%;
     position: absolute;
     top: 0;

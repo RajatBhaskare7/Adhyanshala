@@ -1,7 +1,8 @@
 import React from "react";
 
 import "assets/css/skills.css";
-import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
+import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg';
+import astro1 from 'assets/img/landing/home/Astronaut-01.png';
 import skillwavet from 'assets/img/landing/home/waves/skillwavetop.png'
 import skillwaveb from 'assets/img/landing/home/waves/skillwavebtm.png'
 //import Footer from './footer.js';
@@ -384,7 +385,7 @@ function Home() {
                     <div className="row">
                         <div className="col-md-6" data-aos="fade-left">
                             <div className="d-flex justify-content-center">
-                                
+                                <img src={astro1} width="75%" alt="s" />
                             </div>
                         </div>
                         <div className="col-md-6" data-aos="fade-right">

@@ -65,8 +65,8 @@ class Landing extends React.Component {
         visibles:false,
         visibleabout:false,
         style:'start',
-        vision:'landing'
-        
+        vision:'landing',
+        avisibles:false,
 
     }
     visible = () =>{
@@ -80,7 +80,21 @@ class Landing extends React.Component {
         
              
     };
-    
+    avisible = () =>{
+      
+       
+        this.setState({
+            avisibles:!this.state.avisibles,
+            style:'starty',
+            
+        });
+        if(this.state.avisibles===true){
+          this.props.history.push("/about");
+        }
+
+        
+             
+    };
     
      handleChangeIndex (index, fromIndex) {
     alert('handleChangeIndex Fired with:', index)
@@ -129,7 +143,7 @@ class Landing extends React.Component {
                         education and profession
                         </p>
                 
-    <button  className="btn btn-primary " onClick={this.visible}>
+    <button  className="btn btn-primary " onClick={this.avisible}>
      Learn More
     </button>
 
@@ -138,7 +152,7 @@ class Landing extends React.Component {
                 </div>
             </div>
             </div>
-            {this.state.visibles===true && <Homesub/>}
+            {this.state.avisibles===true && <Homesub/>}
       </div>  
       <div  >
          <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
@@ -158,12 +172,12 @@ class Landing extends React.Component {
             
         </div>
         <div className="sdiv-3 buttons buttonsa">
-              <button className="btn btn-primary mt-7" onClick={this.visible}>
+              <button className="btn btn-primary mt-7" onClick={this.avisible}>
                         Learn More
                       </button>
             </div>
     </div>
-    {this.state.visibles===true &&  <Abouts/>}
+    {this.state.avisibles===true &&  <Abouts/>}
       </div>
        
 

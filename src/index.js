@@ -38,7 +38,7 @@ ReactDOM.render(
     <Switch>
       <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
       <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
-      <Route path="/about" render={(props) => <About {...props} />} />
+      
       <Route path="/contact" render={(props) => <Contact {...props} />} />
       <Route path="/donate" render={(props) => <Donate {...props} />} />
       <Route path="/skills" render={(props) => <Skills {...props} />} />
