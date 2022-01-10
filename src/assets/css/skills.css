@@ -393,6 +393,9 @@ body{
     .buttons{
         transform: translateY(-20px);
     }
+    .adhyanshala-logo{
+        margin-top: 20px;
+    }
     .simg1{
     position: absolute;
     top: 7%;
@@ -574,6 +577,9 @@ body{
     }
     .sdiv-2{
         background-image: url("assets/img/landing/skill/Skill-enhancement_tab-02.png");
+    }
+    .adhyanshala-logo{
+        margin-top: 20px;
     }
 }
 

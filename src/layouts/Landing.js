@@ -44,7 +44,7 @@ import Donates from './donate_elements.js';
 import Skills from './skill_elements.js';
 import Contacts from './contact_elements.js';
 import Login from './login_element.js';
-
+import Loader from './loader.js';
 import Abouts from "./about_elements.js";
 import Homesub from "./home_elements.js";
 
@@ -59,6 +59,7 @@ class Landing extends React.Component {
         this.state = {
             scrollTop: 0,
             index:0,
+            loading:true,
         }
     }
    state ={
@@ -67,6 +68,12 @@ class Landing extends React.Component {
         style:'start',
         vision:'landing',
         avisibles:false,
+        svisibles:false,
+        lvisibles:false,
+        dvisibles:false,
+        cvisibles:false,
+        loading:true,
+
 
     }
     visible = () =>{
@@ -85,17 +92,92 @@ class Landing extends React.Component {
        
         this.setState({
             avisibles:!this.state.avisibles,
+            visibles:!this.state.visibles,
             style:'starty',
             
         });
-        if(this.state.avisibles===true){
+         if(this.state.avisibles==true){
+          this.props.history.push("/");
+          
+        }
+        else{
           this.props.history.push("/about");
         }
-
-        
-             
+                  
     };
-    
+    svisible = () =>{
+      
+       
+        this.setState({
+            svisibles:!this.state.svisibles,
+            visibles:!this.state.visibles,
+            style:'starty',
+            
+        });
+         if(this.state.svisibles==true){
+          this.props.history.push("/");
+          
+        }
+        else{
+          this.props.history.push("/skilldevelopment");
+        }
+                
+    };
+     lvisible = () =>{
+      
+       
+        this.setState({
+            lvisibles:!this.state.lvisibles,
+            visibles:!this.state.visibles,
+            style:'starty',
+            
+        });
+         if(this.state.lvisibles==true){
+          this.props.history.push("/");
+          
+        }
+        else{
+          this.props.history.push("/be_a_part");
+        }
+                 
+    };
+     dvisible = () =>{
+      
+       
+        this.setState({
+            dvisibles:!this.state.dvisibles,
+            visibles:!this.state.visibles,
+            style:'starty',
+            
+        });
+
+         if(this.state.dvisibles==true){
+          this.props.history.push("/");
+          
+        }
+        else{
+          this.props.history.push("/Donation");
+        }
+                  
+    };
+     cvisible = () =>{
+      
+       
+        this.setState({
+            cvisibles:!this.state.cvisibles,
+            visibles:!this.state.visibles,
+            style:'starty',
+            
+        });
+         if(this.state.cvisibles==true){
+          this.props.history.push("/");
+          
+        }
+        else{
+          this.props.history.push("/Contactus");
+        }
+                  
+    };
      handleChangeIndex (index, fromIndex) {
     alert('handleChangeIndex Fired with:', index)
     this.setState({
@@ -103,12 +185,20 @@ class Landing extends React.Component {
     })
   }
    
+   
   render() {
- 
-    return (
+    const {loading}=this.state;
+    if(this.state.loading==true){
+      setTimeout(()=>{
+        this.setState({loading :false})
+      },6000);
+    }
+    return loading ?(
+          <Loader/>
+      ) : (
       <>
     
-    
+     
      <SwipeableViews  disabled={this.state.visibles} enableMouseEvents>
       <div onSwitching= {() => this.handleChangeIndex()}> 
          <div className={(this.state.visibles===true ? 'landing2' :'landing')} >
@@ -143,7 +233,7 @@ class Landing extends React.Component {
                         education and profession
                         </p>
                 
-    <button  className="btn btn-primary " onClick={this.avisible}>
+    <button  className="btn btn-primary " onClick={this.visible}>
      Learn More
     </button>
 
@@ -152,10 +242,10 @@ class Landing extends React.Component {
                 </div>
             </div>
             </div>
-            {this.state.avisibles===true && <Homesub/>}
+            {this.state.visibles===true && <Homesub/>}
       </div>  
       <div  >
-         <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
+         <div className={(this.state.avisibles===true ? 'landing2' :'landing')}>
         <div className="div-1"></div>
         <div className="div-2"></div>
         <div className="div-3">
@@ -182,7 +272,7 @@ class Landing extends React.Component {
        
 
       <div  style={{marginLeft:'-10px'}}>
-        <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
+        <div className={(this.state.svisibles===true ? 'landing2' :'landing')}>
             <div className="sdiv-1"></div>
             <div className="sdiv-2"></div>
             <div className="sdiv-3">
@@ -199,16 +289,16 @@ class Landing extends React.Component {
               
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
+              <button className="btn btn-primary mt-5" onClick={this.svisible}>
                 Learn More
                 </button>
             </div>
 
         </div>
-        {this.state.visibles===true && <Skills/>}
+        {this.state.svisibles===true && <Skills/>}
       </div>
       <div>
-        <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
+        <div className={(this.state.lvisibles===true ? 'landing2' :'landing')}>
             <div className="ldiv-1"></div>
             <div className="ldiv-2"></div>
             <div className="ldiv-3">
@@ -224,17 +314,17 @@ class Landing extends React.Component {
                
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
+              <button className="btn btn-primary mt-5" onClick={this.lvisible}>
                         Learn More
                       </button>
             </div>
         </div>
-         {this.state.visibles===true && <Login/>}
+         {this.state.lvisibles===true && <Login/>}
       </div>
       <div>
-        <div className={(this.state.visibles===true ? 'landing2' :'landing')}>
-            <div className={(this.state.visibles===true ? 'ddiv-11' :'ddiv-1')}></div>
-            <div className={(this.state.visibles===true ? 'ddiv-22' :'ddiv-2')}></div>
+        <div className={(this.state.dvisibles===true ? 'landing2' :'landing')}>
+            <div className={(this.state.dvisibles===true ? 'ddiv-11' :'ddiv-1')}></div>
+            <div className={(this.state.dvisibles===true ? 'ddiv-22' :'ddiv-2')}></div>
             <div className="ddiv-3">
                 <img src={donate_img1} className="dimgr dimg1" alt="img1"/>
                 <img src={donate_img2} className="dimgr dimg2" alt="img2" />
@@ -249,12 +339,12 @@ class Landing extends React.Component {
              
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
+              <button className="btn btn-primary mt-5" onClick={this.dvisible}>
                         Learn More
                       </button>
             </div>
         </div>
-        {this.state.visibles===true && <Donates/>}
+        {this.state.dvisibles===true && <Donates/>}
       </div>
       <div>
         <div className="landing">
@@ -269,12 +359,12 @@ class Landing extends React.Component {
             <h1 className="heading"><b>Contact</b></h1>
           </div>
           <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
+              <button className="btn btn-primary mt-5" onClick={this.cvisible}>
                 Learn More
                 </button>
           </div>
         </div>
-        {this.state.visibles === true && <Contacts />}
+        {this.state.cvisibles === true && <Contacts />}
       </div>
     </SwipeableViews>
 

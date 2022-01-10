@@ -12,7 +12,7 @@ export default function main() {
             {/* Section-1 */}
             <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black" style={{fontSize:'21px'}}>A Revolution</h1>
+                    <h1 className="text-black" style={{fontSize:'40px'}}>A Revolution</h1>
                     <p className="mt-1">
                        A change in education to change the future 
                     </p>
@@ -251,19 +251,18 @@ export default function main() {
 
             <div className="container" style={{marginTop: '4rem'}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
-                    <h1 className="text-black">What we do?</h1>
-                    <p className="mt-1">Our Artificial Intelligence powered tools use millions of project data</p>
+                    
                 </div>
                 <div className="row justify-content-center points" data-aos="zoom-in">
                     <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
-                                 
-                        <div className="icon"><lord-icon
+                                 <lord-icon
                                     src="https://cdn.lordicon.com/jvucoldz.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
-                                </lord-icon></div>
+                                </lord-icon>
+                        
                             <h3 className="title">Our Mission</h3>
                             <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
                             </p>
@@ -271,12 +270,12 @@ export default function main() {
                     </div>
                     <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
-                            <div className="icon">                                <lord-icon
+                                                           <lord-icon
                                     src="https://cdn.lordicon.com/tyounuzx.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
-                                </lord-icon></div>
+                                </lord-icon>
                             <h3 className="title">Our Vision</h3>
                             <p className="description"> We at Adhyanshala have a very positive vision for the country as time passes. We have a vision that every single villager has access to fast internet and to all kinds of global technology. That exposure to technology will definitely increase the employability of 1 billion and that will surely make India a developed country in very little time.
  </p>
@@ -286,7 +285,12 @@ export default function main() {
                 <div className="row justify-content-center points" data-aos="zoom-in">
                     <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
                         <div className="icon-box">
-                            <div className="icon"><i className="fas fa-chart-line"></i></div>
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/qjvxqdov.json"
+                                    trigger="loop"
+                                    colors="primary:#000033,secondary:#000033"
+                                    style={{ width: '100px', height: '100px' }}>
+                                </lord-icon>
                             <h3 className="title">Our Belief</h3>
                             <p className="description">Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and the latest technology. We strongly believe that education is the only way forward in life.            </p>
                         </div>

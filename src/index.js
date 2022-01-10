@@ -30,7 +30,7 @@ import About from "layouts/About.js";
 import Skills from "layouts/Skills.js";
 import Donate from "layouts/Donate.js";
 import Landing from "layouts/Landing.js";
-import Contact from "layouts/Contact.js";
+import Contact from "layouts/loader.js";
 import Beapart from "layouts/Beapart.js";
 import Demo from "layouts/home_elements.js";
 ReactDOM.render(

@@ -87,12 +87,14 @@ export default function page() {
             <img src={aboutwavet} width="100%" style={{ marginTop: "8rem" }} alt='img' />
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
-                    <div className="col-12">
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                    <div className="col-12" >
+                         <h1 className="text-center text-white">
+                         "Bridging the gap between 
+                        <br/>
+                        education and profession"
+                         </h1>
                     </div>
+
                 </div>
 
             </div>
@@ -100,31 +102,29 @@ export default function page() {
             <section className="home-clients">
                 <div className="container" data-aos="zoom-in" style={{ marginTop: '2rem' }}>
                     <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                        <h1 className="text-black">Overview</h1>
-                        <p className="mt-1">
-                            Our Artificial Intelligence powered tools use millions of project data
-                        </p>
+                        <h1 className="text-black">Features we have</h1>
+                       
                     </div>
                     <div className="clients-section">
                         <div className="clients-container">
                             <div className="clients-group">
-                                <div className="clients-item hoopsai"></div>
+                                <div className="clients-item hoopsai text-center "><p><i className=" text-center fas fa-file-word"></i><br/>Text Detection</p></div>
                             </div>
                             <div className="clients-group">
-                                <div className="clients-item agoda"></div>
-                                <div className="clients-item getsafe"></div>
+                                <div className="clients-item agoda text-center"><p><i className=" text-center fas fa-question-circle"></i><br/>Monthly Quiz</p></div>
+                                <div className="clients-item getsafe text-center"><p><i className=" text-center fas fa-divide"></i><br/>Vedic maths</p></div>
                             </div>
                             <div className="clients-group">
-                                <div className="clients-item grab"></div>
-                                <div className="clients-item crisp"></div>
-                                <div className="clients-item anyleads"></div>
+                                <div className="clients-item grab text-center"><p><i className=" text-center fas fa-file-video"></i><br/>Video lectures</p></div>
+                               <div className="clients-item crisp text-center"><p><i className=" text-center fas fa-book-reader"></i><br/>Reading tools</p></div>
+                                <div className="clients-item anyleads text-center"><p><i className=" text-center fas fa-chalkboard"></i><br/>International Courses</p></div>
                             </div>
                             <div className="clients-group">
-                                <div className="clients-item teachable"></div>
-                                <div className="clients-item flyr"></div>
+                                <div className="clients-item teachable text-center"><p><i className=" text-center fas fa-chalkboard-teacher"></i><br/>Best Faculty</p></div>
+                                <div className="clients-item flyr text-center"><p><i className=" text-center fas fa-robot"></i><br/>Chatbot</p></div>
                             </div>
                             <div className="clients-group">
-                                <div className="clients-item roger"></div>
+                                <div className="clients-item roger text-center"><p><i className=" text-center fas fa-table"></i><br/>E-library</p></div>
                             </div>
                         </div>
                     </div>

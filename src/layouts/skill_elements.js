@@ -91,7 +91,7 @@ function Home() {
                             <div className="main-text section-title text-center" data-aos="fade-up" data-aos-delay="0.1s">
                                 <h1 className="text-black font">Skill Development</h1>
                                 <p>
-                                    Our Artificial Intelligence powered tools use millions of project data
+                                   Learn about the skills that we plan to induce into rural population
                                 </p>
                             </div>
                         </div>
@@ -128,7 +128,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-md-4 ">
-                            <img src={bg} className="ml-5" style={{ marginTop: '-40px' }} width="70%" alt="d" />
+                            <img src={bg} className="ml-5 adhyanshala-logo" style={{ marginTop: '-40px' }} width="70%" alt="d" />
                         </div>
                         <div className="col-md-2 mt-1">
                             <div className="feature-card text-center">
@@ -218,10 +218,8 @@ function Home() {
                 </div>
                 <div className="container" data-aos="zoom-in" style={{marginTop: '8rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black">Overview</h1>
-                    <p className="mt-1">
-                        Learn about the skills that we plan to induce into the rural population.
-                    </p>
+                    <h1 className="text-black" style={{fontSuze:'40px'}}>Overview</h1>
+                   
                 </div>
                 <div className="row mt-5">
                     <div className="col-md-5">
@@ -233,7 +231,7 @@ function Home() {
                         <p className="mt-5 text-start px-sm-3 p-md-0">
                            Adhyanshala will allow all students to learn new skills and become more productive individuals and job-ready. We will have a lot of specially curated courses from global teachers which the students will be able to access anywhere, anytime. These courses will mainly be catered to anyone wanting to learn, we will also try in the future for multilingual courses to cater to a wider crowd.
                         </p>
-                        <button className="btn btn-primary mt-2">Learn More</button>
+                        
 
                     </div>
                 </div>

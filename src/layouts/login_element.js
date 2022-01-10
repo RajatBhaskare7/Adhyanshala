@@ -28,7 +28,7 @@ function Login() {
     <>
 <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black">Why Adhyanshala?</h1>
+                    <h1 className="text-black" style={{ fontSize:'40px'}}>What we Serve? </h1>
                    
                 </div>
                 <div className="row mt-5">
@@ -39,10 +39,10 @@ function Login() {
                     </div>
                     <div className="col-md-7">
                         <p className="mt-5 text-start px-sm-3 p-md-0">
-
-                        Adhyanshala deals with ruling out the problem of rural education by providing them the basis for education through virtual platforms.On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.Students do not have access to latest gadgets , hence we developed small gadget libraries where they can issue gadgets on rental basis at an affordable cost. On the website there will be providing Gadgets which can be taken on rent to accelerate the education for the students who live in rural or areas with lack of technology.These will be preloaded with various educational softwares.
+                          Adhyanshala provides services to empower the youth of the country. It not only focuses on providing knowledge to the younger sessions but also considers all the age groups. We aim to provide education for students who are financially weak and also provide employment to teachers who are willing to teach and contribute in this noble cause. Not only this, NGO's and other non-profit organization who are willing to donate are also invited.
+                        
                         </p>
-                        <button className="btn btn-primary mt-2">Learn More</button>
+                       
 
                     </div>
                 </div>
@@ -54,22 +54,22 @@ function Login() {
             <div className="d-flex justify-content-center">
               <div>
                 <div className="row mt-5">
-                  <h2 className="text-black mt-5">Reliable, efficient delivery</h2>
-                  <p className="mt-4">Our Artificial Intelligence powered tools use millions of project data<br /> points to ensure that your project is successful</p>
+                  <h2 className="text-black mt-5">The sections that we Aim</h2>
+                  
                 </div>
                 <div className="row mt-4" data-aos="fade-down">
                   <div className="landing-card">
-                    <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
+                    <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Students - Financially weaker students who are willing to learn.</span></p>
                   </div>
                 </div>
                 <div className="row mt-4" data-aos="fade-down">
                   <div className="landing-card">
-                    <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
+                    <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Teachers - Retired or working teachers who are willing to teach these children</span></p>
                   </div>
                 </div>
                 <div className="row mt-4" data-aos="fade-down">
                   <div className="landing-card">
-                    <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Our Artificial Intelligence powered tools use millions of project data</span></p>
+                    <p className="mt-4 text-center d-flex justify-content-center align-items-center px-3"> <i className="fab fa-gratipay port-icon mx-auto"></i> <span className="px-3">Non-profit organization- NGOs or other private non-profit organization who are willing to donate are invited.</span></p>
                   </div>
                 </div>
               </div>
@@ -84,53 +84,53 @@ function Login() {
       </div>
       <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
         <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
-          <h1 className="text-black">Overview</h1>
-          <p className="mt-1">
-            Our Artificial Intelligence powered tools use millions of project data
-          </p>
+          <h1 className="text-black">Fields in which you can contribute</h1>
+          
         </div>
         <div className="row justify-content-center" style={{ marginTop: '3.5rem' }}>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/imamsnbq.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                <h5>Underprivileged student</h5>
+                <p>If you are willing to learn you can take benefit specially designed for underdeveloped students</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/jqnthkou.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
-              <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+               <div className="text-center">
+                <h5>NGOs/Non-profit Organization</h5>
+                <p> Adhyanshala will be obliged if you can help us for this noble cause.</p>
               </div>
+              
             </div>
           </div>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/uqpazftn.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                <h5>Private Organisations/Corporate Sector</h5>
+                <p> Any sort of help regarding courses or resources for students is welcome.</p>
               </div>
+             
             </div>
           </div>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/jqeuwnmb.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                <h5>Donate Gadgets</h5>
+                <p> If you are a student and wish to donate gadgets you may reach out to us.</p>
               </div>
             </div>
           </div>
@@ -140,33 +140,33 @@ function Login() {
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+               <lord-icon src="https://cdn.lordicon.com/sodlceyy.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                <h5> Working Teachers</h5>
+                <p>If you are working as well as you wish to teach, you are hearty welcome.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/bwnhdkha.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                <h5>Retired Teachers</h5>
+                <p>If you are retired and wish to continue, Adhyanshala welcomes you with open arms.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+                <h5> Donate Books</h5>
+                <p>If you have any resources where students can access books for free, please contact us.</p>
               </div>
             </div>
           </div>
@@ -177,22 +177,24 @@ function Login() {
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+                <lord-icon src="https://cdn.lordicon.com/uukerzzv.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+
+                <h5>Student</h5>
+                <p> Buy plans and learn various courses remotely.</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
             <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
               <div className="icon-box box-3 text-center">
-                <i className="fas fa-location-arrow"></i>
+               <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
-              <div className="text-center">
-                <h5>Heading</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicingamet .</p>
+               <div className="text-center">
+
+                <h5>Teacher Students</h5>
+                <p>If you wish to teach and contribute you may contact us</p>
               </div>
             </div>
           </div>
@@ -206,10 +208,8 @@ function Login() {
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
-                        <p className="text-white text-center">Losmdxlasmdsml;dmas;lm;la</p>
+                        <h1 className="text-white text-center">"Education is not about soving problems it about opportunities to learn more."</h1>
+                        
                     </div>
                 </div>
 
