@@ -81,7 +81,7 @@ class Landing extends React.Component {
       })
       .then(() => {
         alert("Done Successfully!");
-        window.location.href = "/donate";
+        window.location.href = "/";
       });
   };
 
@@ -144,7 +144,7 @@ class Landing extends React.Component {
                         </div>
                         <div className="testimonial-content-wrapper testimonial-active">
                             <div className="single-testimonial">
-                                <img src={astro_donate } width="40%" alt="s"/>
+                                <img src={astro_donate } width="65%" alt="s"/>
                             </div> 
                         </div> 
                     </div> 

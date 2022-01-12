@@ -862,7 +862,13 @@ testimonial-area {
 .single-testimonial {
   background-color: #fff;
   padding: 40px 30px 50px;
-  border-radius: 50px; }
+  border-radius: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
   .single-testimonial .testimonial-text .text {
     font-size: 24px;
     font-weight: 400;

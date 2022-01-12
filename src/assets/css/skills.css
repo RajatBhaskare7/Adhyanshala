@@ -105,7 +105,7 @@ body{
 }
 .simg3{
     position: absolute;
-    top: 52%;
+    top: 45%;
     left:10%;
     width: 10%;
     animation: animation3 7s infinite ease-in-out;
@@ -393,13 +393,14 @@ body{
     .buttons{
         transform: translateY(-20px);
     }
-    .adhyanshala-logo{
-        margin-top: 20px;
+    
+    .one{
+        display: none;
     }
     .simg1{
     position: absolute;
     top: 7%;
-    width: 14%;
+    width: 10%;
     left: 2%;
     animation: animation1 3s infinite ease-in-out;
 }
@@ -420,7 +421,7 @@ body{
 .simg2{
     position: absolute;
     top: 32%;
-    width: 24%;
+    width: 15%;
     left: 14%;
     animation: animation2 4s infinite ease-in-out;
 }
@@ -442,7 +443,7 @@ body{
     position: absolute;
     top: 52%;
     left:10%;
-    width: 18%;
+    width: 12%;
     animation: animation3 7s infinite ease-in-out;
 }
 
@@ -467,7 +468,7 @@ body{
     position: absolute;
     top: 25%;
     left: 60%;
-    width: 20%;
+    width: 15%;
     animation: animation4 4s infinite ease-in-out;
 }
 
@@ -486,15 +487,15 @@ body{
     }
 }
 .skills_heading{
-    font-size:35px;
+    font-size:45px;
     transform: translateY(-30px);
     
 }
 .simg7{
     position: absolute;
-    width: 40.3%;
-    top: 53%;
-    left: 20%;
+    width: 30.3%;
+    top: 58%;
+    left: 11% !important;
     animation: animation7 3s infinite ease-in-out;
 } 
 
@@ -521,7 +522,7 @@ body{
     position: absolute;
     top: 3%;
     left: 79%;
-    width: 16%;
+    width: 12%;
     animation: animation5 6s infinite ease-in-out;
 }
 
@@ -543,7 +544,7 @@ body{
     position: absolute;
     top: 15%;
     left: 39%;
-    width: 16%;
+    width: 10%;
     animation: animation6 4s infinite ease-in-out;
 }
 
@@ -560,6 +561,9 @@ body{
         top: 15%;
         left: 39%;
     }
+}
+.skill_button{
+    margin-top: -20px important;
 }
 }
 
@@ -580,6 +584,9 @@ body{
     }
     .adhyanshala-logo{
         margin-top: 20px;
+    }
+    .simg6{
+        top: ;
     }
 }
 

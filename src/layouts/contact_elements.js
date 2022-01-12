@@ -51,7 +51,7 @@ class Home extends React.Component {
       },
     }).then(() => {
         alert("Done Successfully!");
-        window.location.href = "/contact";
+        window.location.href = "/";
       });
   };
   handleName = (e) => {

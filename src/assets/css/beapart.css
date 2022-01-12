@@ -198,7 +198,10 @@ body{
     animation: banimation1 7s infinite ease-in-out;
 }
 .be_heading{
-    margin-top: -20px;
+    margin-top: 7em !important;
+}
+.be_button{
+    margin-top: 10px !important;
 }
 @keyframes banimation1{
     0%{

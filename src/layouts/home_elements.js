@@ -29,7 +29,7 @@ export default function main() {
                        Adhyanshala is an all-in-one web-based education solution for catering to the rural and underprivileged children of our country. This platform will be like a catalyst to an individual’s learning. We will have the best teachers taking live classes from our platform where any number of students can join and learn. All lectures will be recorded and provided to students for future reference. A whole lot of international skill-based courses will be available for making students job-ready. A gadget donation and rental facility will be provided for the underprivileged. We see a very bright future for this country and we will try our best to reach there one day.
 
                         </p>
-                        <button className="btn btn-primary mt-2">Learn More</button>
+                      
 
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export default function main() {
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
                     <h1 className="text-black">What is our goal and what are we aiming to change?
 </h1>
-                    <p className="mt-1">Our Artificial Intelligence powered tools use millions of project data</p>
+                  
                 </div>
                 <div className="row" data-aos="zoom-in">
 
@@ -231,17 +231,17 @@ export default function main() {
                     </div>
                     <div className="d-sm-block d-lg-none">
                         <div className="row mt-5 justify-content-center">
-                            <div className="col-sm-4 text-center">
-                                <div className="icon"><i className="fas fa-chalkboard-teacher"></i></div>
-                                <p>Lorem, ipsum.</p>
+                            <div className="col-md-3 ml-4 text-center">
+                                 <div className="icon"><i className="fas fa-chart-line"></i></div>
+                                <p>Learning</p>
                             </div>
-                            <div className="col-sm-4 text-center">
+                            <div className="col-sm-3 ml-4 text-center">
+                                 <div className="icon"><i className="fas fa-award"></i></div>
+                                <p>Education</p>
+                            </div>
+                            <div className="col-sm-3 ml-4 text-center">
                                 <div className="icon"><i className="fas fa-swatchbook"></i></div>
-                                <p>Lorem, ipsum.</p>
-                            </div>
-                            <div className="col-sm-4 text-center">
-                                <div className="icon"><i className="fas fa-chart-line"></i></div>
-                                <p>Lorem, ipsum.</p>
+                                <p>Studying</p>
                             </div>
                         </div>
                     </div>

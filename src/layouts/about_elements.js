@@ -75,7 +75,7 @@ export default function page() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                                <h3 className="title">Our Goal</h3>
+                                <h3 className="title">Our Belief</h3>
                                 <p className="description">We at Adhyanshala have a very positive vision for the country as time passes. We have a vision that every single villager has access to fast internet and all kinds of global technology. That exposure to technology will increase the employability of 1 billion and that will surely make India a developed country in very little time.
                                 </p>
                             </div>

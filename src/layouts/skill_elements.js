@@ -95,7 +95,7 @@ function Home() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-md-2 mt-3">
+                        <div className="col-md-2 mt-3 one">
                             <div className="feature-card text-center">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/gxulgxck.json"
@@ -107,7 +107,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="row mt-4">
-                        <div className="col-md-2 mt-3">
+                        <div className="col-md-2 mt-3  one">
                             <div className="feature-card text-center">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/qhgmphtg.json"
@@ -117,7 +117,7 @@ function Home() {
                                 </lord-icon>
                             </div>
                         </div>
-                        <div className="col-md-2 mt-3">
+                        <div className="col-md-2 mt-3 one">
                             <div className="feature-card text-center">
                                 <lord-icon
                                     src="https://cdn.lordicon.com/fgkmrslx.json"

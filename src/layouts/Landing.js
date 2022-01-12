@@ -60,6 +60,7 @@ class Landing extends React.Component {
             scrollTop: 0,
             index:0,
             loading:true,
+             text:"Explore",
         }
     }
    state ={
@@ -73,8 +74,9 @@ class Landing extends React.Component {
         dvisibles:false,
         cvisibles:false,
         loading:true,
+ 
 
-
+        
     }
     visible = () =>{
       
@@ -84,6 +86,16 @@ class Landing extends React.Component {
             style:'starty',
             
         });
+        if(this.state.visibles==true){
+          this.props.history.push("/");
+          this.setState({text:'Explore'});
+          
+        }
+        else{
+          this.props.history.push("/");
+          this.setState({text:'Return to Menu'});
+        }
+      
         
              
     };
@@ -98,10 +110,13 @@ class Landing extends React.Component {
         });
          if(this.state.avisibles==true){
           this.props.history.push("/");
+           this.setState({text:'Explore'});
           
         }
         else{
           this.props.history.push("/about");
+          this.setState({text:'Return to Menu'});
+
         }
                   
     };
@@ -116,10 +131,12 @@ class Landing extends React.Component {
         });
          if(this.state.svisibles==true){
           this.props.history.push("/");
+           this.setState({text:'Explore'});
           
         }
         else{
           this.props.history.push("/skilldevelopment");
+          this.setState({text:'Return to Menu'});
         }
                 
     };
@@ -134,10 +151,12 @@ class Landing extends React.Component {
         });
          if(this.state.lvisibles==true){
           this.props.history.push("/");
+           this.setState({text:'Explore'});
           
         }
         else{
           this.props.history.push("/be_a_part");
+          this.setState({text:'Return to Menu'});
         }
                  
     };
@@ -153,10 +172,12 @@ class Landing extends React.Component {
 
          if(this.state.dvisibles==true){
           this.props.history.push("/");
+           this.setState({text:'Explore'});
           
         }
         else{
           this.props.history.push("/Donation");
+          this.setState({text:'Return to Menu'});
         }
                   
     };
@@ -171,10 +192,12 @@ class Landing extends React.Component {
         });
          if(this.state.cvisibles==true){
           this.props.history.push("/");
+           this.setState({text:'Explore'});
           
         }
         else{
           this.props.history.push("/Contactus");
+          this.setState({text:'Return to Menu'});
         }
                   
     };
@@ -187,7 +210,7 @@ class Landing extends React.Component {
    
    
   render() {
-    const {loading}=this.state;
+    const {loading ,text }=this.state;
     if(this.state.loading==true){
       setTimeout(()=>{
         this.setState({loading :false})
@@ -199,7 +222,7 @@ class Landing extends React.Component {
       <>
     
      
-     <SwipeableViews  disabled={this.state.visibles} enableMouseEvents>
+     <SwipeableViews className="hero"  disabled={this.state.visibles} enableMouseEvents>
       <div onSwitching= {() => this.handleChangeIndex()}> 
          <div className={(this.state.visibles===true ? 'landing2' :'landing')} >
             <div className="hdiv-1"></div>
@@ -233,9 +256,50 @@ class Landing extends React.Component {
                         education and profession
                         </p>
                 
-    <button  className="btn btn-primary " onClick={this.visible}>
-     Learn More
-    </button>
+  
+          <button className="button-upload btn btn-primary m-1" onClick={this.visible}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36.089"
+    height="34.388"
+    className="button-upload__logo"
+    viewBox="0 0 36.089 34.388"
+  >
+    <g
+      transform="translate(22.577) rotate(49)"
+      className="button-upload__logo--complete"
+    >
+      <g
+        transform="translate(5.976 28.664)"
+        className="button-upload__logo--trails"
+      >
+        <path
+          d="M153.97,738.46l1.692.055v6.115l-1.692-1.147"
+          transform="translate(-153.97 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M337.1,738.46l-1.692.055v6.115l1.692-1.147"
+          transform="translate(-328.367 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M243.98,738.46h1.692V747l-.846.939-.846-.971"
+          transform="translate(-240.486 -738.46)"
+          fill="#fafafa"
+        />
+      </g>
+      <g className="button-upload__logo--rocket">
+        <path
+          d="M19.627,21.9l-2.95-2.95A28.11,28.11,0,0,0,10.3,0,28.1,28.1,0,0,0,3.923,18.952L.973,21.9s-1.454,4.092-.8,6.822l4.393-4.378q.074.358.155.721H5.7l.981.979h3.606l.017-.979.017.979h3.605l.979-.979h.979q.083-.363.155-.721l4.393,4.378C21.082,25.994,19.627,21.9,19.627,21.9Zm-9.3-2.65a2.7,2.7,0,1,1,2.7-2.7A2.7,2.7,0,0,1,10.323,19.252Z"
+          transform="translate(-0.002 0)"
+          fill="#fafafa"
+        />
+      </g>
+    </g>
+  </svg>
+  <span className="button-upload__text">{this.state.text} </span>
+</button>
 
 
                     </div>
@@ -244,7 +308,7 @@ class Landing extends React.Component {
             </div>
             {this.state.visibles===true && <Homesub/>}
       </div>  
-      <div  >
+      <div>
          <div className={(this.state.avisibles===true ? 'landing2' :'landing')}>
         <div className="div-1"></div>
         <div className="div-2"></div>
@@ -257,14 +321,52 @@ class Landing extends React.Component {
                 <img src={about_img6} alt="s" className="simgr img6"/>
                 <img src={about_img7} alt="s" className="simgr img7"/> 
         </div>
+        
         <div className="div-4">
             <h1 className="about_heading"><b>About</b></h1>
-            
         </div>
-        <div className="sdiv-3 buttons buttonsa">
-              <button className="btn btn-primary mt-7" onClick={this.avisible}>
-                        Learn More
-                      </button>
+        <div className="sdiv-3 buttons buttonsa">        
+       <button className="button-upload about_button btn btn-primary mt-7" onClick={this.avisible}>
+               <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36.089"
+    height="34.388"
+    className="button-upload__logo"
+    viewBox="0 0 36.089 34.388"
+  >
+    <g
+      transform="translate(22.577) rotate(49)"
+      className="button-upload__logo--complete">
+      <g
+        transform="translate(5.976 28.664)"
+        className="button-upload__logo--trails"
+      >
+        <path
+          d="M153.97,738.46l1.692.055v6.115l-1.692-1.147"
+          transform="translate(-153.97 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M337.1,738.46l-1.692.055v6.115l1.692-1.147"
+          transform="translate(-328.367 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M243.98,738.46h1.692V747l-.846.939-.846-.971"
+          transform="translate(-240.486 -738.46)"
+          fill="#fafafa"
+        />
+      </g>
+      <g className="button-upload__logo--rocket">
+        <path
+          d="M19.627,21.9l-2.95-2.95A28.11,28.11,0,0,0,10.3,0,28.1,28.1,0,0,0,3.923,18.952L.973,21.9s-1.454,4.092-.8,6.822l4.393-4.378q.074.358.155.721H5.7l.981.979h3.606l.017-.979.017.979h3.605l.979-.979h.979q.083-.363.155-.721l4.393,4.378C21.082,25.994,19.627,21.9,19.627,21.9Zm-9.3-2.65a2.7,2.7,0,1,1,2.7-2.7A2.7,2.7,0,0,1,10.323,19.252Z"
+          transform="translate(-0.002 0)"
+          fill="#fafafa"
+        />
+      </g>
+    </g>
+  </svg>{this.state.text}
+                </button>
             </div>
     </div>
     {this.state.avisibles===true &&  <Abouts/>}
@@ -288,9 +390,48 @@ class Landing extends React.Component {
                <h1 className="skills_heading"><b>Skill Development</b></h1>
               
             </div>
-            <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.svisible}>
-                Learn More
+            <div className="sdiv-3 buttons " >
+              <button className="button-upload skill_button btn btn-primary mt-7"  onClick={this.svisible}>
+               <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36.089"
+    height="34.388"
+    className="button-upload__logo"
+    viewBox="0 0 36.089 34.388"
+  >
+    <g
+      transform="translate(22.577) rotate(49)"
+      className="button-upload__logo--complete"
+    >
+      <g
+        transform="translate(5.976 28.664)"
+        className="button-upload__logo--trails"
+      >
+        <path
+          d="M153.97,738.46l1.692.055v6.115l-1.692-1.147"
+          transform="translate(-153.97 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M337.1,738.46l-1.692.055v6.115l1.692-1.147"
+          transform="translate(-328.367 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M243.98,738.46h1.692V747l-.846.939-.846-.971"
+          transform="translate(-240.486 -738.46)"
+          fill="#fafafa"
+        />
+      </g>
+      <g className="button-upload__logo--rocket">
+        <path
+          d="M19.627,21.9l-2.95-2.95A28.11,28.11,0,0,0,10.3,0,28.1,28.1,0,0,0,3.923,18.952L.973,21.9s-1.454,4.092-.8,6.822l4.393-4.378q.074.358.155.721H5.7l.981.979h3.606l.017-.979.017.979h3.605l.979-.979h.979q.083-.363.155-.721l4.393,4.378C21.082,25.994,19.627,21.9,19.627,21.9Zm-9.3-2.65a2.7,2.7,0,1,1,2.7-2.7A2.7,2.7,0,0,1,10.323,19.252Z"
+          transform="translate(-0.002 0)"
+          fill="#fafafa"
+        />
+      </g>
+    </g>
+  </svg>{this.state.text}
                 </button>
             </div>
 
@@ -314,9 +455,51 @@ class Landing extends React.Component {
                
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.lvisible}>
-                        Learn More
-                      </button>
+              
+
+                       <button className="button-upload be_button btn btn-primary mt-5" onClick={this.lvisible}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36.089"
+    height="34.388"
+    className="button-upload__logo"
+    viewBox="0 0 36.089 34.388"
+  >
+    <g
+      transform="translate(22.577) rotate(49)"
+      className="button-upload__logo--complete"
+    >
+      <g
+        transform="translate(5.976 28.664)"
+        className="button-upload__logo--trails"
+      >
+        <path
+          d="M153.97,738.46l1.692.055v6.115l-1.692-1.147"
+          transform="translate(-153.97 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M337.1,738.46l-1.692.055v6.115l1.692-1.147"
+          transform="translate(-328.367 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M243.98,738.46h1.692V747l-.846.939-.846-.971"
+          transform="translate(-240.486 -738.46)"
+          fill="#fafafa"
+        />
+      </g>
+      <g className="button-upload__logo--rocket">
+        <path
+          d="M19.627,21.9l-2.95-2.95A28.11,28.11,0,0,0,10.3,0,28.1,28.1,0,0,0,3.923,18.952L.973,21.9s-1.454,4.092-.8,6.822l4.393-4.378q.074.358.155.721H5.7l.981.979h3.606l.017-.979.017.979h3.605l.979-.979h.979q.083-.363.155-.721l4.393,4.378C21.082,25.994,19.627,21.9,19.627,21.9Zm-9.3-2.65a2.7,2.7,0,1,1,2.7-2.7A2.7,2.7,0,0,1,10.323,19.252Z"
+          transform="translate(-0.002 0)"
+          fill="#fafafa"
+        />
+      </g>
+    </g>
+  </svg>
+  <span className="button-upload__text">{this.state.text} </span>
+</button>
             </div>
         </div>
          {this.state.lvisibles===true && <Login/>}
@@ -339,9 +522,47 @@ class Landing extends React.Component {
              
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.dvisible}>
-                        Learn More
-                      </button>
+              <button className="button-upload btn btn-primary mt-7" onClick={this.dvisible}>
+               <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36.089"
+    height="34.388"
+    className="button-upload__logo"
+    viewBox="0 0 36.089 34.388"
+  >
+    <g
+      transform="translate(22.577) rotate(49)"
+      className="button-upload__logo--complete">
+      <g
+        transform="translate(5.976 28.664)"
+        className="button-upload__logo--trails"
+      >
+        <path
+          d="M153.97,738.46l1.692.055v6.115l-1.692-1.147"
+          transform="translate(-153.97 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M337.1,738.46l-1.692.055v6.115l1.692-1.147"
+          transform="translate(-328.367 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M243.98,738.46h1.692V747l-.846.939-.846-.971"
+          transform="translate(-240.486 -738.46)"
+          fill="#fafafa"
+        />
+      </g>
+      <g className="button-upload__logo--rocket">
+        <path
+          d="M19.627,21.9l-2.95-2.95A28.11,28.11,0,0,0,10.3,0,28.1,28.1,0,0,0,3.923,18.952L.973,21.9s-1.454,4.092-.8,6.822l4.393-4.378q.074.358.155.721H5.7l.981.979h3.606l.017-.979.017.979h3.605l.979-.979h.979q.083-.363.155-.721l4.393,4.378C21.082,25.994,19.627,21.9,19.627,21.9Zm-9.3-2.65a2.7,2.7,0,1,1,2.7-2.7A2.7,2.7,0,0,1,10.323,19.252Z"
+          transform="translate(-0.002 0)"
+          fill="#fafafa"
+        />
+      </g>
+    </g>
+  </svg>{this.state.text}
+                </button>
             </div>
         </div>
         {this.state.dvisibles===true && <Donates/>}
@@ -359,15 +580,61 @@ class Landing extends React.Component {
             <h1 className="heading"><b>Contact</b></h1>
           </div>
           <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.cvisible}>
-                Learn More
+                <button className="button-upload btn btn-primary mt-7"  onClick={this.cvisible}>
+               <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="36.089"
+    height="34.388"
+    className="button-upload__logo"
+    viewBox="0 0 36.089 34.388"
+  >
+    <g
+      transform="translate(22.577) rotate(49)"
+      className="button-upload__logo--complete">
+      <g
+        transform="translate(5.976 28.664)"
+        className="button-upload__logo--trails"
+      >
+        <path
+          d="M153.97,738.46l1.692.055v6.115l-1.692-1.147"
+          transform="translate(-153.97 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M337.1,738.46l-1.692.055v6.115l1.692-1.147"
+          transform="translate(-328.367 -738.46)"
+          fill="#fafafa"
+        />
+        <path
+          d="M243.98,738.46h1.692V747l-.846.939-.846-.971"
+          transform="translate(-240.486 -738.46)"
+          fill="#fafafa"
+        />
+      </g>
+      <g className="button-upload__logo--rocket">
+        <path
+          d="M19.627,21.9l-2.95-2.95A28.11,28.11,0,0,0,10.3,0,28.1,28.1,0,0,0,3.923,18.952L.973,21.9s-1.454,4.092-.8,6.822l4.393-4.378q.074.358.155.721H5.7l.981.979h3.606l.017-.979.017.979h3.605l.979-.979h.979q.083-.363.155-.721l4.393,4.378C21.082,25.994,19.627,21.9,19.627,21.9Zm-9.3-2.65a2.7,2.7,0,1,1,2.7-2.7A2.7,2.7,0,0,1,10.323,19.252Z"
+          transform="translate(-0.002 0)"
+          fill="#fafafa"
+        />
+      </g>
+    </g>
+  </svg>{this.state.text}
                 </button>
+
+
           </div>
         </div>
         {this.state.cvisibles === true && <Contacts />}
       </div>
     </SwipeableViews>
-
+    <div className="landscape-view">
+      <div className="phone">
+</div>
+<div className="message">
+  Please rotate your device!
+</div>
+    </div>
       </>
     );
   }
