@@ -1108,6 +1108,7 @@ body{
     transition: all 0.3s ease-in-out;
     border-radius: 15px;
     text-align: center;
+    z-index: 1;
     border-bottom: 3px solid #fff;
 }
 
@@ -1178,4 +1179,30 @@ body{
 .statergy-card:hover {
     transform: scale(1.05); 
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+}
+.screen{
+    height: 100vh;
+    padding-top: 30vh;
+    background: url('assets/img/landing/home/bg.png');
+    background-size: cover;
+}
+.quote_heading{
+    font-size:2.5rem !important;
+}
+.wave_div{
+    position: relative;
+}
+.quote_wave{
+    position: absolute;
+}
+.quote_lottie{
+    position: absolute;
+    left: 50%;
+}
+.borders{
+    background: url(assets/img/landing/donate/border.png);
+}
+.indexes{
+    z-index: 5;
+    padding-top: 50px;
 }

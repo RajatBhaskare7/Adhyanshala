@@ -11,8 +11,8 @@ function Home() {
 
     return (
         <>
-            <div>
-                <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
+            <div className="hero">
+                <div className="container"  data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
                     <div className="row mt-5">
                         <div className="col-md-2 mt-3">
                             <div className="feature-card text-center">
@@ -300,7 +300,7 @@ function Home() {
                                 </div>
                             </div>
                         </div>
-                </div>n
+                </div>
           
                 <img src={skillwavet} width="100%" style={{marginTop:"8rem"}} alt='img' />
             <div className="container-fluid" style={{ "background": "#000033" }} >
@@ -331,7 +331,7 @@ function Home() {
 </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h1>Web Development</h1>
+                                            <h2 className="heading2">Web Development</h2>
                                             <p>learn web development from our portal.</p>
                                         </div>
                                     </div>
@@ -347,7 +347,7 @@ function Home() {
 </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h1>Mathematics</h1>
+                                            <h2>Mathematics</h2>
                                             <p>Best of maths, available in your hands.</p>
                                         </div>
                                     </div>
@@ -364,7 +364,7 @@ function Home() {
 </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h1>Science</h1>
+                                            <h2>Science</h2>
                                             <p>learn the latest of science through the courses.</p>
                                         </div>
                                     </div>
@@ -382,7 +382,7 @@ function Home() {
                 <div className="container mt-5 mb-5">
                     <div className="row">
                         <div className="col-md-6" data-aos="fade-left">
-                            <div className="d-flex justify-content-center">
+                            <div className="align-middle justify-content-center">
                                 <img src={astro1} width="75%" alt="s" />
                             </div>
                         </div>
@@ -402,7 +402,7 @@ function Home() {
 </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h1>Artificial Intelligence</h1>
+                                            <h2>Artificial Intelligence</h2>
                                             <p> Use your intelligence to learn the artificial one.</p>
                                         </div>
                                     </div>
@@ -420,7 +420,7 @@ function Home() {
 </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h1> Designing</h1>
+                                            <h2> Designing</h2>
                                             <p> Learn graphic designing on adhyanshala for free.</p>
                                         </div>
                                     </div>
@@ -436,7 +436,7 @@ function Home() {
 </lord-icon>
                                         </div>
                                         <div className="text-center">
-                                            <h1>English</h1>
+                                            <h2>English</h2>
                                             <p>learn spoken English and flaunt it to everyone with confidence.</p>
                                         </div>
                                     </div>

@@ -1,10 +1,12 @@
-import React from "react";
+ import React from "react";
 // reactstrap components
 import "assets/css/contact.css";
 import img1 from "assets/img/landing/contact/contact-03.png"
 import img2 from "assets/img/landing/contact/contact-04.png"
 import img3 from "assets/img/landing/contact/contact-05.png"
 import Contacts from "./contact_elements.js";
+import Menu from './Menu.js';
+import Footer from './footer.js';
 class Home extends React.Component {
   state = {
     visibles: false,
@@ -12,15 +14,20 @@ class Home extends React.Component {
   }
   visible = () => {
     this.setState({
-      visibles: !this.state.visibles
+      visibles: !this.state.visibles 
     })
 
 
   }
+   componentDidMount(){
+        window.scrollTo(0,0);
+    }
   render() {
     return (
-      <>
-        <div className="landing">
+      <div >
+      <Menu/>
+
+        <div className="landing" className="hero">
           <div className="cdiv-1"></div>
           <div className="cdiv-2"></div>
           <div className="cdiv-3">
@@ -32,13 +39,19 @@ class Home extends React.Component {
             <h1 className="heading"><b>Contact</b></h1>
           </div>
           <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
-                Learn More
-                </button>
+              
           </div>
         </div>
-        {this.state.visibles === true && <Contacts />}
-      </>
+        {this.state.visibles === false && <Contacts />}
+        <Footer/>
+        <div className="landscape-view">
+      <div className="phone">
+</div>
+<div className="message">
+  Please rotate your device!
+</div>
+    </div>
+      </div>
     );
   }
 }

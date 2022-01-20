@@ -87,12 +87,12 @@ class Landing extends React.Component {
             
         });
         if(this.state.visibles==true){
-          this.props.history.push("/");
+          this.props.history.push("/home");
           this.setState({text:'Explore'});
           
         }
         else{
-          this.props.history.push("/");
+          this.props.history.push("/home");
           this.setState({text:'Return to Menu'});
         }
       
@@ -135,7 +135,7 @@ class Landing extends React.Component {
           
         }
         else{
-          this.props.history.push("/skilldevelopment");
+          this.props.history.push("/skills");
           this.setState({text:'Return to Menu'});
         }
                 
@@ -155,7 +155,7 @@ class Landing extends React.Component {
           
         }
         else{
-          this.props.history.push("/be_a_part");
+          this.props.history.push("/beapart");
           this.setState({text:'Return to Menu'});
         }
                  
@@ -176,7 +176,7 @@ class Landing extends React.Component {
           
         }
         else{
-          this.props.history.push("/Donation");
+          this.props.history.push("/donate");
           this.setState({text:'Return to Menu'});
         }
                   
@@ -196,7 +196,7 @@ class Landing extends React.Component {
           
         }
         else{
-          this.props.history.push("/Contactus");
+          this.props.history.push("/contact");
           this.setState({text:'Return to Menu'});
         }
                   
@@ -304,11 +304,13 @@ class Landing extends React.Component {
 
                     </div>
                 </div>
+
             </div>
+
             </div>
             {this.state.visibles===true && <Homesub/>}
       </div>  
-      <div>
+      <div style={{overflow:'hidden'}}>
          <div className={(this.state.avisibles===true ? 'landing2' :'landing')}>
         <div className="div-1"></div>
         <div className="div-2"></div>
@@ -451,7 +453,7 @@ class Landing extends React.Component {
                 <img src={be_img6} alt="s" className="imgr limg6"/>              
             </div>
             <div className="ldiv-4">
-               <h1 className="be_heading"><b>Be A Part</b></h1>
+               <h1 className="be_heading beapart_heading"><b>Be A Part</b></h1>
                
             </div>
             <div className="sdiv-3 buttons">

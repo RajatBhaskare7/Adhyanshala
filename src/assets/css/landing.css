@@ -13,6 +13,7 @@
     width: 100%;
     position: relative;
     overflow:hidden;
+     z-index: 7;
 }
 .landing_donate{
   height: 130vh;
@@ -330,12 +331,12 @@
 .landscape-view{
   display: none;
 }
-@media only screen and (max-device-width: 812px) and (orientation: landscape) {
+@media only screen and (max-device-width: 812px) and (max-device-height: 400px) and (orientation: landscape) {
   
   .landscape-view{
     display: flex;
   }
-  .hero{display: none}
+  .hero{display: none;}
 }
 @media only screen  and (orientation: portrait){
   .landscape-view{

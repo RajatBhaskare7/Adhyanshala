@@ -9,6 +9,8 @@ import img5 from 'assets/img/landing/skill/skill development-07.png';
 import img6 from 'assets/img/landing/skill/skill development-08.png';
 import img7 from 'assets/img/landing/skill/skill development-09.png';
 import Skills from './skill_elements.js'
+import Menu from './Menu.js';
+import Footer from './footer.js';
 class Home extends React.Component {
    state ={
         visibles:false,
@@ -17,14 +19,27 @@ class Home extends React.Component {
     visible = () =>{
         this.setState({
             visibles:!this.state.visibles
-        })
+        });
+        if(this.state.visibles==true){
+          this.props.history.push("/");
+           
+          
+        }
+        else{
+          this.props.history.push("/");
+         };
         
+    }
+    componentDidMount(){
+        window.scrollTo(0,0);
     }
   render() {
   
     return (
       <>
-       <div className="landing">
+      <Menu/>
+
+       <div className="landing" className="hero" >
             <div className="sdiv-1"></div>
             <div className="sdiv-2"></div>
             <div className="sdiv-3">
@@ -41,13 +56,19 @@ class Home extends React.Component {
               
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
-                Learn More
-                </button>
+            
             </div>
 
         </div>
-        {this.state.visibles===true && <Skills/>}
+        {this.state.visibles===false && <Skills/>}
+        <Footer/>
+        <div className="landscape-view">
+      <div className="phone">
+</div>
+<div className="message">
+  Please rotate your device!
+</div>
+    </div>
       </>
     );
   }

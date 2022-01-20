@@ -30,19 +30,19 @@ import About from "layouts/About.js";
 import Skills from "layouts/Skills.js";
 import Donate from "layouts/Donate.js";
 import Landing from "layouts/Landing.js";
-import Contact from "layouts/loader.js";
+import Contact from "layouts/Contact.js";
 import Beapart from "layouts/Beapart.js";
-import Demo from "layouts/home_elements.js";
+import Demo from "layouts/loader.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
+      <Route path="/admin" exact render={(props) => <AdminLayout {...props} />} />
       <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
-      
+      <Route path="/about" render={(props)=> <About {...props}/>}/>
       <Route path="/contact" render={(props) => <Contact {...props} />} />
       <Route path="/donate" render={(props) => <Donate {...props} />} />
       <Route path="/skills" render={(props) => <Skills {...props} />} />
-      <Route path="/home" render={(props) => <Home {...props} />} />
+      <Route path="/home"  render={(props) => <Home {...props} />} />
       <Route path="/beapart" render={(props) => <Beapart {...props} />} />
       <Route path="/" render={props => <Landing {...props} />} />
       <Route path="/demo" render={(props) => <Demo {...props}/> }/>

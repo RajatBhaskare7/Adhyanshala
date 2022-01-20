@@ -16,6 +16,7 @@ body{
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
+   
 
 }
 
@@ -218,6 +219,10 @@ body{
     .div-2{
         background-image: url("assets/img/landing/about/About_Mobile-02.png");
     }
+    .about_heading{
+        text-shadow: 0px 3px 0px #1678a5, 0px 10px 10px rgb(0 0 0 / 15%), 0px 6px 2px rgb(0 0 0 / 10%), 0px 24px 30px rgb(0 0 0 / 10%);
+        color: #ffff;
+    }
     .about_button{
     margin-top: 10em !important;
 
@@ -375,6 +380,10 @@ body{
     .div-2{
         background-image: url("assets/img/landing/about/Iphone_about-02.png");
     }
+    .about_heading{
+        text-shadow: 0px 3px 0px #1678a5, 0px 10px 10px rgb(0 0 0 / 15%), 0px 6px 2px rgb(0 0 0 / 10%), 0px 24px 30px rgb(0 0 0 / 10%);
+        color: #ffff;
+    }
     .about_button{
     margin-top: 11em !important;
     margin-left: 4em !important;
@@ -515,6 +524,6 @@ body{
 }
 }
 .buttonsa{
-
+    z-index: 5;
     transform: translate(-30px,10px);
 }

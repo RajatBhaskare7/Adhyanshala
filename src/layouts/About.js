@@ -9,9 +9,13 @@ import img6 from 'assets/img/landing/about/About_Landing-14.png';
 import img7 from 'assets/img/landing/about/About_Landing-15.png';
 import Abouts from './about_elements.js';
 import "assets/css/about.css";
+import "assets/css/landing.css"
+import Menu from './Menu.js';
+import Footer from './footer.js';
 class Home extends React.Component {
-  
+
   state ={
+
         visibles:false,
         
     }
@@ -22,12 +26,15 @@ class Home extends React.Component {
         
     }
 
-
+ componentDidMount(){
+        window.scrollTo(0,0);
+    }
   render() {
   
     return (
-      <>
-        <div className="landing">
+      <>  
+        <Menu/>
+         <div id="abouts" className={(this.state.visibles===false ? 'landing2' :'landing')} className="hero">
         <div className="div-1"></div>
         <div className="div-2"></div>
         <div className="div-3">
@@ -44,12 +51,18 @@ class Home extends React.Component {
             
         </div>
         <div className="sdiv-3 buttons buttonsa">
-              <button className="btn btn-primary mt-7" onClick={this.visible}>
-                        Learn More
-                      </button>
             </div>
     </div>
-    {this.state.visibles===true && <Abouts/>}
+    {this.state.visibles===false && <Abouts/>}
+    <Footer/>
+    <div className="landscape-view">
+      <div className="phone">
+</div>
+<div className="message">
+  Please rotate your device!
+</div>
+    </div>
+    
       </>
     );
   }

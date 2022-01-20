@@ -81,7 +81,7 @@ class Landing extends React.Component {
       })
       .then(() => {
         alert("Done Successfully!");
-        window.location.href = "/";
+        window.location.href = "/donate";
       });
   };
 
@@ -113,7 +113,7 @@ class Landing extends React.Component {
   render() {
     
     return (
-      <>
+      <div  className="hero">
     {/*  <div className="wave_landing">
           <div className="donate_waves"></div>
           <div className="donate_waves2"></div>
@@ -268,24 +268,20 @@ class Landing extends React.Component {
       </Col>
       </div>
       <img src={donatewavet} width="100%" alt="" />
-             <div className="container-fluid" style={{ "background": "#000033" }} >
-                <div className="row ">
-                    <div className="col-md-5 mt-7" >
-                        <div className="d-flex justify-content-center align-middle">
-                            <img src={astro2}  alt='img' />
-                        </div>
-                    </div>
-                    <div className="col-md-6 mt-9">
-                        <p className="mt-7   px-sm-3 p-md-0 ">
-                           Adhyanshala will allow all students to learn new skills and become more productive individuals and job-ready. We will have a lot of specially curated courses from global teachers which the students will be able to access anywhere, anytime. These courses will mainly be catered to anyone wanting to learn, we will also try in the future for multilingual courses to cater to a wider crowd.
+             
+                <div className="container-fluid" style={{ "background": "#000033" }} >
+                <div className="row">
+                    <div className="col-12" >
+                        <p className="text-center  text-white" style={{fontSize:'22px'}}>
+                           Adhyanshala will allow all students to learn new skills and become more productive individuals and job-ready.<br/> We will have a lot of specially curated courses from global teachers which the students will be able to access anywhere, anytime.<br/> These courses will mainly be catered to anyone wanting to learn, we will also try in the future for multilingual courses to cater to a wider crowd.
                         </p>
                        
 
                     </div>
+
                 </div>
 
-            </div> 
-        
+            </div>
             <img src={donatewaveb} width="100%" alt='img' />
             <div className="container" data-aos="zoom-in" >
                 <div className="main-text section-title mb-5 text-center" data-aos="fade-up" data-aos-delay="0.1s">
@@ -364,7 +360,7 @@ class Landing extends React.Component {
 
                 </div>
 
-      </>
+      </div>
     );
   }
 }

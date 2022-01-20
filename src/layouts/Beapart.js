@@ -8,10 +8,15 @@ import img4 from 'assets/img/landing/Beapart/login register-06.png';
 import img5 from 'assets/img/landing/Beapart/login register-07.png';
 import img6 from 'assets/img/landing/Beapart/login register-08.png';
 import Login from './login_element.js';
+import Menu from './Menu.js';
+import Footer from './footer.js';
 class Home extends React.Component {
    state ={
         visibles:false,
         
+    }
+     componentDidMount(){
+        window.scrollTo(0,0);
     }
     visible = () =>{
         this.setState({
@@ -24,7 +29,9 @@ class Home extends React.Component {
   
     return (
       <>
-       <div className="landing">
+      <Menu/>
+
+       <div className="landing" className="hero">
             <div className="ldiv-1"></div>
             <div className="ldiv-2"></div>
             <div className="ldiv-3">
@@ -40,12 +47,19 @@ class Home extends React.Component {
                
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary " onClick={this.visible}>
-                 View More
-                </button>
+              
             </div>
         </div>
-         {this.state.visibles===true && <Login/>}
+         {this.state.visibles===false && <Login/>}
+         <Footer/>
+
+         <div className="landscape-view">
+      <div className="phone">
+</div>
+<div className="message">
+  Please rotate your device!
+</div>
+    </div>
       </>
     );
   }

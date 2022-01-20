@@ -22,19 +22,19 @@ import {
   Col,
 } from "reactstrap";
 
-import border from 'assets/img/landing/donate/border.png';
+import border from 'assets/img/landing/donate/donate border.png';
 function Login() {
   return (
-    <>
-<div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
+    <div className="hero">
+<div className="container"  data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black" style={{ fontSize:'40px'}}>What we Serve? </h1>
                    
                 </div>
                 <div className="row mt-5">
                     <div className="col-md-5">
-                        <div className="d-flex justify-content-center align-middle">
-                            <img src={why_astro} width="73%" alt='img' />
+                        <div className="justify-content-center align-middle">
+                            <img src={why_astro} width="95%" alt='img' />
                         </div>
                     </div>
                     <div className="col-md-7">
@@ -208,14 +208,14 @@ function Login() {
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
-                        <h1 className="text-white text-center">"Education is not about soving problems it about opportunities to learn more."</h1>
+                        <h1 className="text-white quote_heading text-center">"Education is not about solving problems it about opportunities to learn more."</h1>
                         
                     </div>
                 </div>
 
             </div>
             <img src={beapartwaveb} width="100%" className="mb-5" alt='img' />
-            <Col lg="5" md="7" className="center" style={{ marginTop: "8rem" }}>
+            <Col lg="5" md="7" className="center" style={{ marginBottom: "8rem" }}>
         <Card className="bg-secondary shadow border-0">
           <img className="imgs" src={border} style={{ borderRadius: '20px', }} alt="" />
           <CardHeader className="bg-transparent pb-5">
@@ -225,7 +225,7 @@ function Login() {
           </CardHeader>
           <CardBody className="px-lg-5 py-lg-5">
 
-            <Form role="form">
+            <Form role="form" className="mb-5">
               <FormGroup className="mb-3">
                 <InputGroup className="input-group-alternative">
                   <InputGroupAddon addonType="prepend">
@@ -275,28 +275,9 @@ function Login() {
             </Form>
           </CardBody>
         </Card>
-        <Row className="mt-3">
-          <Col xs="6">
-            <a
-              className="text-light"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
-            >
-              <small>Forgot password?</small>
-            </a>
-          </Col>
-          <Col className="text-right" xs="6">
-            <a
-              className="text-light"
-              href="#pablo"
-              onClick={(e) => e.preventDefault()}
-            >
-              <small>Create new account</small>
-            </a>
-          </Col>
-        </Row>
+        
       </Col>
-    </>
+    </div>
   );
 }
 

@@ -5,10 +5,11 @@ import homewaveb from 'assets/img/landing/home/waves/homewavebtm.png'
 import 'assets/css/landing.css'
 import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
+import border from 'assets/img/landing/donate/border.png';
 export default function main() {
 
     return (
-        <div>
+        <div className="hero">
             {/* Section-1 */}
             <div className="container" data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
@@ -190,16 +191,20 @@ export default function main() {
             </div>
 `           {/* wave secrion-3 */}
             <img src={homewavet} width="100%" className="mt-5" alt='img' />
-            <div className="container-fluid" style={{ "background": "#000033" }} >
+            <div className="container-fluid " style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
-                        <h1 class="text-white text-center" >"Education is not the learning of facts, but the training of the mind to think"</h1>
+                        <h1 className="text-white text-center quote_heading" >"Education is not the learning of facts,<br/> but the training of the mind to think"</h1>
                     </div>
                 </div>
 
             </div>
-            <img src={homewaveb} width="100%" className="mb-5" alt='img' />
-            <div className="container" style={{marginTop: '5.5rem'}}>
+        
+            <img src={homewaveb} width="100%" alt='img' />
+           
+
+          
+            <div className="container" style={{marginTop: '20.5em '}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
                     <h1 className="text-black">What we do?</h1>
                     <p className="mt-1">We intend to change the present based on the future</p>
@@ -249,20 +254,21 @@ export default function main() {
                 </div>
             </div>
 
-            <div className="container" style={{marginTop: '4rem'}}>
+            <div className="container" style={{marginTop: '4rem',marginBottom:'4rem'}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
                     
                 </div>
                 <div className="row justify-content-center points" data-aos="zoom-in">
-                    <div className="col-md-6 col-lg-6 d-flex align-items" data-aos="zoom-in" data-aos-delay="100">
-                        <div className="icon-box">
+                    <div className="col-md-6 col-lg-6  d-flex align-items">
+                        <div className="icon-box ">
+
                                  <lord-icon
                                     src="https://cdn.lordicon.com/jvucoldz.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                        
+                                
                             <h3 className="title">Our Mission</h3>
                             <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
                             </p>

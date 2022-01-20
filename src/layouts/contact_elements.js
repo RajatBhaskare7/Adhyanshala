@@ -14,8 +14,9 @@ import {
    
     Col,
 } from "reactstrap";
-
-import border from './../assets/img/landing/donate/border.png';
+import contactwavet from 'assets/img/landing/home/waves/contactwavetop.png'
+import contactwaveb from 'assets/img/landing/home/waves/contactwavebtm.png'
+import border from './../assets/img/landing/donate/donate border.png';
 import "assets/css/contact.css";
 
 import firebase from "../config/firebase-ad.js";
@@ -51,7 +52,7 @@ class Home extends React.Component {
       },
     }).then(() => {
         alert("Done Successfully!");
-        window.location.href = "/";
+        window.location.href = "/contact";
       });
   };
   handleName = (e) => {
@@ -70,17 +71,17 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <>
-        <div className="d-flex align-item-center justify-content-center" >
+      <div className="hero" >
+        <div className="d-flex mb-3 align-item-center justify-content-center" >
        <Col className="mt-5 "  lg ="6" md="8">
         <Card className="bg-secondary shadow border-0" >
 
           <img className="imgs" src={border}  style={{borderRadius:'20px',}} alt="not able to load"/>
           <CardBody className="px-lg-5 py-lg-5">
             <div className="text-center text-muted mb-5">
-              <p style={{fontSize:'27px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Contact Form</p>
+              <h2 style={{fontSize:'40px',fontWeight:'600',paddingTop:'20px',color:'#000033'}}>Contact Form</h2>
             </div>
-            <Form role="form"  onSubmit={this.handleSubmit}>
+            <Form role="form" className="mt-7"  onSubmit={this.handleSubmit}>
               <FormGroup>
                 <InputGroup className="input-group-alternative mb-3">
                   <InputGroupAddon addonType="prepend">
@@ -152,7 +153,19 @@ class Home extends React.Component {
         </Card>
       </Col>
       </div>
-      </>
+      {/* wave secrion-3 */}
+            <img src={contactwavet} width="100%" className="mt-5" alt='img' />
+            <div className="container-fluid " style={{ "background": "#000033" }} >
+                <div className="row">
+                    <div className="col-12">
+                        <h1 className="text-white text-center quote_heading" >" Develop a passion for learning.If you do, you will never cease to grow."</h1>
+                    </div>
+                </div>
+
+            </div>
+        
+            <img src={contactwaveb} width="100%" alt='img' />
+      </div>
     );
   }
 }

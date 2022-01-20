@@ -6,6 +6,8 @@ import img4 from 'assets/img/landing/donate/donate-06.png';
 import img5 from 'assets/img/landing/donate/donate-07.png';
 import Donates from './donate_elements.js';
 import 'assets/css/donate.css';
+import Menu from './Menu.js';
+import Footer from './footer.js';
 // reactstrap components
 class Home extends React.Component {
   
@@ -20,14 +22,17 @@ class Home extends React.Component {
         
     }
 
-
+ componentDidMount(){
+        window.scrollTo(0,0);
+    }
   render() {
   
     return (
       <>
-       <div className="landing">
-            <div className="ddiv-1"></div>
-            <div className="ddiv-2"></div>
+      <Menu/>
+      <div  className={(this.state.visibles===false ? 'landing2' :'landing')} className="hero">
+            <div className={(this.state.visibles===false ? 'ddiv-11' :'ddiv-1')}></div>
+            <div className={(this.state.visibles===false ? 'ddiv-22' :'ddiv-2')}></div>
             <div className="ddiv-3">
                 <img src={img1} className="dimgr dimg1" alt="img1"/>
                 <img src={img2} className="dimgr dimg2" alt="img2" />
@@ -42,12 +47,18 @@ class Home extends React.Component {
              
             </div>
             <div className="sdiv-3 buttons">
-              <button className="btn btn-primary mt-5" onClick={this.visible}>
-                        Learn More
-                      </button>
+              
             </div>
         </div>
-        {this.state.visibles===true && <Donates/>}
+        {this.state.visibles===false && <Donates/>}
+        <Footer/>
+        <div className="landscape-view">
+      <div className="phone">
+</div>
+<div className="message">
+  Please rotate your device!
+</div>
+    </div>
       </>
     );
   }

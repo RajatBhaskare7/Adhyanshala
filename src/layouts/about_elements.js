@@ -6,8 +6,8 @@ import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
 
 export default function page() {
     return (
-        <div>
-            <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
+        <div className="hero">
+            <div className="container"   style={{ marginTop: '3.5rem' }}>
                 <div className="main-text section-title mt-5  text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black" style={{ fontSize: '60px' }}>About Us</h1>
 
@@ -130,7 +130,7 @@ export default function page() {
                     </div>
                 </div>
             </section>
-            <div className="container" data-aos="zoom-in" style={{ marginTop: '3.5rem' }}>
+            <div className="container"  style={{ marginTop: '3.5rem' }}>
                 <div className="main-text section-title mt-5 mb-3 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black">What we do </h1>
                     <p className="mt-1">
