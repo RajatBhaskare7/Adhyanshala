@@ -377,7 +377,14 @@ body{
 
      }
      
+     .swipe{
+        transform: translateX(-64%);
+     }
+     .swipe h2{
+        color: #fff ;
      
+
+     }
 .himg1{
     position: absolute;
     top:5%;

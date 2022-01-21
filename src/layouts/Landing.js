@@ -208,7 +208,7 @@ class Landing extends React.Component {
     })
   }
    
-   
+
   render() {
     const {loading ,text }=this.state;
     if(this.state.loading==true){
@@ -298,14 +298,16 @@ class Landing extends React.Component {
       </g>
     </g>
   </svg>
-  <span className="button-upload__text">{this.state.text} </span>
+  <span className="button-upload__text">{this.state.text}  </span>
 </button>
-
 
                     </div>
                 </div>
-
-            </div>
+                 <div className="swipe text-center" style={{color:'#000',float:'right',padding:'10px'}} >
+<h2>Swipe for more<br/>
+<i className="fa fa-hand-point-right text-center" ></i></h2>
+</div>
+            </div>  
 
             </div>
             {this.state.visibles===true && <Homesub/>}

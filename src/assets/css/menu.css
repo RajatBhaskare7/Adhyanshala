@@ -91,6 +91,9 @@ h1 {
   background: #cccccc;
   color: #000033;
 }
+.menu-item span{
+  font-size: 15px;
+}
 .menu-item:nth-child(3) {
   transition-duration: 180ms;
 }
@@ -166,6 +169,12 @@ h1 {
   .menu{
     left: 30%;
     top: 80%;
+  }
+  .menu-item span{
+    font-size: 10px;
+  }
+  .menu-item i{
+    font-size: 14px;
   }
   .hamburger{
     width: 15px;

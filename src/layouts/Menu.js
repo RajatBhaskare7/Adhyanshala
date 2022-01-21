@@ -25,18 +25,18 @@ class Landing extends React.Component {
     <span className="hamburger hamburger-3"></span>
   </label>
   
-  <Link to="/" className="menu-item">  <i className="fa fa-bars"> </i> </Link>
-  <Link to="/home"  className="menu-item"> <i  className="fa fa-home"></i> </Link>
-  <Link to="/about" className="menu-item"> <i className="fa fa-tools"></i> </Link>
+  <Link to="/" className="menu-item">  <i className="fa fa-bars"> <span>Slider</span></i> </Link>
+  <Link to="/home"  className="menu-item"> <i  className="fa fa-home"> <span>Home</span></i> </Link>
+  <Link to="/about" className="menu-item"> <i className="fa fa-tools"> <span>About</span></i> </Link>
   
-  <Link to="/beapart" className="menu-item"> <i className="fa fa-file-signature"></i> </Link>
-  <Link to="/donate" className="menu-item"> <i className="fa fa-donate"></i> </Link>
+  <Link to="/beapart" className="menu-item"> <i className="fa fa-file-signature"> <span>Beapart</span> </i> </Link>
+  <Link to="/donate" className="menu-item"> <i className="fa fa-donate"> <span>Donate</span></i> </Link>
 
-  <Link to="/contact" className="menu-item"> <i className="fa fa-mail-bulk"></i> </Link>
+  <Link to="/contact" className="menu-item"> <i className="fa fa-mail-bulk"> <span>Contact</span></i> </Link>
  
  
 
- <Link to="/skills" className="menu-item"> <i className="fab fa-accusoft"></i> </Link>
+ <Link to="/skills" className="menu-item"> <i className="fab fa-accusoft">  <span>Skills</span></i> </Link>
 </nav>
 
 
