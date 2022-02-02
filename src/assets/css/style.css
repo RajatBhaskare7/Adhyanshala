@@ -1192,6 +1192,7 @@ body{
     padding-top: 30vh;
     background: url('assets/img/landing/home/bg.png');
     background-size: cover;
+    background-position: center;
 }
 .quote_heading{
     font-size:2.5rem !important;

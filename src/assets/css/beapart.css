@@ -324,7 +324,7 @@ body{
          background-image: url("assets/img/landing/Beapart/Login-Register_tab-02.png");
     }
     .beapart_heading{
-        transform: translateY(-50px);
+        transform: translateY(-30px);
     }
 }
 @media (max-width: 450px) {

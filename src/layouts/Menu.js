@@ -1,17 +1,10 @@
 
 import React from "react";
 
-import { Link, hashHistory } from 'react-router-dom';
-import Contact from './Donate.js';
+import { Link } from 'react-router-dom';
 import 'assets/css/menu.css';
-import border from 'assets/img/landing/donate/border.png';
-import About from './About.js';
-import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 class Landing extends React.Component {
-  constructor(props){
-    super(props);
-  }
-       
+      
   render(){
     
   return (

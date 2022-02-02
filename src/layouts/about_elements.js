@@ -37,7 +37,7 @@ export default function page() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                                <h3 className="title">Our Goal</h3>
+                                <h3 >Our Goal</h3>
                                 <p className="description">Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and latest technology.We strongly believe that education is the only way forward in life.
 </p>
                             </div>
@@ -50,7 +50,7 @@ export default function page() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                                <h3 className="title">Our Mission</h3>
+                                <h3>Our Mission</h3>
                                 <p className="description">India has the second largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.</p>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ export default function page() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                                <h3 className="title">Our Vision</h3>
+                                <h3 >Our Vision</h3>
                                 <p className="description">We are a tech-based learning platform to cater to the rural crowd of India.We cover everything including live online classes from the best instructors, the best handpicked online courses from all over the globe, a lot of tools for better accessibility of students.We do only one thing, we just teach, but we do it the best.
                                 </p>
                             </div>
@@ -75,7 +75,7 @@ export default function page() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                                <h3 className="title">Our Belief</h3>
+                                <h3 >Our Belief</h3>
                                 <p className="description">We at Adhyanshala have a very positive vision for the country as time passes. We have a vision that every single villager has access to fast internet and all kinds of global technology. That exposure to technology will increase the employability of 1 billion and that will surely make India a developed country in very little time.
                                 </p>
                             </div>

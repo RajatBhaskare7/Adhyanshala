@@ -1,9 +1,8 @@
 import 'assets/css/footer.css';
 import { Link } from 'react-router-dom';
-import footer_logo from 'assets/img/landing/home/adhyanshala_footer.png';
+import footer_logo from 'assets/img/landing/home/adhyanshala_footer_logo.png';
 const Contact = () =>{
 	return(
-
 		<div >
 			 <footer className="main-footer hero">
         <div className="container">
@@ -12,7 +11,7 @@ const Contact = () =>{
                     <div className="col-lg-4 col-md-6 col-sm-12 footer-column">
                         <div className="logo-widget footer-widget">
 
-                            <figure className="logo-box"><a href="#"><img src={footer_logo} alt="error"/></a></figure>
+                            <figure className="logo-box"><Link><img src={footer_logo} style={{height:'50%',width:'80%'}} alt="error"/></Link></figure>
                                 
                             <div className="text">
                                 <p> Adhyanshala is a complete online learning platform, which is specially curated for the rural population of our country. We provide everything, the best teachers, a lot of skill-based courses, an easy-to-use multilingual user interface, and much more.</p>
@@ -40,10 +39,10 @@ const Contact = () =>{
                             <div className="text">
                                 <p>adhyanshaladotin@gmail.com</p>
                                 <ul className="footer-social d-flex ">
-                                <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i className="fab fa-google-plus-g"></i></a></li>
+                                <li><Link><i className="fab fa-facebook-f"></i></Link></li>
+                                <li><Link><i className="fab fa-twitter"></i></Link></li>
+                                <li><Link><i className="fab fa-vimeo-v"></i></Link></li>
+                                <li><Link><i className="fab fa-google-plus-g"></i></Link></li>
                             </ul>
                             </div>
                         </div>
@@ -56,12 +55,12 @@ const Contact = () =>{
         <div className="container">
             <div className="row">
                 <div className="col-lg-6 col-md-6 col-sm-12 column" style={{float:'right'}}>
-                    <div className="copyright"><a href="#">Adhyanshala</a> &copy; 2019 All Right Reserved</div>
+                    <div className="copyright"><Link>Adhyanshala</Link> &copy; 2022 All Right Reserved</div>
                 </div>
                 <div className="col-lg-6 col-md-6 col-sm-12 column">
                     <ul className="footer-nav">
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><Link >Terms of Service</Link></li>
+                        <li><Link >Privacy Policy</Link></li>
                     </ul>
                 </div>
             </div>

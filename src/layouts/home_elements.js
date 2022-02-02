@@ -3,9 +3,6 @@ import homewavet from 'assets/img/landing/home/waves/homewavetop.png'
 import homewaveb from 'assets/img/landing/home/waves/homewavebtm.png'
 
 import 'assets/css/landing.css'
-import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
-import astronaut1 from 'assets/img/landing/home/laptop_ass-04.svg'
-import border from 'assets/img/landing/donate/border.png';
 export default function main() {
 
     return (
@@ -255,9 +252,7 @@ export default function main() {
             </div>
 
             <div className="container" style={{marginTop: '4rem',marginBottom:'4rem'}}>
-                <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
-                    
-                </div>
+                
                 <div className="row justify-content-center points" data-aos="zoom-in">
                     <div className="col-md-6 col-lg-6  d-flex align-items">
                         <div className="icon-box ">
@@ -269,7 +264,7 @@ export default function main() {
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
                                 
-                            <h3 className="title">Our Mission</h3>
+                            <h3 style={{ fontSize:'25px'}}>Our Mission</h3>
                             <p className="description">India has the second-largest population of just under 1.4 billion people, out of that about 1 billion people live in under-developed rural areas of our country. We at Adhyanshala believe that this is a gift in disguise for our country and if the rural youth is given proper education and exposure to technology then we can be the global leader in the manufacturing and services sector in no time.
                             </p>
                         </div>
@@ -282,7 +277,7 @@ export default function main() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                            <h3 className="title">Our Vision</h3>
+                            <h3 style={{ fontSize:'25px'}}>Our Vision</h3>
                             <p className="description"> We at Adhyanshala have a very positive vision for the country as time passes. We have a vision that every single villager has access to fast internet and to all kinds of global technology. That exposure to technology will definitely increase the employability of 1 billion and that will surely make India a developed country in very little time.
  </p>
                         </div>
@@ -297,7 +292,7 @@ export default function main() {
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>
                                 </lord-icon>
-                            <h3 className="title">Our Belief</h3>
+                            <h3 style={{ fontSize:'25px'}} >Our Belief</h3>
                             <p className="description">Adhyanshala literally translates to “House Of Education” and that’s exactly what we want to implement in all rural parts of our country. We want to make students feel at home with online education and the latest technology. We strongly believe that education is the only way forward in life.            </p>
                         </div>
                     </div>

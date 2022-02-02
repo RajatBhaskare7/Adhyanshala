@@ -332,7 +332,6 @@
   display: none;
 }
 @media only screen and (max-device-width: 812px) and (max-device-height: 400px) and (orientation: landscape) {
-  
   .landscape-view{
     display: flex;
   }

@@ -27,7 +27,7 @@ class Home extends React.Component {
       <div >
       <Menu/>
 
-        <div className="landing" className="hero">
+        <div className="landing hero">
           <div className="cdiv-1"></div>
           <div className="cdiv-2"></div>
           <div className="cdiv-3">

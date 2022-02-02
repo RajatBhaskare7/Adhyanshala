@@ -30,7 +30,7 @@ class Home extends React.Component {
     return (
       <>
       <Menu/>
-      <div  className={(this.state.visibles===false ? 'landing2' :'landing')} className="hero">
+      <div  className={(this.state.visibles===false ? 'landing2 hero' :'landing hero')} >
             <div className={(this.state.visibles===false ? 'ddiv-11' :'ddiv-1')}></div>
             <div className={(this.state.visibles===false ? 'ddiv-22' :'ddiv-2')}></div>
             <div className="ddiv-3">

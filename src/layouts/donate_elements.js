@@ -13,18 +13,13 @@ import {
    
     Col,
 } from "reactstrap";
-import astronaut from 'assets/img/landing/home/laptop_ass-04.svg'
 
 import border from './../assets/img/landing/donate/donate border.png';
-import astronaut1 from 'assets/img/landing/home/Be_A_Part-03.svg'
-import why_astro from 'assets/img/landing/home/astro-1.png';
-import astro2 from 'assets/img/landing/home/astro-2.png'
 import astronaut3 from 'assets/img/landing/home/Astronaut-05.png'
 import donatewavet from 'assets/img/landing/home/waves/donatewavetop.png'
 import donatewaveb from 'assets/img/landing/home/waves/donatewavebtm.png'
 import firebase from "../config/firebase-ad.js";
-
-import astro_donate from 'assets/img/landing/home/Astronaut-02.png'
+import astro_donate from 'assets/img/landing/home/Astronaut-02.png';
 class Landing extends React.Component {
   constructor(props) {
       super(props);

@@ -1,12 +1,9 @@
 import React from "react";
-import astronaut from 'assets/img/landing/home/Be_A_Part-03.svg'
 import astro3 from 'assets/img/landing/home/Astronaut-03.png';
-
 import why_astro from 'assets/img/landing/home/astro-1.png';
 import beapartwavet from 'assets/img/landing/home/waves/beapartwavetop.png'
 import beapartwaveb from 'assets/img/landing/home/waves/beapartwavebtm.png'
 
-// reactstrap components
 import {
   Button,
   Card,
@@ -18,7 +15,6 @@ import {
   InputGroupAddon,
   InputGroupText,
   InputGroup,
-  Row,
   Col,
 } from "reactstrap";
 
@@ -94,18 +90,18 @@ function Login() {
                 <lord-icon src="https://cdn.lordicon.com/imamsnbq.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Underprivileged student</h5>
+                <h3>Underprivileged<br/> student</h3>
                 <p>If you are willing to learn you can take benefit specially designed for underdeveloped students</p>
               </div>
             </div>
           </div>
           <div className="col-md-3">
-            <div className="statergy-card px-3 py-2 mt-5 mt-lg-0">
+            <div className="statergy-card px-3 py-2 mt-7 mt-lg-0">
               <div className="icon-box box-3 text-center">
                 <lord-icon src="https://cdn.lordicon.com/jqnthkou.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
                <div className="text-center">
-                <h5>NGOs/Non-profit Organization</h5>
+                <h3>NGOs/<br/>Non-profit <br/>Organization</h3>
                 <p> Adhyanshala will be obliged if you can help us for this noble cause.</p>
               </div>
               
@@ -117,7 +113,7 @@ function Login() {
                 <lord-icon src="https://cdn.lordicon.com/uqpazftn.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Private Organisations/Corporate Sector</h5>
+                <h3>Private Organisations/Corporate Sector</h3>
                 <p> Any sort of help regarding courses or resources for students is welcome.</p>
               </div>
              
@@ -128,8 +124,8 @@ function Login() {
               <div className="icon-box box-3 text-center">
                 <lord-icon src="https://cdn.lordicon.com/jqeuwnmb.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
-              <div className="text-center">
-                <h5>Donate Gadgets</h5>
+              <div className="text-center ">
+                <h2 className="mt-4">Donate <br/> Gadgets</h2>
                 <p> If you are a student and wish to donate gadgets you may reach out to us.</p>
               </div>
             </div>
@@ -143,7 +139,7 @@ function Login() {
                <lord-icon src="https://cdn.lordicon.com/sodlceyy.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5> Working Teachers</h5>
+                <h3> Working Teachers</h3>
                 <p>If you are working as well as you wish to teach, you are hearty welcome.</p>
               </div>
             </div>
@@ -154,7 +150,7 @@ function Login() {
                 <lord-icon src="https://cdn.lordicon.com/bwnhdkha.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5>Retired Teachers</h5>
+                <h3>Retired Teachers</h3>
                 <p>If you are retired and wish to continue, Adhyanshala welcomes you with open arms.</p>
               </div>
             </div>
@@ -165,7 +161,7 @@ function Login() {
                 <lord-icon src="https://cdn.lordicon.com/wxnxiano.json" trigger="loop" colors="primary:#000033,secondary:#000033" style={{ width: '60px', height: '60px' }}></lord-icon>
               </div>
               <div className="text-center">
-                <h5> Donate Books</h5>
+                <h3> Donate Books</h3>
                 <p>If you have any resources where students can access books for free, please contact us.</p>
               </div>
             </div>
@@ -181,7 +177,7 @@ function Login() {
               </div>
               <div className="text-center">
 
-                <h5>Student</h5>
+                <h3>Student</h3>
                 <p> Buy plans and learn various courses remotely.</p>
               </div>
             </div>
@@ -193,7 +189,7 @@ function Login() {
               </div>
                <div className="text-center">
 
-                <h5>Teacher Students</h5>
+                <h3>Teacher Students</h3>
                 <p>If you wish to teach and contribute you may contact us</p>
               </div>
             </div>
@@ -208,7 +204,7 @@ function Login() {
             <div className="container-fluid" style={{ "background": "#000033" }} >
                 <div className="row">
                     <div className="col-12">
-                        <h1 className="text-white quote_heading text-center">"Education is not about solving problems it about opportunities to learn more."</h1>
+                        <h1 className="text-white quote_heading text-center">"Education is not about solving problems <br/>it about opportunities to learn more."</h1>
                         
                     </div>
                 </div>

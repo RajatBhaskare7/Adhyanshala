@@ -1,7 +1,6 @@
 
 
 import Index from "views/Index.js";
-
 var routes = [
  {
     path: "/index",

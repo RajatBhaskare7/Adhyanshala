@@ -86,7 +86,7 @@ class Landing extends React.Component {
             style:'starty',
             
         });
-        if(this.state.visibles==true){
+        if(this.state.visibles===true){
           this.props.history.push("/home");
           this.setState({text:'Explore'});
           
@@ -108,7 +108,7 @@ class Landing extends React.Component {
             style:'starty',
             
         });
-         if(this.state.avisibles==true){
+         if(this.state.avisibles===true){
           this.props.history.push("/");
            this.setState({text:'Explore'});
           
@@ -129,7 +129,7 @@ class Landing extends React.Component {
             style:'starty',
             
         });
-         if(this.state.svisibles==true){
+         if(this.state.svisibles===true){
           this.props.history.push("/");
            this.setState({text:'Explore'});
           
@@ -149,7 +149,7 @@ class Landing extends React.Component {
             style:'starty',
             
         });
-         if(this.state.lvisibles==true){
+         if(this.state.lvisibles===true){
           this.props.history.push("/");
            this.setState({text:'Explore'});
           
@@ -170,7 +170,7 @@ class Landing extends React.Component {
             
         });
 
-         if(this.state.dvisibles==true){
+         if(this.state.dvisibles===true){
           this.props.history.push("/");
            this.setState({text:'Explore'});
           
@@ -190,7 +190,7 @@ class Landing extends React.Component {
             style:'starty',
             
         });
-         if(this.state.cvisibles==true){
+         if(this.state.cvisibles===true){
           this.props.history.push("/");
            this.setState({text:'Explore'});
           
@@ -210,10 +210,10 @@ class Landing extends React.Component {
    
 
   render() {
-    const {loading ,text }=this.state;
-    if(this.state.loading==true){
+    const {loading }=this.state;
+    if(this.state.loading===true){
       setTimeout(()=>{
-        this.setState({loading :false})
+        this.setState({loading :false});
       },6000);
     }
     return loading ?(

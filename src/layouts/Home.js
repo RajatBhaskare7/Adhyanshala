@@ -30,7 +30,7 @@ class Home extends Component {
             style:'starty',
             
         });
-        if(this.state.visibles==true){
+        if(this.state.visibles===true){
           this.props.history.push("/home");
         
           

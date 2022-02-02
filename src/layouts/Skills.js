@@ -20,7 +20,7 @@ class Home extends React.Component {
         this.setState({
             visibles:!this.state.visibles
         });
-        if(this.state.visibles==true){
+        if(this.state.visibles===true){
           this.props.history.push("/");
            
           
@@ -39,7 +39,7 @@ class Home extends React.Component {
       <>
       <Menu/>
 
-       <div className="landing" className="hero" >
+       <div className="landing hero" >
             <div className="sdiv-1"></div>
             <div className="sdiv-2"></div>
             <div className="sdiv-3">

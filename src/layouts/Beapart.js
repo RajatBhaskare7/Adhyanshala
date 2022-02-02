@@ -31,7 +31,7 @@ class Home extends React.Component {
       <>
       <Menu/>
 
-       <div className="landing" className="hero">
+       <div className="landing hero" >
             <div className="ldiv-1"></div>
             <div className="ldiv-2"></div>
             <div className="ldiv-3">
@@ -44,7 +44,6 @@ class Home extends React.Component {
             </div>
             <div className="ldiv-4">
                <h1 className="be_heading"><b>Be A Part</b></h1>
-               
             </div>
             <div className="sdiv-3 buttons">
               

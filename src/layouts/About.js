@@ -16,12 +16,12 @@ class Home extends React.Component {
 
   state ={
 
-        visibles:false,
+        avisibles:false,
         
     }
     visible = () =>{
         this.setState({
-            visibles:!this.state.visibles
+            avisibles:!this.state.avisibles
         })
         
     }
@@ -30,11 +30,10 @@ class Home extends React.Component {
         window.scrollTo(0,0);
     }
   render() {
-  
     return (
       <>  
         <Menu/>
-         <div id="abouts" className={(this.state.visibles===false ? 'landing2' :'landing')} className="hero">
+         <div id="abouts" className={(this.state.avisibles===false ? 'landing2 hero ' :'landing hero')} >
         <div className="div-1"></div>
         <div className="div-2"></div>
         <div className="div-3">
@@ -53,7 +52,7 @@ class Home extends React.Component {
         <div className="sdiv-3 buttons buttonsa">
             </div>
     </div>
-    {this.state.visibles===false && <Abouts/>}
+    {this.state.avisibles===false && <Abouts/>}
     <Footer/>
     <div className="landscape-view">
       <div className="phone">
