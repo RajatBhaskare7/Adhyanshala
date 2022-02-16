@@ -43,7 +43,7 @@ class Home extends React.Component {
                   
             </div>
             <div className="ddiv-4">
-               <h1 className="heading"><b>Donate</b></h1>
+               <h1 className="donate__heading"><b>Donate</b></h1>
              
             </div>
             <div className="sdiv-3 buttons">

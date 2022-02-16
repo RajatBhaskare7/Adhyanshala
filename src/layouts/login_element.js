@@ -17,9 +17,11 @@ import {
   InputGroup,
   Col,
 } from "reactstrap";
-
 import border from 'assets/img/landing/donate/donate border.png';
+
 function Login() {
+  
+
   return (
     <div className="hero">
 <div className="container"  data-aos="zoom-in" style={{marginTop: '3.5rem'}}>
@@ -264,7 +266,7 @@ function Login() {
                 </label>
               </div>
               <div className="text-center">
-                <Button className="my-4" color="primary" type="button">
+                <Button className="my-4"  color="primary" type="button">
                   Sign in
                 </Button>
               </div>

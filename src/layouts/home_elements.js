@@ -201,7 +201,7 @@ export default function main() {
            
 
           
-            <div className="container" style={{marginTop: '20.5em '}}>
+            <div className="container" style={{marginTop: '2.5em '}}>
                 <div className="main-text section-title mb-5 text-center" data-aos="zoom-in">
                     <h1 className="text-black">What we do?</h1>
                     <p className="mt-1">We intend to change the present based on the future</p>

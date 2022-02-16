@@ -46,7 +46,7 @@ class Home extends React.Component {
                 <img src={img7} alt="s" className="simgr img7"/> 
         </div>
         <div className="div-4">
-            <h1 className="about_heading"><b>About</b></h1>
+            <h1 style={{fontSize:'8em',fontFamily:'cursive',transform:"translate(-1em,0.8em)"}}><b>About</b></h1>
             
         </div>
         <div className="sdiv-3 buttons buttonsa">

@@ -47,7 +47,7 @@ import Login from './login_element.js';
 import Loader from './loader.js';
 import Abouts from "./about_elements.js";
 import Homesub from "./home_elements.js";
-
+import Drift from "react-driftjs";
 import 'assets/css/landing.css';
 //import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 //import SwipeableRoutes from "react-swipeable-routes";
@@ -214,7 +214,7 @@ class Landing extends React.Component {
     if(this.state.loading===true){
       setTimeout(()=>{
         this.setState({loading :false});
-      },6000);
+      },6);
     }
     return loading ?(
           <Loader/>
@@ -255,7 +255,11 @@ class Landing extends React.Component {
                         <br/>
                         education and profession
                         </p>
-                
+                        <Drift
+  appId="xxxxx"
+  userId="1234"
+  attributes={{ email: "user@example.com", company: "Acme Inc" }}
+/>
   
           <button className="button-upload btn btn-primary m-1" onClick={this.visible}>
   <svg
@@ -308,6 +312,7 @@ class Landing extends React.Component {
 <i className="fa fa-hand-point-right text-center" ></i></h2>
 </div>
             </div>  
+            <Drift appId="xxxxx" />
 
             </div>
             {this.state.visibles===true && <Homesub/>}
@@ -327,10 +332,10 @@ class Landing extends React.Component {
         </div>
         
         <div className="div-4">
-            <h1 className="about_heading"><b>About</b></h1>
+            <h1 className="about_title_heading">About</h1>
         </div>
         <div className="sdiv-3 buttons buttonsa">        
-       <button className="button-upload about_button btn btn-primary mt-7" onClick={this.avisible}>
+       <button className="button-upload about_button btn btn-primary mt-9" onClick={this.avisible}>
                <svg
     xmlns="http://www.w3.org/2000/svg"
     width="36.089"
@@ -391,7 +396,7 @@ class Landing extends React.Component {
                 <img src={skill_img7} alt="s" className="simgr simg7"/>               
             </div>
             <div className="sdiv-4">
-               <h1 className="skills_heading"><b>Skill Development</b></h1>
+               <h1 className="skills_heading">Skill Development</h1>
               
             </div>
             <div className="sdiv-3 buttons " >
@@ -455,7 +460,7 @@ class Landing extends React.Component {
                 <img src={be_img6} alt="s" className="imgr limg6"/>              
             </div>
             <div className="ldiv-4">
-               <h1 className="be_heading beapart_heading"><b>Be A Part</b></h1>
+               <h1 className="be_heading beapart_heading ">Be A Part</h1>
                
             </div>
             <div className="sdiv-3 buttons">
@@ -522,7 +527,7 @@ class Landing extends React.Component {
                   
             </div>
             <div className="ddiv-4">
-               <h1 className="heading"><b>Donate</b></h1>
+               <h1 className="donate__heading" >Donate</h1>
              
             </div>
             <div className="sdiv-3 buttons">
@@ -581,7 +586,7 @@ class Landing extends React.Component {
             <img src={c_img3} className="imgr cimg3" alt="s" />
           </div>
           <div className="cdiv-4">
-            <h1 className="heading"><b>Contact</b></h1>
+            <h1 className="headingc">Contact</h1>
           </div>
           <div className="sdiv-3 buttons">
                 <button className="button-upload btn btn-primary mt-7"  onClick={this.cvisible}>
@@ -631,7 +636,9 @@ class Landing extends React.Component {
         </div>
         {this.state.cvisibles === true && <Contacts />}
       </div>
+      
     </SwipeableViews>
+
     <div className="landscape-view">
       <div className="phone">
 </div>
@@ -639,6 +646,7 @@ class Landing extends React.Component {
   Please rotate your device!
 </div>
     </div>
+   
       </>
     );
   }

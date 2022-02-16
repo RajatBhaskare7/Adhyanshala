@@ -36,7 +36,7 @@ class Home extends React.Component {
             <img src={img3} className="imgr cimg3" alt="s" />
           </div>
           <div className="cdiv-4">
-            <h1 className="heading"><b>Contact</b></h1>
+            <h1 className="headingc">Contact</h1>
           </div>
           <div className="sdiv-3 buttons">
               

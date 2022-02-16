@@ -235,10 +235,10 @@ body{
 }
 .skills_heading {
     margin: auto;
-    font-size: 40px;
+    font-size: 4rem;
+    font-family: cursive;
+    font-weight: 600;
     transform: translate(20px,20px);
-    text-shadow: 0px 3px 0px #ccc, 0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
 }
 /*@media (max-width: 840px){
     .simg7{
@@ -489,8 +489,10 @@ body{
 .skills_heading{
     font-size:35px;
     transform: translateY(-30px);
+    font-family: cursive;
+    font-weight: 700;
     color: #ffff;
-    text-shadow: 0px 3px 0px #1678a5, 0px 10px 10px rgb(0 0 0 / 15%), 0px 6px 2px rgb(0 0 0 / 10%), 0px 24px 30px rgb(0 0 0 / 10%);
+    
 
     }
 
@@ -577,6 +579,9 @@ body{
     .sdiv-2{
         background-image: url("assets/img/landing/skill/Skilldev_landscpe-02.png");
     }
+    .skills_heading{
+        font-size:3rem;
+    }
 }
 @media (max-width: 1175px) and (min-width: 776px){
     .sdiv-1{
@@ -588,9 +593,10 @@ body{
     .adhyanshala-logo{
         margin-top: 20px;
     }
-    .simg6{
-        top: ;
+    .skills_heading{
+        font-size:2.5rem;
     }
+    
 }
 
 .bg {

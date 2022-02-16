@@ -14,6 +14,7 @@ import bg from 'assets/img/landing/home/adhyanshala-01.png';
 import Menu from './Menu.js';
 import Homesub from './home_elements.js';
 import Footer from './footer.js';
+import Drift from "react-driftjs";
 class Home extends Component {
     state ={
         visibles:false,
@@ -84,6 +85,11 @@ class Home extends Component {
                         <br/>
                         education and profession
                         </p>
+                        <Drift
+  appId="xxxxx"
+  userId="1234"
+  attributes={{ email: "digoko3084@afarek.com", company: "Acme Inc" }}
+/>
                    
                       
 
@@ -92,6 +98,7 @@ class Home extends Component {
                 </div>
             </div>
         </div>
+        
          {this.state.visibles===false && <Homesub/>}
          <Footer/>
           <div className="landscape-view">

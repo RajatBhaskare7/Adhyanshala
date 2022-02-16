@@ -445,8 +445,21 @@ body{
 }
 .be_heading {
     margin: auto;
-    font-size: 40px;
-    transform: translate(0px,0px);
-    text-shadow: 0px 3px 0px #ccc, 0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 6px 2px rgba(0, 0, 0, 0.1), 0px 24px 30px rgba(0, 0, 0, 0.1);
+    font-size: 4rem;
+    font-family: cursive;
+    font-weight: 600;
+    transform: translate(0px,-0.2em);
+    
+}
+@media (max-width:780px) and (min-width:490px){
+    .be_heading{
+        transform: translate(0,-2.6em);
+    }
+}
+@media (max-width:489px) {
+    .be_heading{
+        transform: translate(0,-0.5em);
+        font-size: 3rem;
+        
+    }
 }

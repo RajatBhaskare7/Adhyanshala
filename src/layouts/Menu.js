@@ -4,7 +4,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import 'assets/css/menu.css';
 class Landing extends React.Component {
-      
+        
   render(){
     
   return (
@@ -18,7 +18,7 @@ class Landing extends React.Component {
     <span className="hamburger hamburger-3"></span>
   </label>
   
-  <Link to="/" className="menu-item">  <i className="fa fa-bars"> <span>Slider</span></i> </Link>
+  <Link to="/" className="menu-item ">  <i className="fa fa-bars"> <span>Slider</span></i> </Link>
   <Link to="/home"  className="menu-item"> <i  className="fa fa-home"> <span>Home</span></i> </Link>
   <Link to="/about" className="menu-item"> <i className="fa fa-tools"> <span>About</span></i> </Link>
   
