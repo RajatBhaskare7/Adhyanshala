@@ -41,15 +41,12 @@ ReactDOM.render(
       <Route path="/admin"  render={(props) => <AdminLayout {...props} />} />
       <Route path="/auth" render={(props) => <AuthLayout {...props} />} />
       <Route path="/about" render={(props)=> <About {...props}/>}/>
-     <Route path="/contact" render={(props) => <Contact {...props} />} />
+      <Route path="/contact" render={(props) => <Contact {...props} />} />
       <Route path="/donate" render={(props) => <Donate {...props} />} />
       <Route path="/skills" render={(props) => <Skills {...props} />} />
       <Route path="/home"  render={(props) => <Home {...props} />} />
       <Route path="/beapart" render={(props) => <Beapart {...props} />} />
       <Route path="*" component={Not_found}/>
-      
-      
-
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
