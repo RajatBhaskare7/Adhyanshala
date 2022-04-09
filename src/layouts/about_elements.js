@@ -9,7 +9,7 @@ export default function page() {
         <div className="hero">
             <div className="container"   style={{ marginTop: '3.5rem' }}>
                 <div className="main-text section-title mt-5  text-center" data-aos="fade-up" data-aos-delay="0.1s">
-                    <h1 className="text-black" style={{ fontSize: '60px' }}>About Us</h1>
+                               <h1 style={{fontSize:'8em',fontFamily:'cursive'}}><b>About</b></h1>
 
                 </div>
                 <div className="row mt-5">

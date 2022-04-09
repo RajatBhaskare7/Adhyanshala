@@ -307,7 +307,7 @@ class Landing extends React.Component {
 
                     </div>
                 </div>
-                 <div className="swipe text-center" style={{color:'#000',float:'right',padding:'10px'}} >
+                 <div className="swipe text-center" style={{color:'#000',float:'right',paddingTop:'-30px'}} >
 <h2>Swipe for more<br/>
 <i className="fa fa-hand-point-right text-center" ></i></h2>
 </div>
