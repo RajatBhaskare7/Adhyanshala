@@ -118,7 +118,7 @@ class Landing extends React.Component {
         <div className="container">
             <div className="row justify-content-between">
                 <div className="col-xl-5 col-lg-6">
-                    <div className="testimonial-left-content mt-45">
+                    <div className="testimonial-left-content " style={{marginTop:'-6em'}}>
                         <h4 className="title">Donate and Help!<br/> </h4>
 
                         <ul className="testimonial-line">
@@ -132,8 +132,8 @@ class Landing extends React.Component {
 
                     </div> 
                 </div>
-                <div className="col-lg-6">
-                    <div className="testimonial-right-content mt-50">
+                <div className="col-lg-6" style={{padding:'5rem'}}>
+                    <div className="testimonial-right-content ">
                         <div className="quota">
                             <i className="lni lni-quotation"></i>
                         </div>
@@ -278,7 +278,7 @@ class Landing extends React.Component {
 
             </div>
             <img src={donatewaveb} width="100%" alt='img' />
-            <div className="container" data-aos="zoom-in" >
+            <div className="container" data-aos="zoom-in mb-5" >
                 <div className="main-text section-title mb-5 text-center" data-aos="fade-up" data-aos-delay="0.1s">
                     <h1 className="text-black" style={{ fontSize:'40px'}}>3 ways you can donate</h1>
 

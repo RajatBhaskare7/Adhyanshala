@@ -28,6 +28,7 @@ body{
     background-repeat: no-repeat;
 
 }
+
 .ddiv-22{
     height: 130vh;
     width: 100%;
@@ -236,9 +237,7 @@ body{
   .ddiv-2 {
     background-image: url("assets/img/landing/donate/Donate_mobile-02.png");
   }
-  .ddiv-11{
-    background-image: url("assets/img/landing/donate/Donate_mobile-01.png");
-  }
+  
   .dimg1{
   position: absolute;
   width: 22%;
@@ -349,6 +348,7 @@ body{
   .ddiv-2{
     background-image: url("assets/img/landing/donate/Donate_tab-02.png");
   }
+  
 }
 
 
