@@ -176,7 +176,7 @@ function Home() {
                         <div className="col-md-2 mt-1">
                             <div className="feature-card text-center">
                                 <lord-icon
-                                    src="https://cdn.lordicon.com/isvvzjbf.json"
+                                    src="https://cdn.lordicon.com/gqzfzudq.json"
                                     trigger="loop"
                                     colors="primary:#000033,secondary:#000033"
                                     style={{ width: '100px', height: '100px' }}>

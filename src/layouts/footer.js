@@ -31,29 +31,29 @@ const Contact = () => {
                         <div class="col-md-12 col-lg-7">
                         
                             <div class="row">
-                                <div class="col-md-4 mb-md-0 mt-2 border-left">
-                                <h2 className=' ml-9 footer-heading'>Services</h2>
-                                    <ul class="list-unstyled pl-5">
+                                <div class="col-md-4 mb-md-0 mt-3 border-left">
+                                <h2 className=' ml-2 footer-heading'>Services</h2>
+                                    <ul class="list-unstyled ">
                                         <li><Link to="/home">Home</Link></li>
                                         <li><Link to="/about">About</Link></li>
                                         <li><Link to="/skills">Skill development</Link></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4  mb-md-0 mt-6 border-left">
-                                    <ul class="list-unstyled pl-5">
+                                <div class="col-md-4  mb-md-0 mt-6 ">
+                                    <ul class="list-unstyled ">
                                         <li><Link to="/beapart">Be A Part</Link></li>
                                         <li><Link to="/donate">Donate</Link></li>
                                         <li><Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>
                                 
-                                <div class="col-md-4 mb-md-0 mt-2 border-left">
+                                <div class="col-md-4 mb-md-0 mt-3 border-left">
                                     <h2 class="footer-heading">Social</h2>
                                     <ul class="list-unstyled">
-                                        <li><Link href="#" class="py-1 d-block">Facebook</Link></li>
-                                        <li><Link href="#" class="py-1 d-block">Twitter</Link></li>
-                                        <li><Link href="#" class="py-1 d-block">Instagram</Link></li>
-                                        <li><Link href="#" class="py-1 d-block">Googleplus</Link></li>
+                                        <li><Link href="#" class=" d-block">Facebook</Link></li>
+                                        <li><Link href="#" class=" d-block">Twitter</Link></li>
+                                        <li><Link href="#" class="d-block">Instagram</Link></li>
+                                        <li><Link href="#" class="d-block">Googleplus</Link></li>
                                     </ul>
                                 </div>
                             </div>

@@ -247,7 +247,7 @@
   border: none;
  
   padding: 0.8rem;
-  transform: translate(-10px,-10px);
+  /* transform: translate(-10px,-10px); */
   transition: all 0.5s cubic-bezier(0.68, 0.15, 0.31, 1.05);
 }
 .button-upload:hover {
@@ -285,7 +285,7 @@
     opacity: 1;
   }
   100% {
-    transform: rotate(49deg 18px 17px);
+    transform: rotate(49deg 0px 0px);
   }
 }
 .landscape-view {
