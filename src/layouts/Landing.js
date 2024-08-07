@@ -330,7 +330,7 @@ class Landing extends React.Component {
                 <img src={about_img6} alt="s" className="simgr img6"/>
                 <img src={about_img7} alt="s" className="simgr img7"/> 
         </div>
-        
+         
         <div className="div-4">
             <h1 className="about_title_heading">About</h1>
         </div>
